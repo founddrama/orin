@@ -3,8 +3,8 @@
  * Starkers functions and definitions
  *
  * @package WordPress
- * @subpackage Starkers
- * @since Starkers HTML5 3.0
+ * @subpackage Orin
+ * @since 0.1a
  */
 
 /** Tell WordPress to run starkers_setup() when the 'after_setup_theme' hook is run. */
