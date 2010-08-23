@@ -8,12 +8,14 @@ Author URI: http://blog.founddrama.net
 Tags: orin, html5
 */
 
-@import "css/reset.css";
-@import "css/layout.css";
+/* imports */
+@import "reset";
+@import "layout";
 
 /* SASS variables */
 $f_d-color: #710;
-$_basewidth: 960px;
+$f_d-grey: #ddd;
+$f_d-dark: #222;
 
 body {
 	header {
