@@ -26,6 +26,7 @@
 <?php while ( have_posts() ) : the_post(); ?>
 
 <?php /* How to display posts in the Gallery category (only useful to you if you create a category named 'gallery' in your site). */ ?>
+		<div class="post-decorator">
 
 	<?php if ( in_category( _x('gallery', 'gallery category slug', 'starkers') ) ) : ?>
 	
@@ -115,6 +116,7 @@
 			<?php comments_template( '', true ); ?>
 			
 		</article>
+		</div>
 
 	<?php endif; // This was the if statement that broke the loop into three parts based on categories. ?>
 
