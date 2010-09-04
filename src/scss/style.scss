@@ -11,28 +11,105 @@ Tags: orin, html5
 /* imports */
 @import "reset";
 @import "layout";
+@import "typography";
 
 /* SASS variables */
+// colors
 $f_d-color: #710;
+$f_d-desat: desaturate($f_d-color, 50%);
 $f_d-grey: #ddd;
 $f_d-dark: #222;
 
+// pseudo grid units
+$_960_base: 960px;
+$_3rd: $_960_base / 3;
+$_24th: $_960_base / 24;
+
+/* @mixins */
+@mixin rounded {
+	$radius: 20px;
+	
+	border-radius: $radius;
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+}
+
+@mixin article-shadow($strength, $color) {
+	$_shadow: 0 $strength $strength $color;
+	-moz-box-shadow: $_shadow;
+	-webkit-box-shadow: $_shadow;
+}
+
+
+
 body {
-	header {
-		width: $_basewidth;
-	}
-	
-	article {
-		width: $_basewidth/3 * 2;
-	}
-	
-	aside {
-		width: $_basewidth/3;
+	background: white;
+	// #s below accept an int+"px" or %
+	background: -moz-linear-gradient(top, $f_d-grey, white 128px);
+	// #s below accept an int or %
+	background: -webkit-gradient(linear, 0 0, 0 128, from($f_d-grey), to(white));
+}
+
+header hgroup {
+	h1 {
+		position: absolute;
+		left: 1em;
+		text-shadow: 2px 0 2px $f_d-dark, -2px 0 2px $f_d-dark;
+		a {
+			text-decoration: none;
+			color: $f_d-color;
+		}
 	}
 }
 
-article {
-	a, em {
-		color: $f_d-color;
+#orin-container {
+	float: right;
+	width: $_960_base;
+	margin-right: 2em;
+	
+	aside {
+		float: right;
+		display: inline;
+		width: $_3rd - $_24th;
 	}
+}
+
+#orin-chronology {
+	display: inline-block;
+	width: $_3rd * 2;
+	
+	.post-decorator {
+		@include rounded;
+		
+		padding: $_24th;
+		background: white;
+		background: -moz-linear-gradient(top, $f_d-desat, white 64px);
+		background: -webkit-gradient(linear, 0 0, 0 64, from($f_d-desat), to(white));
+		
+		margin-bottom: 64px;
+		
+		@include article-shadow(8px, $f_d-grey);
+		-webkit-transition: -webkit-box-shadow 0.5s ease-out;
+		
+		&:hover {
+			@include article-shadow(24px, saturate($f_d-color, 25%));
+		}
+	}
+	
+	article {
+		@include rounded;
+		
+		header,
+		footer {
+			width: 100%;
+		}
+		
+		header { margin-bottom: 2em; }
+		
+		a { color: $f_d-color; }
+	}
+}
+
+footer {
+	clear: both;
 }
