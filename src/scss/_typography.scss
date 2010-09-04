@@ -1,27 +1,59 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-nav {
-	font-family: "Gill Sans", "Lucida Grande", "Trebuchet MS", sans-serif;
-}
+// font-families
+@mixin _sans-serif { font-family: "Gill Sans", "Lucida Grande", "Trebuchet MS", sans-serif; }
+@mixin _serif { font-family: "Hoefler Text", Palatino, Georgia, serif; }
+@mixin _console { font-family: Consolas, "Lucida Console", Monaco, monospace; }
 
 div, span, p, blockquote,
 abbr, address, cite,
 del, dfn, ins,  q, samp,
 dl, dt, dd, ol, ul, li,
 label, legend,
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, section, summary {
-	font-family: "Hoefler Text", Palatino, Georgia, serif;
+article, details, figcaption, figure, 
+hgroup, menu, section, summary {
+	@include _serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+nav, aside {
+	@include _sans-serif;
+}
+
+article {
+	header, footer {
+		@include _sans-serif;
+		* { @include _sans-serif; }
+	}
 }
 
 pre, code, kbd, tt {
-	font-family: Consolas, "Lucida Console", Monaco, monospace;
+	@include _console;
 }
 
 table, caption, tbody, tfoot, thead, tr, th, td {
+	
+}
+
+// sizing:
+$_font-size: 16px;
+
+header hgroup h1 {
+	font-size: 6em;
+}
+
+article {
+	header, footer { font-size: 0.875em; }
+	
+	header h2 {
+		font-size: 2em;
+		a { text-decoration: none; }
+	}
+	
+	font-size: $_font-size;
+	line-height: $_font-size * 1.5;
+	
+	p {
+		margin-bottom: $_font-size * 1.5;
+	}
+	
 	
 }
