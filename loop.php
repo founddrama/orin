@@ -8,14 +8,6 @@
  */
 ?>
 
-<?php /* Display navigation to next/previous pages when applicable */ ?>
-<?php if ( $wp_query->max_num_pages > 1 ) : ?>
-	<nav>
-		<?php next_posts_link( __( '&larr; Older posts', 'starkers' ) ); ?>
-		<?php previous_posts_link( __( 'Newer posts &rarr;', 'starkers' ) ); ?>
-	</nav>
-<?php endif; ?>
-
 <?php /* If there are no posts to display, such as an empty archive page */ ?>
 <?php if ( ! have_posts() ) : ?>
 		<h1><?php _e( 'Not Found', 'starkers' ); ?></h1>
