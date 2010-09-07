@@ -12,6 +12,7 @@ Tags: orin, html5
 @import "reset";
 @import "layout";
 @import "typography";
+@import "mixins";
 
 /* SASS variables */
 // colors
@@ -20,44 +21,67 @@ $f_d-desat: desaturate($f_d-color, 50%);
 $f_d-grey: #ddd;
 $f_d-dark: #222;
 
-// pseudo grid units
-$_960_base: 960px;
-$_3rd: $_960_base / 3;
-$_24th: $_960_base / 24;
-
-/* @mixins */
-@mixin rounded {
-	$radius: 20px;
-	
-	border-radius: $radius;
-	-moz-border-radius: $radius;
-	-webkit-border-radius: $radius;
-}
-
-@mixin article-shadow($strength, $color) {
-	$_shadow: 0 $strength $strength $color;
-	-moz-box-shadow: $_shadow;
-	-webkit-box-shadow: $_shadow;
-}
-
 
 
 body {
-	background: white;
-	// #s below accept an int+"px" or %
-	background: -moz-linear-gradient(top, $f_d-grey, white 128px);
-	// #s below accept an int or %
-	background: -webkit-gradient(linear, 0 0, 0 128, from($f_d-grey), to(white));
+	@include basic-linear-grader(white, $f_d-grey, 128);
 }
 
-header hgroup {
-	h1 {
+// some way to do this as "header" w/o #masthead ?
+#masthead {
+	height: 12em;
+	
+	hgroup {
+		h1 {
+			position: absolute;
+			margin-left: $_12th;
+			text-shadow: 2px 0 2px $f_d-dark, -2px 0 2px $f_d-dark;
+			a {
+				text-decoration: none;
+				color: $f_d-color;
+			}
+		}
+
+		h2 {
+			position: absolute;
+			margin-left: $_3rd / 2;
+			margin-top: $_12th;
+		}
+	}
+	
+	nav ul {
+		float: right;
 		position: absolute;
-		left: 1em;
-		text-shadow: 2px 0 2px $f_d-dark, -2px 0 2px $f_d-dark;
-		a {
-			text-decoration: none;
-			color: $f_d-color;
+		right: $_24th;
+		
+		li {
+			float: left;
+			position: relative;
+			
+			padding: 4px;
+			
+			$_nav-li-border-style: 1px $f_d-grey solid;
+			border: {
+				bottom: $_nav-li-border-style;
+				right: $_nav-li-border-style;
+			}
+			
+			&:last-child {
+				@include rounded(4px, bottom, right);
+			}
+			
+			ul {
+				display: none;
+				li {
+					min-width: $_12th;
+					float: none;
+				}
+			}
+			&:hover ul {
+				display: block;
+				position: absolute;
+				left: 0;
+			}
 		}
 	}
 }
@@ -79,12 +103,11 @@ header hgroup {
 	width: $_3rd * 2;
 	
 	.post-decorator {
-		@include rounded;
+		@include rounded(8px, 0, 0);
 		
 		padding: $_24th;
-		background: white;
-		background: -moz-linear-gradient(top, $f_d-desat, white 64px);
-		background: -webkit-gradient(linear, 0 0, 0 64, from($f_d-desat), to(white));
+		
+		@include basic-linear-grader(white, $f_d-desat, 64);
 		
 		margin-bottom: 64px;
 		
@@ -97,16 +120,47 @@ header hgroup {
 	}
 	
 	article {
-		@include rounded;
+		@include rounded(8px, 0, 0);
 		
-		header,
-		footer {
-			width: 100%;
-		}
+		header, footer { width: 100%; }
 		
 		header { margin-bottom: 2em; }
 		
-		a { color: $f_d-color; }
+		// $_font-size @ _typography
+		p { margin-bottom: $_font-size * 1.5; }
+		
+		a {
+			color: $f_d-color;
+			
+			img:hover {
+				@include article-shadow(4px, lighten($f_d-dark, 25%));
+				@include rotator(-1deg);
+			}
+		}
+		
+		img {
+			border: 1px $f_d-grey solid;
+			padding: 4px;
+			@include article-shadow(2px, lighten($f_d-dark, 50%));
+			-webkit-transition: {
+				property: -webkit-transform, -webkit-box-shadow	;
+				duration: 0.5s, 0.5s;
+				timing-function: ease-in, ease-out;
+			}
+		}
+		
+		blockquote, q {
+			color: white;
+			padding: 1em;
+			margin: 2em;
+			border: 0.25em white solid;
+			@include article-shadow(4px, $f_d-grey);
+			@include basic-linear-grader(darken($f_d-color, 10%), $f_d-dark, 92%);
+			
+			a { color: $f_d-grey; }
+			
+			p:last-child { margin-bottom: 0; }
+		}
 	}
 }
 
