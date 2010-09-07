@@ -14,8 +14,10 @@ hgroup, menu, section, summary {
 }
 
 h1, h2, h3, h4, h5, h6,
-nav, aside {
+nav, aside,
+header nav * {
 	@include _sans-serif;
+	
 }
 
 article {
@@ -36,8 +38,17 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 // sizing:
 $_font-size: 16px;
 
-header hgroup h1 {
-	font-size: 6em;
+h1 { font-size: 1.750em; }
+h2 { font-size: 1.625em; }
+h3 { font-size: 1.500em; }
+h4 { font-size: 1.375em; }
+h5 { font-size: 1.250em; }
+h6 { font-size: 1.125em; }
+
+// @todo - how to ditch #masthead ?
+#masthead {
+	h1 { font-size: 6em; }
+	li { font-size: 14px; /* don't do "em" b/c of the cascade */ }
 }
 
 article {
@@ -45,15 +56,14 @@ article {
 	
 	header h2 {
 		font-size: 2em;
-		a { text-decoration: none; }
+		a {
+			text-decoration: none;
+			&:hover { text-decoration: underline; }
+		}
 	}
 	
 	font-size: $_font-size;
 	line-height: $_font-size * 1.5;
 	
-	p {
-		margin-bottom: $_font-size * 1.5;
-	}
-	
-	
+	blockquote, q { font-size: 0.875em; }
 }
