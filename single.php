@@ -9,13 +9,12 @@
 
 get_header(); ?>
 
+<section id="orin-container">
+	<section id="orin-chronology">
+
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-		<nav>
-			<?php previous_post_link( '%link', '' . _x( '&larr;', 'Previous post link', 'starkers' ) . ' %title' ); ?>
-			<?php next_post_link( '%link', '%title ' . _x( '&rarr;', 'Next post link', 'starkers' ) . '' ); ?>
-		</nav>
-		
+	<div class="post-decorator">
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			
 			<header>
@@ -50,8 +49,11 @@ get_header(); ?>
 				<?php comments_template( '', true ); ?>
 				
 		</article>
+	</div><?php /* .post-decorator */ ?>
 
 <?php endwhile; // end of the loop. ?>
 
+	</section><?php /* #orin-chronology */ ?>
 <?php get_sidebar(); ?>
+</section><?php /* #orin-container */ ?>
 <?php get_footer(); ?>
