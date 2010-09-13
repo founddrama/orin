@@ -285,13 +285,14 @@ function starkers_posted_on() {
 }
 endif;
 
-if ( ! function_exists( 'starkers_posted_in' ) ) :
+if ( ! function_exists( 'orin_posted_in' ) ) :
 /**
  * Prints HTML with meta information for the current post (category, tags and permalink).
+ * Replaces {@method starkers_posted_in}
  *
- * @since Starkers HTML5 3.0
+ * @since Orin 0.1-alpha
  */
-function starkers_posted_in() {
+function orin_posted_in() {
 	// Retrieves tag list of current post, separated by commas.
 	$tag_list = get_the_tag_list( '', ', ' );
 	if ( $tag_list ) {
@@ -309,5 +310,16 @@ function starkers_posted_in() {
 		get_permalink(),
 		the_title_attribute( 'echo=0' )
 	);
+}
+endif;
+
+if ( ! function_exists( 'orin_edit_post_link' ) ) :
+/**
+ * Augment standard edit_post_link function...
+ * 
+ * @since Orin 0.1-alpha
+ */
+function orin_edit_post_link() {
+	edit_post_link( __( '&#9998; Edit', 'orin' ), '', '' );
 }
 endif;
