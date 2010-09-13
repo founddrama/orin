@@ -27,7 +27,7 @@
 			<header>
 				<h2><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'starkers' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 
-				<?php starkers_posted_on(); ?>
+				<?php starkers_posted_on(); ?> <?php orin_edit_post_link(); ?>
 			</header>
 
 <?php if ( post_password_required() ) : ?>
@@ -46,7 +46,7 @@
 <?php endif; ?>
 
 			<footer>
-				<a href="<?php echo get_term_link( _x('gallery', 'gallery category slug', 'starkers'), 'category' ); ?>" title="<?php esc_attr_e( 'View posts in the Gallery category', 'starkers' ); ?>"><?php _e( 'More Galleries', 'starkers' ); ?></a> | <?php comments_popup_link( __( 'Leave a comment', 'starkers' ), __( '1 Comment', 'starkers' ), __( '% Comments', 'starkers' ) ); ?> <?php edit_post_link( __( 'Edit', 'starkers' ), '| ', '' ); ?>
+				<a href="<?php echo get_term_link( _x('gallery', 'gallery category slug', 'starkers'), 'category' ); ?>" title="<?php esc_attr_e( 'View posts in the Gallery category', 'starkers' ); ?>"><?php _e( 'More Galleries', 'starkers' ); ?></a> | <?php comments_popup_link( __( 'Leave a comment', 'starkers' ), __( '1 Comment', 'starkers' ), __( '% Comments', 'starkers' ) ); ?>
 			</footer>
 			
 		</article>
@@ -64,7 +64,7 @@
 		<?php endif; ?>
 		
 			<footer>
-				<?php starkers_posted_on(); ?> | <?php comments_popup_link( __( 'Leave a comment', 'starkers' ), __( '1 Comment', 'starkers' ), __( '% Comments', 'starkers' ) ); ?> <?php edit_post_link( __( 'Edit', 'starkers' ), '| ', '' ); ?>
+				<?php starkers_posted_on(); ?> | <?php comments_popup_link( __( 'Leave a comment', 'starkers' ), __( '1 Comment', 'starkers' ), __( '% Comments', 'starkers' ) ); ?> <?php orin_edit_post_link(); ?>
 			</footer>
 		
 		</article>
@@ -78,7 +78,7 @@
 			<header>
 				<h2><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'starkers' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 
-				<?php starkers_posted_on(); ?>
+				<?php starkers_posted_on(); ?> <?php orin_edit_post_link(); ?>
 			</header>
 
 	<?php if ( is_archive() || is_search() ) : // Only display excerpts for archives and search. ?>
@@ -92,16 +92,15 @@
 			<footer>
 
 				<?php if ( count( get_the_category() ) ) : ?>
-						<?php printf( __( 'Posted in %2$s', 'starkers' ), 'entry-utility-prep entry-utility-prep-cat-links', get_the_category_list( ', ' ) ); ?> |
+						<?php printf( __( 'Posted in %2$s', 'starkers' ), 'entry-utility-prep entry-utility-prep-cat-links', get_the_category_list( ', ' ) ); ?>
 				<?php endif; ?>
 				<?php
-					$tags_list = get_the_tag_list( '', ', ' );
+					$tags_list = get_the_tag_list( '#', ', #' );
 					if ( $tags_list ):
 				?>
-						<?php printf( __( 'Tagged %2$s', 'starkers' ), 'entry-utility-prep entry-utility-prep-tag-links', $tags_list ); ?> |
+						<?php printf( __( ' [%2$s]', 'starkers' ), 'entry-utility-prep entry-utility-prep-tag-links', $tags_list ); ?>
 				<?php endif; ?>
-				<?php comments_popup_link( __( 'Leave a comment', 'starkers' ), __( '1 Comment', 'starkers' ), __( '% Comments', 'starkers' ) ); ?>
-				<?php edit_post_link( __( 'Edit', 'starkers' ), '| ', '' ); ?>
+				<span class="post-comment-link"><?php comments_popup_link( __( 'Leave a comment', 'starkers' ), __( '1 Comment', 'starkers' ), __( '% Comments', 'starkers' ) ); ?></span>
 				
 			</footer>
 

@@ -21,6 +21,7 @@ get_header(); ?>
 				<h1><?php the_title(); ?></h1>
 
 				<?php starkers_posted_on(); ?>
+				<?php orin_edit_post_link(); ?>
 			</header>
 
 				<?php the_content(); ?>
@@ -37,8 +38,7 @@ get_header(); ?>
 				<?php endif; ?>
 				
 				<footer>
-					<?php starkers_posted_in(); ?>
-					<?php edit_post_link( __( 'Edit', 'starkers' ), '', '' ); ?>
+					<?php orin_posted_in(); ?>
 				</footer>
 
 				<nav>

@@ -26,7 +26,7 @@ get_header(); ?>
 				<?php wp_link_pages( array( 'before' => '<nav>' . __( 'Pages:', 'starkers' ), 'after' => '</nav>' ) ); ?>
 						
 			<footer>
-				<?php edit_post_link( __( 'Edit', 'starkers' ), '', '' ); ?>
+				<?php orin_edit_post_link(); ?>
 			</footer>
 
 				<?php comments_template( '', true ); ?>
