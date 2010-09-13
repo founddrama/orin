@@ -7,13 +7,13 @@ div, span, p, blockquote,
 abbr, address, cite,
 del, dfn, ins,  q, samp,
 dl, dt, dd, ol, ul, li,
-label, legend,
 article, details, figcaption, figure, 
 hgroup, menu, section, summary {
 	@include _serif;
 }
 
 h1, h2, h3, h4, h5, h6,
+label, legend,
 nav, aside,
 header nav * {
 	@include _sans-serif;
