@@ -40,6 +40,11 @@ body {
 				text-decoration: none;
 				color: $f_d-color;
 			}
+			
+			-webkit-transition: 0.3s linear;
+			&:hover {
+				text-shadow: 4px 0 4px lighten($f_d-color, 10%), -4px 0 4px lighten($f_d-color, 10%);
+			}
 		}
 
 		h2 {
@@ -106,64 +111,23 @@ body {
 		@include rounded(8px, 0, 0);
 		
 		padding: $_24th;
+		padding-bottom: $_24th / 2;
 		
-		@include basic-linear-grader(white, $f_d-desat, 64);
+		@include basic-linear-grader(white, $f_d-desat, 56); // was : 64
 		
 		margin-bottom: 64px;
 		
 		@include article-shadow(8px, $f_d-grey);
 		-webkit-transition: -webkit-box-shadow 0.5s ease-out;
 		
-		&:hover {
-			@include article-shadow(24px, saturate($f_d-color, 25%));
-		}
-	}
-	
-	article {
-		@include rounded(8px, 0, 0);
-		
-		header, footer { width: 100%; }
-		
-		header { margin-bottom: 2em; }
-		
-		// $_font-size @ _typography
-		p { margin-bottom: $_font-size * 1.5; }
-		
-		a {
-			color: $f_d-color;
-			
-			img:hover {
-				@include article-shadow(4px, lighten($f_d-dark, 25%));
-				@include rotator(-1deg);
-			}
-		}
-		
-		img {
-			border: 1px $f_d-grey solid;
-			padding: 4px;
-			@include article-shadow(2px, lighten($f_d-dark, 50%));
-			-webkit-transition: {
-				property: -webkit-transform, -webkit-box-shadow	;
-				duration: 0.5s, 0.5s;
-				timing-function: ease-in, ease-out;
-			}
-		}
-		
-		blockquote, q {
-			color: white;
-			padding: 1em;
-			margin: 2em;
-			border: 0.25em white solid;
-			@include article-shadow(4px, $f_d-grey);
-			@include basic-linear-grader(darken($f_d-color, 10%), $f_d-dark, 92%);
-			
-			a { color: $f_d-grey; }
-			
-			p:last-child { margin-bottom: 0; }
-		}
+		&:hover { @include article-shadow(24px, saturate($f_d-color, 25%)); }
 	}
 }
 
-footer {
-	clear: both;
-}
+// inside : #orin-chronology 
+@import "articles";
+
+// aside
+@import "sidebar";
+
+footer { clear: both; }
