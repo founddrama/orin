@@ -15,6 +15,7 @@ hgroup, menu, section, summary {
 h1, h2, h3, h4, h5, h6,
 label, legend,
 nav, aside,
+aside li,	
 header nav * {
 	@include _sans-serif;
 	
@@ -38,12 +39,12 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 // sizing:
 $_font-size: 16px;
 
-h1 { font-size: 1.750em; }
-h2 { font-size: 1.625em; }
-h3 { font-size: 1.500em; }
-h4 { font-size: 1.375em; }
-h5 { font-size: 1.250em; }
-h6 { font-size: 1.125em; }
+// h#{n} headings:
+$_em: 1em;
+@for $i from 1 through 6 {
+	$_em: $_em + 0.125em;
+	h#{$i} { font-size: $_em; }
+}
 
 // @todo - how to ditch #masthead ?
 #masthead {
