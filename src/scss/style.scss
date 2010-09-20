@@ -60,6 +60,8 @@ body {
 		&:first-child { float: left; }
 		&:last-child { float: right; }
 	}
+	
+	margin-bottom: $_24th;
 }
 
 // inside : #orin-chronology 
@@ -68,4 +70,5 @@ body {
 // aside
 @import "sidebar";
 
-footer { clear: both; }
+// footer
+@import "footer";

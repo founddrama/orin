@@ -1,0 +1,9 @@
+footer {
+	clear: both;
+	
+//	min-height: 12em;
+	padding-top: 12em;
+	
+	border-top: 1px solid white;
+	@include basic-linear-grader($f_d-color, $f_d-dark, 24);
+}
