@@ -9,6 +9,9 @@
 
 get_header(); ?>
 
+<section id="orin-container">
+	<section id="orin-chronology">
+
 				<h1><?php
 					printf( __( 'Category Archives: %s', 'starkers' ), '' . single_cat_title( '', false ) . '' );
 				?></h1>
@@ -20,5 +23,8 @@ get_header(); ?>
 				get_template_part( 'loop', 'category' );
 				?>
 
-<?php get_sidebar(); ?>
+	</section> <?php /* / #orin-chronology */ ?>
+	<?php get_sidebar(); ?>
+</section> <?php /* / #orin-container */ ?>
+
 <?php get_footer(); ?>

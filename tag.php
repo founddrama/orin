@@ -9,6 +9,9 @@
 
 get_header(); ?>
 
+<section id="orin-container">
+	<section id="orin-chronology">
+
 		<h1><?php
 			printf( __( 'Tag Archives: %s', 'starkers' ), '' . single_tag_title( '', false ) . '' );
 		?></h1>
@@ -17,5 +20,8 @@ get_header(); ?>
  get_template_part( 'loop', 'tag' );
 ?>
 
-<?php get_sidebar(); ?>
+	</section> <?php /* / #orin-chronology */ ?>
+	<?php get_sidebar(); ?>
+</section> <?php /* / #orin-container */ ?>
+
 <?php get_footer(); ?>

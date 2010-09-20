@@ -9,6 +9,9 @@
 
 get_header(); ?>
 
+<section id="orin-container">
+	<section id="orin-chronology">
+
 <?php
 	if ( have_posts() )
 		the_post();
@@ -32,5 +35,8 @@ get_header(); ?>
 	get_template_part( 'loop', 'archive' );
 ?>
 
-<?php get_sidebar(); ?>
+	</section> <?php /* / #orin-chronology */ ?>
+	<?php get_sidebar(); ?>
+</section> <?php /* / #orin-container */ ?>
+
 <?php get_footer(); ?>
