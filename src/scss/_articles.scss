@@ -25,7 +25,7 @@ article {
 	}
 	
 	img {
-		border: 1px $f_d-grey solid;
+		border: 1px solid $f_d-grey;
 		padding: 4px;
 		@include article-shadow(2px, lighten($f_d-dark, 50%));
 		-webkit-transition: {
@@ -39,7 +39,7 @@ article {
 		color: white;
 		padding: 1em;
 		margin: 2em;
-		border: 0.25em white solid;
+		border: 0.25em solid white;
 		@include article-shadow(4px, $f_d-grey);
 		@include basic-linear-grader(darken($f_d-color, 10%), $f_d-dark, 92%);
 		

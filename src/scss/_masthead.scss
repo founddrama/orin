@@ -36,7 +36,7 @@
 			
 			@include basic-linear-grader(rgba($f_d-grey, .7), rgba(white, .9), 92%);
 			
-			$_nav-li-border-style: 1px $f_d-grey solid;
+			$_nav-li-border-style: 1px solid $f_d-grey;
 			border: {
 				bottom: $_nav-li-border-style;
 				right: $_nav-li-border-style;
