@@ -28,79 +28,12 @@ body {
 }
 
 // some way to do this as "header" w/o #masthead ?
-#masthead {
-	height: 12em;
-	
-	hgroup {
-		h1 {
-			position: absolute;
-			margin-left: $_12th;
-			text-shadow: 2px 0 2px $f_d-dark, -2px 0 2px $f_d-dark;
-			a {
-				text-decoration: none;
-				color: $f_d-color;
-			}
-			
-			-webkit-transition: 0.3s linear;
-			&:hover {
-				text-shadow: 4px 0 4px lighten($f_d-color, 10%), -4px 0 4px lighten($f_d-color, 10%);
-			}
-		}
-
-		h2 {
-			position: absolute;
-			margin-left: $_3rd / 2;
-			margin-top: $_12th;
-		}
-	}
-	
-	nav ul {
-		float: right;
-		position: absolute;
-		right: $_24th;
-		
-		li {
-			float: left;
-			position: relative;
-			
-			padding: 4px;
-			
-			$_nav-li-border-style: 1px $f_d-grey solid;
-			border: {
-				bottom: $_nav-li-border-style;
-				right: $_nav-li-border-style;
-			}
-			
-			&:last-child {
-				@include rounded(4px, bottom, right);
-			}
-			
-			ul {
-				display: none;
-				li {
-					min-width: $_12th;
-					float: none;
-				}
-			}
-			&:hover ul {
-				display: block;
-				position: absolute;
-				left: 0;
-			}
-		}
-	}
-}
+@import "masthead";
 
 #orin-container {
 	float: right;
 	width: $_960_base;
 	margin-right: 2em;
-	
-	aside {
-		float: right;
-		display: inline;
-		width: $_3rd - $_24th;
-	}
 }
 
 #orin-chronology {
@@ -117,10 +50,15 @@ body {
 		
 		margin-bottom: 64px;
 		
-		@include article-shadow(8px, $f_d-grey);
+		@include article-shadow(8px, rgba($f_d-grey, .8));
 		-webkit-transition: -webkit-box-shadow 0.5s ease-out;
 		
-		&:hover { @include article-shadow(24px, saturate($f_d-color, 25%)); }
+		&:hover { @include article-shadow(24px, rgba(saturate($f_d-color, 25%), .8)); }
+	}
+	
+	nav a {
+		&:first-child { float: left; }
+		&:last-child { float: right; }
 	}
 }
 
