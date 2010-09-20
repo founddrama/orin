@@ -9,6 +9,9 @@
 
 get_header(); ?>
 
+<section id="orin-container">
+	<section id="orin-chronology">
+
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
@@ -35,5 +38,8 @@ get_header(); ?>
 
 <?php endwhile; ?>
 
-<?php get_sidebar(); ?>
+	</section><?php /* / #orin-container */ ?>
+	<?php get_sidebar(); ?>
+</section> <?php /* / #orin-chronology */ ?>
+
 <?php get_footer(); ?>
