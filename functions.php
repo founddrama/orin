@@ -262,13 +262,13 @@ function starkers_remove_recent_comments_style() {
 }
 add_action( 'widgets_init', 'starkers_remove_recent_comments_style' );
 
-if ( ! function_exists( 'starkers_posted_on' ) ) :
+if ( ! function_exists( 'orin_posted_on' ) ) :
 /**
  * Prints HTML with meta information for the current post—date/time and author.
  *
  * @since Starkers HTML5 3.0
  */
-function starkers_posted_on() {
+function orin_posted_on() {
 	printf( __( 'Posted on %2$s by %3$s', 'starkers' ),
 		'meta-prep meta-prep-author',
 		sprintf( '<a href="%1$s" title="%2$s" rel="bookmark"><time datetime="%3$s" pubdate>%4$s</time></a>',

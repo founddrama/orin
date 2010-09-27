@@ -20,7 +20,7 @@ get_header(); ?>
 			<header>
 				<h1><?php the_title(); ?></h1>
 
-				<?php starkers_posted_on(); ?>
+				<?php orin_posted_on(); ?>
 				<?php orin_edit_post_link(); ?>
 			</header>
 

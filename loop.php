@@ -27,7 +27,7 @@
 			<header>
 				<h2><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'starkers' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 
-				<?php starkers_posted_on(); ?> <?php orin_edit_post_link(); ?>
+				<?php orin_posted_on(); ?> <?php orin_edit_post_link(); ?>
 			</header>
 
 <?php if ( post_password_required() ) : ?>
@@ -64,7 +64,7 @@
 		<?php endif; ?>
 		
 			<footer>
-				<?php starkers_posted_on(); ?> | <?php comments_popup_link( __( 'Leave a comment', 'starkers' ), __( '1 Comment', 'starkers' ), __( '% Comments', 'starkers' ) ); ?> <?php orin_edit_post_link(); ?>
+				<?php orin_posted_on(); ?> | <?php comments_popup_link( __( 'Leave a comment', 'starkers' ), __( '1 Comment', 'starkers' ), __( '% Comments', 'starkers' ) ); ?> <?php orin_edit_post_link(); ?>
 			</footer>
 		
 		</article>
@@ -78,7 +78,7 @@
 			<header>
 				<h2><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'starkers' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 
-				<?php starkers_posted_on(); ?> <?php orin_edit_post_link(); ?>
+				<?php orin_posted_on(); ?> <?php orin_edit_post_link(); ?>
 			</header>
 
 	<?php if ( is_archive() || is_search() ) : // Only display excerpts for archives and search. ?>
