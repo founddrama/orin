@@ -25,6 +25,9 @@ $f_d-dark: #222;
 
 body {
 	@include basic-linear-grader(white, $f_d-grey, 128);
+//	background-image: url(images/purple-neon-lights-background.jpg);
+//	background: transparent url(images/pinstripes.png) repeat-x;
+	border-bottom: 1px solid $f_d-color;
 }
 
 // some way to do this as "header" w/o #masthead ?
@@ -57,8 +60,8 @@ body {
 	}
 	
 	nav a {
-		&:first-child { float: left; }
 		&:last-child { float: right; }
+		&:first-child { float: none; }
 	}
 	
 	margin-bottom: $_24th;

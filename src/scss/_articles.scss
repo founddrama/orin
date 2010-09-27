@@ -1,11 +1,13 @@
 article {
+	$_48th: $_24th / 2;
+	
 	@include rounded(8px, 0, 0);
 	
 	header, footer { width: 100%; }
 	
 	header {
 		margin-bottom: 2em;
-		h2 {
+		h1, h2 {
 			$hh2a-shadow: 1px 0 1px $f_d-grey;
 			-moz-text-shadow: $hh2a-shadow;
 			text-shadow: $hh2a-shadow;

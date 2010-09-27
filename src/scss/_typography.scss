@@ -3,6 +3,7 @@
 @mixin _serif { font-family: "Hoefler Text", Palatino, Georgia, serif; }
 @mixin _console { font-family: Consolas, "Lucida Console", Monaco, monospace; }
 
+// Elements
 div, span, p, blockquote,
 abbr, address, cite,
 del, dfn, ins,  q, samp,
@@ -12,9 +13,11 @@ hgroup, menu, section, summary {
 	@include _serif;
 }
 
+// Elements
 h1, h2, h3, h4, h5, h6,
 label, legend,
 nav, aside,
+// Element combinationss
 aside li,	
 header nav * {
 	@include _sans-serif;
@@ -28,6 +31,12 @@ article {
 	}
 }
 
+.comment {
+	@include _sans-serif;
+	p { @include _serif; }
+}
+
+// Elements
 pre, code, kbd, tt {
 	@include _console;
 }
@@ -52,19 +61,29 @@ $_em: 1em;
 	li { font-size: 14px; /* don't do "em" b/c of the cascade */ }
 }
 
+nav {
+	font-size: $_font-size;
+}
+
 article {
 	header, footer { font-size: 0.875em; }
 	
-	header h2 {
-		font-size: 2em;
-		a {
-			text-decoration: none;
-			&:hover { text-decoration: underline; }
+	header {
+		h1, h2 {
+			font-size: 2em;
+			a {
+				text-decoration: none;
+				&:hover { text-decoration: underline; }
+			}
 		}
 	}
-	
+		
 	font-size: $_font-size;
 	line-height: $_font-size * 1.5;
 	
 	blockquote, q { font-size: 0.875em; }
 }
+
+.form-allowed-tags { font-size: 0.8125em; }
+
+.comment a:first-of-type { font-size: 0.75em; }
