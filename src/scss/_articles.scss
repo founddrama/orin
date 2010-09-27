@@ -49,10 +49,46 @@ article {
 	}
 	
 	footer {
-		padding-top: $_24th / 2;
+		padding-top: $_48th;
 		background: white;
+	}
+	
+	footer, nav {
+		margin-bottom: $_48th;
+	}
+	
+	#comments-title,
+	.comment { clear: both; }
+	
+	#comments-title {
+		margin: {
+			top: $_24th;
+			bottom: $_48th
+		}
+	}
+	
+	.comment {
+		&:nth-child(odd) { @include basic-linear-grader(white, lighten($f_d-desat, 50%), 92%); }
+		
+		a:first-of-type { float: right; }
+	}
+	.avatar {
+		background: white;
+		float: left;
+		margin-right: 0.5em;
+	}
+	
+	#reply-title { padding-top: $_24th; }
+	
+	#commentform {
+		input,
+		textarea { display: block; }
+		
+		.required { color: $f_d-color; }
 	}
 }
 
 .post-edit-link,
 .post-comment-link { float: right; }
+
+// and COMMENTS
