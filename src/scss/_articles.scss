@@ -35,7 +35,7 @@ article {
 		}
 	}
 	
-	blockquote, q {
+	blockquote {
 		color: white;
 		padding: 1em;
 		margin: 2em;
@@ -46,6 +46,11 @@ article {
 		a { color: $f_d-grey; }
 		
 		p:last-child { margin-bottom: 0; }
+	}
+	
+	q {
+		font-style: italic;
+		color: $f_d-dark;
 	}
 	
 	footer {
