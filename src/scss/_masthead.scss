@@ -42,9 +42,7 @@
 				right: $_nav-li-border-style;
 			}
 			
-			&:last-child {
-				@include rounded(4px, bottom, right);
-			}
+			&:last-child { @include rounded(4px, bottom, right); }
 			
 			ul {
 				display: none;

@@ -73,6 +73,8 @@ article {
 	}
 	
 	.comment {
+		padding: 0 1em;
+		
 		&:nth-child(odd) { @include basic-linear-grader(white, lighten($f_d-desat, 50%), 92%); }
 		
 		a:first-of-type { float: right; }
@@ -80,7 +82,10 @@ article {
 	.avatar {
 		background: white;
 		float: left;
-		margin-right: 0.5em;
+		margin: {
+			left: -1em;
+			right: 0.5em;
+		}
 	}
 	
 	#reply-title { padding-top: $_24th; }

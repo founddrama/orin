@@ -13,7 +13,8 @@ get_header(); ?>
 	<section id="orin-chronology">
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-
+		
+	<div class="page-decorator">
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 		
 			<header>
@@ -35,6 +36,7 @@ get_header(); ?>
 				<?php comments_template( '', true ); ?>
 				
 		</article>
+	</div><?php /* /.page-decorator */ ?>
 
 <?php endwhile; ?>
 

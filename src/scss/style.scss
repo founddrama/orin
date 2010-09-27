@@ -43,6 +43,7 @@ body {
 	display: inline-block;
 	width: $_3rd * 2;
 	
+	.page-decorator,
 	.post-decorator {
 		@include rounded(8px, 0, 0);
 		
@@ -75,3 +76,6 @@ body {
 
 // footer
 @import "footer";
+
+// tables
+@import "table";

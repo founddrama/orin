@@ -1,0 +1,20 @@
+table {
+	border: 1px solid $f_d-grey;
+	padding: 1px;
+}
+
+thead tr {
+	background: $f_d-dark;
+	color: white;
+}
+
+tr {
+	background: white;
+	&:nth-child(even) { background: $f_d-grey; }
+}
+
+td, th {
+	border: 1px dotted $f_d-dark;
+	margin: 1px;
+	padding: 2px;
+}
