@@ -81,7 +81,7 @@ article {
 	font-size: $_font-size;
 	line-height: $_font-size * 1.5;
 	
-	blockquote, q { font-size: 0.875em; }
+	blockquote { font-size: 0.875em; }
 }
 
 .form-allowed-tags { font-size: 0.8125em; }
