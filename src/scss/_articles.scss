@@ -1,6 +1,4 @@
 article {
-	$_48th: $_24th / 2;
-	
 	@include rounded(8px, 0, 0);
 	
 	header, footer { width: 100%; }
