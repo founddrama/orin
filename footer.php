@@ -8,7 +8,7 @@
  */
 ?>
 
-	<footer>
+	<footer id="orin-footer">
 
 <?php
 	get_sidebar( 'footer' );
