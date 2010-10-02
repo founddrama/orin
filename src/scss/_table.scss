@@ -1,5 +1,8 @@
-table {
+table, td, th {
 	border: 1px solid $f_d-grey;
+}
+
+table {
 	padding: 1px;
 }
 
@@ -9,7 +12,6 @@ thead tr {
 }
 
 td, th {
-	border: 1px solid $f_d-grey;
 	margin: 1px;
 	padding: 2px;
 }
