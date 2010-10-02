@@ -10,9 +10,10 @@ aside {
 		li {
 			margin-bottom: 0.25em;
 			
+			margin-left: $_48th;
 			list-style: {
 				type: circle;
-				position: inside;
+				position: outside;
 			}
 		}
 		
