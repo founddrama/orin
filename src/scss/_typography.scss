@@ -49,9 +49,9 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 $_font-size: 16px;
 
 // h#{n} headings:
-$_em: 1em;
-@for $i from 1 through 6 {
-	$_em: $_em + 0.125em;
+$_em: 1em; $i: 6;
+@while $i > 0 {
+	$_em: $_em + 0.125em; $i: $i - 1;
 	h#{$i} { font-size: $_em; }
 }
 
