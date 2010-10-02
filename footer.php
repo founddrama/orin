@@ -9,10 +9,10 @@
 ?>
 
 	<footer id="orin-footer">
-
-<?php
-	get_sidebar( 'footer' );
-?>
+	
+		<section>
+			<?php get_sidebar( 'footer' ); ?>
+		</section>
 
 		<a href="<?php echo home_url( '/' ) ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 			<?php bloginfo( 'name' ); ?>
