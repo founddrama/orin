@@ -47,7 +47,6 @@
 	a {
 		color: $f_d-grey;
 		&:visited { color: darken($f_d-grey, 25%); }
-		&:hover { color: lighten(desaturate($f_d-color, 25%), 50%); }
 		
 		&[rel="home"] { clear: both; }
 	}
