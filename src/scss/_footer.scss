@@ -6,16 +6,21 @@
 	border-top: 1px solid white;
 	@include basic-linear-grader($f_d-color, $f_d-dark, 24);
 	
-	&>ul {
-		display: inline-block;
-		vertical-align: top;
+	text-align: center;
+	
+	section {
+		overflow: hidden;
 		
-		margin: 1em 2em;
-		&:first-of-type {
-			margin-left: $_4th;
+		&>ul {
+			text-align: left;
+			max-width: $_4th;
+			display: inline-block;
+			vertical-align: top;
+			
+			margin: 2em;
+			
+			list-style-type: none;
 		}
-		&:last-of-type { margin-right: $_4th; }
-		list-style-type: none;
 	}
 	
 	li {
@@ -30,12 +35,20 @@
 		li {
 			margin-bottom: 0.25em;
 			
+			margin-left: $_48th;
 			list-style: {
 				type: circle;
-				position: inside;
+				position: outside;
+				
 			}
 		}
 	}
 	
-	a[rel="home"] { clear: both; }
+	a {
+		color: $f_d-grey;
+		&:visited { color: darken($f_d-grey, 25%); }
+		&:hover { color: lighten(desaturate($f_d-color, 25%), 50%); }
+		
+		&[rel="home"] { clear: both; }
+	}
 }
