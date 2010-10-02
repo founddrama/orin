@@ -42,7 +42,7 @@ pre, code, kbd, tt {
 }
 
 table, caption, tbody, tfoot, thead, tr, th, td {
-	
+	@include _sans-serif;
 }
 
 // sizing:

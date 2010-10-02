@@ -8,13 +8,23 @@ thead tr {
 	color: white;
 }
 
-tr {
-	background: white;
-	&:nth-child(even) { background: $f_d-grey; }
-}
-
 td, th {
-	border: 1px dotted $f_d-dark;
+	border: 1px solid $f_d-grey;
 	margin: 1px;
 	padding: 2px;
+}
+
+th { border-color: $f_d-dark; }
+
+tr {
+	background: white;
+	&:nth-child(even) {
+		background: $f_d-grey;
+		td {
+			border-color: white;
+			&:first-of-type { border-left-color: $f_d-grey; }
+			&:last-of-type { border-right-color: $f_d-grey; }
+		}
+		
+	}
 }
