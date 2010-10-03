@@ -2,8 +2,8 @@
 	clear: both;
 	
 	min-height: 12em;
+	padding-bottom: 2em;
 	
-	border-top: 1px solid white;
 	@include basic-linear-grader($f_d-color, $f_d-dark, 24);
 	
 	text-align: center;
@@ -13,12 +13,10 @@
 		
 		&>ul {
 			text-align: left;
-			max-width: $_4th;
+			width: $_4th;
 			display: inline-block;
 			vertical-align: top;
-			
-			margin: 2em;
-			
+			margin: 2em 0;
 			list-style-type: none;
 		}
 	}
@@ -33,9 +31,10 @@
 		}
 		
 		li {
-			margin-bottom: 0.25em;
-			
-			margin-left: $_48th;
+			margin: {
+				bottom: 0.25em;
+				left: $_48th;				
+			}
 			list-style: {
 				type: circle;
 				position: outside;
@@ -48,6 +47,6 @@
 		color: $f_d-grey;
 		&:visited { color: darken($f_d-grey, 25%); }
 		
-		&[rel="home"] { clear: both; }
+		&[rel="generator"] { clear: both; }
 	}
 }
