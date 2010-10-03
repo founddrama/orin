@@ -31,6 +31,10 @@
 	-webkit-transition: -webkit-box-shadow 0.5s ease-out;
 }
 
+/**
+* @param {Number} $strength (in px or %)
+* @param {Color} $color
+ */
 @mixin nav-shadow($strength, $color) {
 	$_shadow: $strength 0 abs($strength) $color;
 	-moz-box-shadow: $_shadow;
@@ -48,16 +52,19 @@
 	$_moz_stop: $stop;
 	
 	@if unitless($stop) {
+		// b/c both -moz and -webkit will take "${n}%"
+		// but -moz needs "${n}" to be "${n}px"
 		$_moz_stop: #{$stop}px;
 	}
 	
 	background: $base_color;
-	// #s below accept an int+"px" or %
 	background: -moz-linear-gradient(top, $accent_color, $base_color $_moz_stop);
-	// #s below accept an int or %
 	background: -webkit-gradient(linear, 0 0, 0 $stop, from($accent_color), to($base_color));
 }
 
+/**
+ * @param {Number} $amount
+ */
 @mixin rotator($amount) {
 	-webkit-transform: rotate($amount);
 	-moz-transform: rotate($amount);
