@@ -3,16 +3,16 @@
  * The template for displaying the footer.
  *
  * @package WordPress
- * @subpackage Starkers
- * @since Starkers HTML5 3.0
+ * @subpackage Orin
+ * @since 0.1a
  */
 ?>
 
-	<footer>
-
-<?php
-	get_sidebar( 'footer' );
-?>
+	<footer id="orin-footer">
+	
+		<section>
+			<?php get_sidebar( 'footer' ); ?>
+		</section>
 
 		<a href="<?php echo home_url( '/' ) ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 			<?php bloginfo( 'name' ); ?>

@@ -3,8 +3,8 @@
  * The Sidebar containing the primary and secondary widget areas.
  *
  * @package WordPress
- * @subpackage Starkers
- * @since Starkers HTML5 3.0
+ * @subpackage Orin
+ * @since 0.1a
  */
 ?>
 

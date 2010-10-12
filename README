@@ -14,6 +14,10 @@ Author URI: http://blog.founddrama.net/
 Version: 0.1a
 
 NOTES:
+- CSS is developed and managed using Sass: <http://sass-lang.com/>; the author
+  recommends that you work it into your deploy script.
+
+@todo
 - The site references minified versions of certain resources (e.g., css and js
   files); the author recommends a built script to handle creating these
   minified files and putting them in the right place

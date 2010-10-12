@@ -1,0 +1,62 @@
+// some way to do this as "header" w/o #masthead ?
+#masthead {
+	height: 12em;
+	
+	hgroup {
+		h1 {
+			position: absolute;
+			margin-left: $_12th;
+			text-shadow: 2px 0 2px $f_d-dark, -2px 0 2px $f_d-dark;
+			a {
+				text-decoration: none;
+				color: $f_d-color;
+			}
+			
+			-webkit-transition: 0.3s linear;
+			&:hover { text-shadow: 4px 0 4px lighten($f_d-color, 10%), -4px 0 4px lighten($f_d-color, 10%); }
+		}
+
+		h2 {
+			position: absolute;
+			margin-left: $_3rd / 2;
+			margin-top: $_12th;
+		}
+	}
+	
+	nav ul {
+		float: right;
+		position: absolute;
+		right: $_24th;
+		
+		li {
+			float: left;
+			position: relative;
+			
+			padding: 4px;
+			
+			@include basic-linear-grader(rgba($f_d-grey, .7), rgba(white, .9), 92%);
+			
+			$_nav-li-border-style: 1px solid $f_d-grey;
+			border: {
+				bottom: $_nav-li-border-style;
+				right: $_nav-li-border-style;
+			}
+			
+			&:last-child { @include rounded(4px, bottom, right); }
+			
+			ul {
+				display: none;
+				li {
+					min-width: $_12th;
+					width: auto;
+					float: none;
+				}
+			}
+			&:hover ul {
+				display: block;
+				position: absolute;
+				left: 0;
+			}
+		}
+	}
+}

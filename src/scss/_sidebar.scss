@@ -1,0 +1,33 @@
+aside {
+	float: right;
+	display: inline;
+	width: $_3rd - $_48th;
+	
+	ul { list-style-type: none; }
+	
+	li {
+		margin-bottom: $_24th;
+		li {
+			margin-bottom: 0.25em;
+			
+			margin-left: $_48th;
+			list-style: {
+				type: circle;
+				position: outside;
+			}
+		}
+		
+		h3, ul {
+			padding: 0.5em;
+			padding-top: 0;
+		}
+		
+		h3 {
+			color: $f_d-color;
+			
+			$wh3-shadow: 0 2px 1px $f_d-grey;
+			-moz-text-shadow: $wh3-shadow;
+			text-shadow: $wh3-shadow;
+		}
+	}
+}

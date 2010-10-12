@@ -3,8 +3,8 @@
  * Template Name: One column, no sidebar
  *
  * @package WordPress
- * @subpackage Starkers
- * @since Starkers HTML5 3.0
+ * @subpackage Orin
+ * @since 0.1a
  */
 
 get_header(); ?>
@@ -22,7 +22,7 @@ get_header(); ?>
 				<?php wp_link_pages( array( 'before' => '<nav>' . __( 'Pages:', 'starkers' ), 'after' => '</nav>' ) ); ?>
 						
 			<footer>
-				<?php edit_post_link( __( 'Edit', 'starkers' ), '', '' ); ?>
+				<?php orin_edit_post_link(); ?>
 			</footer>
 
 				<?php comments_template( '', true ); ?>

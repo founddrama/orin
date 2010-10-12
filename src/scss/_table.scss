@@ -1,0 +1,32 @@
+table, td, th {
+	border: 1px solid $f_d-grey;
+}
+
+table {
+	padding: 1px;
+}
+
+thead tr {
+	background: $f_d-dark;
+	color: white;
+}
+
+td, th {
+	margin: 1px;
+	padding: 2px 8px;
+}
+
+th { border-color: $f_d-dark; }
+
+tr {
+	background: white;
+	&:nth-child(even) {
+		background: $f_d-grey;
+		td {
+			border-color: white;
+			&:first-of-type { border-left-color: $f_d-grey; }
+			&:last-of-type { border-right-color: $f_d-grey; }
+		}
+		
+	}
+}

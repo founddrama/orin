@@ -3,11 +3,14 @@
  * The template for displaying Search Results pages.
  *
  * @package WordPress
- * @subpackage Starkers
- * @since Starkers HTML5 3.0
+ * @subpackage Orin
+ * @since 0.1a
  */
 
 get_header(); ?>
+
+<section id="orin-container">
+	<section id="orin-chronology">
 
 <?php if ( have_posts() ) : ?>
 		<h1><?php printf( __( 'Search Results for: %s', 'starkers' ), '' . get_search_query() . '' ); ?></h1>
@@ -20,5 +23,8 @@ get_header(); ?>
 			<?php get_search_form(); ?>
 <?php endif; ?>
 
-<?php get_sidebar(); ?>
+	</section> <?php /* / #orin-chronology */ ?>
+	<?php get_sidebar(); ?>
+</section> <?php /* / #orin-container */ ?>
+
 <?php get_footer(); ?>
