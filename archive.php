@@ -3,11 +3,14 @@
  * The template for displaying Archive pages.
  *
  * @package WordPress
- * @subpackage Starkers
- * @since Starkers HTML5 3.0
+ * @subpackage Orin
+ * @since 0.1a
  */
 
 get_header(); ?>
+
+<section id="orin-container">
+	<section id="orin-chronology">
 
 <?php
 	if ( have_posts() )
@@ -32,5 +35,8 @@ get_header(); ?>
 	get_template_part( 'loop', 'archive' );
 ?>
 
-<?php get_sidebar(); ?>
+	</section> <?php /* / #orin-chronology */ ?>
+	<?php get_sidebar(); ?>
+</section> <?php /* / #orin-container */ ?>
+
 <?php get_footer(); ?>

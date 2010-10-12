@@ -1,0 +1,94 @@
+// font-families
+@mixin _sans-serif { font-family: "Gill Sans", "Lucida Grande", "Trebuchet MS", sans-serif; }
+@mixin _serif { font-family: "Hoefler Text", Palatino, Georgia, serif; }
+@mixin _console { font-family: Consolas, "Lucida Console", Monaco, monospace; }
+
+// Elements
+div, span, p, blockquote,
+abbr, address, cite,
+del, dfn, ins,  q, samp,
+dl, dt, dd, ol, ul, li,
+article, details, figcaption, figure, 
+hgroup, menu, section, summary {
+	@include _serif;
+}
+
+// Elements
+h1, h2, h3, h4, h5, h6,
+label, legend,
+nav, aside,
+// Element combinationss
+aside li,	
+header nav * {
+	@include _sans-serif;
+	
+}
+
+article {
+	header, footer {
+		@include _sans-serif;
+		* { @include _sans-serif; }
+	}
+}
+
+.comment {
+	@include _sans-serif;
+	p { @include _serif; }
+}
+
+// Elements
+pre, code, kbd, tt {
+	@include _console;
+}
+
+table, caption, tbody, tfoot, thead, tr, th, td {
+	@include _sans-serif;
+}
+
+// sizing:
+$_font-size: 16px;
+
+// h#{n} headings:
+$_em: 1em; $i: 6;
+@while $i > 0 {
+	$_em: $_em + 0.125em; $i: $i - 1;
+	h#{$i} { font-size: $_em; }
+}
+
+// @todo - how to ditch #masthead ?
+#masthead {
+	h1 { font-size: 6em; }
+	li { font-size: 14px; /* don't do "em" b/c of the cascade */ }
+}
+
+nav {
+	font-size: $_font-size;
+}
+
+article {
+	header, footer { font-size: 0.875em; }
+	
+	header {
+		h1, h2 {
+			font-size: 2em;
+			a {
+				text-decoration: none;
+				&:hover { text-decoration: underline; }
+			}
+		}
+	}
+		
+	font-size: $_font-size;
+	line-height: $_font-size * 1.5;
+	
+	blockquote {
+		font-size: 0.875em;
+		& blockquote { font-size: 1em; }
+	}
+}
+
+.form-allowed-tags { font-size: 0.8125em; }
+
+.comment a:first-of-type { font-size: 0.75em; }
+
+#orin-footer { font-size: 0.75em; }

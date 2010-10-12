@@ -3,25 +3,25 @@
  * The Template for displaying all single posts.
  *
  * @package WordPress
- * @subpackage Starkers
- * @since Starkers HTML5 3.0
+ * @subpackage Orin
+ * @since 0.1a
  */
 
 get_header(); ?>
 
+<section id="orin-container">
+	<section id="orin-chronology">
+
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-		<nav>
-			<?php previous_post_link( '%link', '' . _x( '&larr;', 'Previous post link', 'starkers' ) . ' %title' ); ?>
-			<?php next_post_link( '%link', '%title ' . _x( '&rarr;', 'Next post link', 'starkers' ) . '' ); ?>
-		</nav>
-		
+	<div class="post-decorator">
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			
 			<header>
 				<h1><?php the_title(); ?></h1>
 
-				<?php starkers_posted_on(); ?>
+				<?php orin_posted_on(); ?>
+				<?php orin_edit_post_link(); ?>
 			</header>
 
 				<?php the_content(); ?>
@@ -38,8 +38,7 @@ get_header(); ?>
 				<?php endif; ?>
 				
 				<footer>
-					<?php starkers_posted_in(); ?>
-					<?php edit_post_link( __( 'Edit', 'starkers' ), '', '' ); ?>
+					<?php orin_posted_in(); ?>
 				</footer>
 
 				<nav>
@@ -50,8 +49,12 @@ get_header(); ?>
 				<?php comments_template( '', true ); ?>
 				
 		</article>
+	</div><?php /* .post-decorator */ ?>
 
 <?php endwhile; // end of the loop. ?>
 
+	</section><?php /* #orin-chronology */ ?>
 <?php get_sidebar(); ?>
+</section><?php /* #orin-container */ ?>
+
 <?php get_footer(); ?>

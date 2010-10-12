@@ -3,8 +3,8 @@
  * Starkers functions and definitions
  *
  * @package WordPress
- * @subpackage Starkers
- * @since Starkers HTML5 3.0
+ * @subpackage Orin
+ * @since 0.1a
  */
 
 /** Tell WordPress to run starkers_setup() when the 'after_setup_theme' hook is run. */
@@ -157,23 +157,24 @@ function starkers_comment_close() {
 /**
  * Adjusts the comment_form() input types for HTML5.
  *
- * @since Starkers HTML5 3.0
+ * @since Orin 0.1-alpha
  */
-function starkers_fields($fields) {
+function orin_fields($fields) {
 $commenter = wp_get_current_commenter();
 $req = get_option( 'require_name_email' );
+$req_star = '<span class="required">*</span>';
 $aria_req = ( $req ? " aria-required='true'" : '' );
 $fields =  array(
-	'author' => '<p><label for="author">' . __( 'Name' ) . '</label> ' . ( $req ? '*' : '' ) .
-	'<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' /></p>',
-	'email'  => '<p><label for="email">' . __( 'Email' ) . '</label> ' . ( $req ? '*' : '' ) .
-	'<input id="email" name="email" type="email" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' /></p>',
+	'author' => '<p><label for="author">' . __( 'Name' ) . '</label> ' . ( $req ? $req_star : '' ) .
+	'<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' placeholder="' . __( 'your name' ) .'" /></p>',
+	'email'  => '<p><label for="email">' . __( 'Email' ) . '</label> ' . ( $req ? $req_star : '' ) .
+	'<input id="email" name="email" type="email" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' placeholder="' . __( 'your email address' ) . '" /></p>',
 	'url'    => '<p><label for="url">' . __( 'Website' ) . '</label>' .
-	'<input id="url" name="url" type="url" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /></p>',
+	'<input id="url" name="url" type="url" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" placeholder="' . __( 'your website (if you have one)' ) . '" /></p>',
 );
 return $fields;
 }
-add_filter('comment_form_default_fields','starkers_fields');
+add_filter('comment_form_default_fields', 'orin_fields');
 
 /**
  * Register widgetized areas.
@@ -261,14 +262,14 @@ function starkers_remove_recent_comments_style() {
 }
 add_action( 'widgets_init', 'starkers_remove_recent_comments_style' );
 
-if ( ! function_exists( 'starkers_posted_on' ) ) :
+if ( ! function_exists( 'orin_posted_on' ) ) :
 /**
  * Prints HTML with meta information for the current post—date/time and author.
  *
  * @since Starkers HTML5 3.0
  */
-function starkers_posted_on() {
-	printf( __( 'Posted on %2$s by %3$s', 'starkers' ),
+function orin_posted_on() {
+	printf( __( '&para; %2$s by %3$s', 'starkers' ),
 		'meta-prep meta-prep-author',
 		sprintf( '<a href="%1$s" title="%2$s" rel="bookmark"><time datetime="%3$s" pubdate>%4$s</time></a>',
 			get_permalink(),
@@ -285,13 +286,14 @@ function starkers_posted_on() {
 }
 endif;
 
-if ( ! function_exists( 'starkers_posted_in' ) ) :
+if ( ! function_exists( 'orin_posted_in' ) ) :
 /**
  * Prints HTML with meta information for the current post (category, tags and permalink).
+ * Replaces {@method starkers_posted_in}
  *
- * @since Starkers HTML5 3.0
+ * @since Orin 0.1-alpha
  */
-function starkers_posted_in() {
+function orin_posted_in() {
 	// Retrieves tag list of current post, separated by commas.
 	$tag_list = get_the_tag_list( '', ', ' );
 	if ( $tag_list ) {
@@ -309,5 +311,16 @@ function starkers_posted_in() {
 		get_permalink(),
 		the_title_attribute( 'echo=0' )
 	);
+}
+endif;
+
+if ( ! function_exists( 'orin_edit_post_link' ) ) :
+/**
+ * Augment standard edit_post_link function...
+ * 
+ * @since Orin 0.1-alpha
+ */
+function orin_edit_post_link() {
+	edit_post_link( __( '&#9998; Edit', 'orin' ), '', '' );
 }
 endif;

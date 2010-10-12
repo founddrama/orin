@@ -1,0 +1,72 @@
+/* @mixins for Orin */
+
+/**
+ * For smooth rounded corners, feed in your radius and which corner to round;
+ * if you want "all corners" then input 0 for both $tb and $lr.
+ * @param {Number} $radius
+ * @param {String} $tb (top? bottom?)
+ * @param {String} $lr (left? right?)
+ * @return {border-radius}
+ */
+@mixin rounded($radius, $tb, $lr) {
+	// use "0" for $tb + $lr if you don't want to specify specific borders
+	
+	@if type_of($tb) == string and type_of($lr) == string {
+		border-#{$tb}-#{$lr}-radius: $radius;
+		-moz-border-radius-#{$tb}#{$lr}: $radius;
+	} @else {
+		border-radius: $radius;
+		-moz-border-radius: $radius;
+	}
+}
+
+/**
+ * @param {Number} $strength (in px or %)
+ * @param {Color} $color
+ */
+@mixin article-shadow($strength, $color) {
+	$_shadow: 0 $strength $strength $color;
+	-moz-box-shadow: $_shadow;
+	-webkit-box-shadow: $_shadow;
+	-webkit-transition: -webkit-box-shadow 0.5s ease-out;
+}
+
+/**
+* @param {Number} $strength (in px or %)
+* @param {Color} $color
+ */
+@mixin nav-shadow($strength, $color) {
+	$_shadow: $strength 0 abs($strength) $color;
+	-moz-box-shadow: $_shadow;
+	-webkit-box-shadow: $_shadow;
+	-webkit-transition: -webkit-box-shadow 0.5s ease-out;
+}
+
+
+/**
+ * @param {Color} $base_color
+ * @param {Color} $accent_color
+ * @param {Number/Percent} $stop
+ */
+@mixin basic-linear-grader($base_color, $accent_color, $stop) {
+	$_moz_stop: $stop;
+	
+	@if unitless($stop) {
+		// b/c both -moz and -webkit will take "${n}%"
+		// but -moz needs "${n}" to be "${n}px"
+		$_moz_stop: #{$stop}px;
+	}
+	
+	background: $base_color;
+	background: -moz-linear-gradient(top, $accent_color, $base_color $_moz_stop);
+	background: -webkit-gradient(linear, 0 0, 0 $stop, from($accent_color), to($base_color));
+}
+
+/**
+ * @param {Number} $amount
+ */
+@mixin rotator($amount) {
+	-webkit-transform: rotate($amount);
+	-moz-transform: rotate($amount);
+	transform: rotate($amount);
+}

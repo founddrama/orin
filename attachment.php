@@ -3,8 +3,8 @@
  * The template for displaying attachments.
  *
  * @package WordPress
- * @subpackage Starkers
- * @since Starkers HTML5 3.0
+ * @subpackage Orin
+ * @since 0.1a
  */
 
 get_header(); ?>
@@ -50,7 +50,7 @@ get_header(); ?>
 							);
 						}
 					?>
-					<?php edit_post_link( __( 'Edit', 'starkers' ), '', '' ); ?>
+					<?php orin_edit_post_link(); ?>
 				</header>
 
 <?php if ( wp_attachment_is_image() ) :
@@ -92,8 +92,8 @@ get_header(); ?>
 				<?php wp_link_pages( array( 'before' => '<nav>' . __( 'Pages:', 'starkers' ), 'after' => '</nav>' ) ); ?>
 				
 				<footer>
-					<?php starkers_posted_in(); ?>
-					<?php edit_post_link( __( 'Edit', 'starkers' ), ' ', '' ); ?>
+					<?php orin_posted_in(); ?>
+					<?php orin_edit_post_link(); ?>
 				</footer>
 				
 				<?php comments_template(); ?>

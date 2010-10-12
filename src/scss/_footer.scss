@@ -1,0 +1,52 @@
+#orin-footer {
+	clear: both;
+	
+	min-height: 12em;
+	padding-bottom: 2em;
+	
+	@include basic-linear-grader($f_d-color, $f_d-dark, 24);
+	
+	text-align: center;
+	
+	section {
+		overflow: hidden;
+		
+		&>ul {
+			text-align: left;
+			width: $_4th;
+			display: inline-block;
+			vertical-align: top;
+			margin: 2em 0;
+			list-style-type: none;
+		}
+	}
+	
+	li {
+		margin-bottom: $_24th;
+		color: $f_d-grey;
+		
+		h3 {
+			color: $f_d-dark;
+			margin-bottom: $_48th / 2;
+		}
+		
+		li {
+			margin: {
+				bottom: 0.25em;
+				left: $_48th;				
+			}
+			list-style: {
+				type: circle;
+				position: outside;
+				
+			}
+		}
+	}
+	
+	a {
+		color: $f_d-grey;
+		&:visited { color: darken($f_d-grey, 25%); }
+		
+		&[rel="generator"] { clear: both; }
+	}
+}

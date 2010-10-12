@@ -5,8 +5,8 @@
  * Displays all of the <head> section
  *
  * @package WordPress
- * @subpackage Starkers
- * @since Starkers HTML5 3.0
+ * @subpackage Orin
+ * @since 0.1a
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -43,7 +43,7 @@
 
 <body <?php body_class(); ?>>
 
-	<header>
+	<header id="masthead">
 		<hgroup>
 			<h1><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2><?php bloginfo( 'description' ); ?></h2>
