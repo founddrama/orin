@@ -53,6 +53,10 @@ a {
 		&:hover { @include article-shadow(24px, rgba(saturate($f_d-color, 25%), .8)); }
 	}
 	
+	.post-decorator {
+		border: 1px solid $f_d-grey;
+	}
+	
 	nav a {
 		&:last-child { float: right; }
 		&:first-child { float: none; }
