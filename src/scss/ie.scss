@@ -1,0 +1,36 @@
+/**
+ * Internet Explorer-specific overrides and compensatory concessionss.
+ * @compile to ${THEME_DIRECTORY}/css/ie.css
+ */
+
+@import "variables";
+
+/** 
+ * IE7 and below...
+ */
+
+// to get the sidebar in the right place: (fixes IE6+7)
+#orin-chronology { float: left; }
+
+// to get the floaters in the footer working: (fixes IE7, but not IE6)
+#orin-footer section ul { display: inline !important; }
+
+// gets the buttons on the same line as the field (fixes IE7, not really IE6)
+@mixin ie-button-fix {
+	border: 0px;
+	padding: 0px;
+}
+button { @include ie-button-fix; }
+input {
+	&[type="button"],
+	&[type="file"],
+	&[type="reset"],
+	&[type="submit"] {
+		@include ie-button-fix;
+	}
+}
+
+// fixes the calendar in IE6+7
+thead tr {
+	th, td { background: #222222; }
+}

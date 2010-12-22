@@ -18,6 +18,11 @@ article {
 	a img:hover {
 		@include article-shadow(4px, lighten($f_d-dark, 25%));
 		@include rotator(-1deg);
+		-webkit-transition: {
+			property: -webkit-transform, -webkit-box-shadow	;
+			duration: 0.5s;
+			timing-function: ease-out;
+		}
 	}
 		
 	img {
@@ -27,8 +32,8 @@ article {
 		@include article-shadow(2px, lighten($f_d-dark, 50%));
 		-webkit-transition: {
 			property: -webkit-transform, -webkit-box-shadow	;
-			duration: 0.5s, 0.5s;
-			timing-function: ease-in, ease-out;
+			duration: 0.5s;
+			timing-function: ease-out;
 		}
 	}
 	
@@ -108,5 +113,3 @@ article {
 		bottom: $_border;
 	}
 }
-
-// and COMMENTS

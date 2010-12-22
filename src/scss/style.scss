@@ -13,15 +13,7 @@ Tags: orin, html5
 @import "layout";
 @import "typography";
 @import "mixins";
-
-/* SASS variables */
-// colors
-$f_d-color: #710;
-$f_d-desat: desaturate($f_d-color, 50%);
-$f_d-grey: #ddd;
-$f_d-dark: #222;
-
-
+@import "variables";
 
 body {
 	@include basic-linear-grader(white, $f_d-grey, 128);
@@ -59,6 +51,12 @@ a {
 		@include article-shadow(8px, rgba($f_d-grey, .8));
 		
 		&:hover { @include article-shadow(24px, rgba(saturate($f_d-color, 25%), .8)); }
+	}
+	
+	.post-decorator {
+		border: 1px solid $f_d-grey;
+		border-color: rgba($f_d-grey, 0);
+		border-bottom-color: rgba(#fff, 1);
 	}
 	
 	nav a {
