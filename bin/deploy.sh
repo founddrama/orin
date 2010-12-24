@@ -35,6 +35,11 @@ done
 
 # .css from .scss
 sass --style compressed src/scss/style.scss:style.css
+if [ ! -d css ]; then
+	echo "Missing css directory!"
+	echo "Attempting to create orin/css:"
+	mkdir css
+fi
 sass --style compressed src/scss/ie.scss:css/ie.css
 
 exit 0;
