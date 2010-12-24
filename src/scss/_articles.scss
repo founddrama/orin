@@ -1,4 +1,12 @@
 article {
+	// h#{n} headings:
+	$_em: 1em; $i: 6;
+	@while $i > 0 {
+		$_em: $_em + 0.125em; $i: $i - 1;
+		h#{$i} { line-height: $_em * 1.5; }
+	}
+	
+	
 	@include rounded(8px, 0, 0);
 	
 	header, footer { width: 100%; }
@@ -13,7 +21,7 @@ article {
 	}
 	
 	// $_font-size @ _typography
-	p { margin-bottom: $_font-size * 1.5; }
+	p, ol, ul { margin-bottom: $_font-size * 1.5; }
 	
 	a img:hover {
 		@include article-shadow(4px, lighten($f_d-dark, 25%));
@@ -53,6 +61,11 @@ article {
 	q {
 		font-style: italic;
 		color: $f_d-dark;
+	}
+	
+	ol, ul {
+		list-style-position: outside;
+		margin-left: 1.5em;
 	}
 	
 	footer {
