@@ -33,3 +33,17 @@ img.amazon-beacon {
 	margin: 0px !important;
 	padding: 0px !important;
 }
+
+/**
+ * WP-Footnotes
+ */
+.footnotes {
+	border {
+		top: 1px solid $f_d-grey;
+		top-color: rgba($f_d-color, 0.5);
+	}
+	padding-top: $_48th;
+}
+.footnote {
+	font-size: 0.8em;
+}
