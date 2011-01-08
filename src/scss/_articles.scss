@@ -52,6 +52,9 @@ article {
 		border: 0.25em solid white;
 		@include article-shadow(4px, $f_d-grey);
 		@include basic-linear-grader(darken($f_d-color, 10%), $f_d-dark, 92%);
+		blockquote {
+			@include article-shadow(4px, $f_d-dark);
+		}
 		
 		a { color: $f_d-grey; }
 		

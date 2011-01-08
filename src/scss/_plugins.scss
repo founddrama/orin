@@ -17,6 +17,11 @@
 }
 .delicious-tags {
 	font-size: 0.8em;
+	a {
+		&:before { content: "#"; }
+		&:after { content: ","; }
+		&:last-of-type:after { content: ""; }
+	}
 }
 
 /**
