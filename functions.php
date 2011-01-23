@@ -247,6 +247,17 @@ function starkers_widgets_init() {
 		'before_title' => '<h3>',
 		'after_title' => '</h3>',
 	) );
+	
+	// Area 7, located in the header. Empty by default.
+	register_sidebar( array(
+		'name' => __( 'Masthead Widget Area', 'starkers' ),
+		'id' => 'masthead-widget-area',
+		'description' => __( 'The masthead widget area', 'starkers' ),
+		'before_widget' => '<div class="widget">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>',
+	) );
 }
 /** Register sidebars by running starkers_widgets_init() on the widgets_init hook. */
 add_action( 'widgets_init', 'starkers_widgets_init' );
