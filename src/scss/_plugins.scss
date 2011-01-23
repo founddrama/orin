@@ -6,6 +6,15 @@
  */
 
 /**
+ * WP-Calendar
+ */
+#wp-calendar {
+	$_foot_border: 0px;
+	#prev, .pad { border-right: $_foot_border; }
+	#next, .pad { border-left: $_foot_border; }
+}
+
+/**
  * Delicious.com
  */
 .delicious li {
