@@ -1,0 +1,1 @@
+$(document).ready(orin.flickr.onHover);
