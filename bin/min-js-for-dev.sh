@@ -25,9 +25,9 @@ cd ${ORIN}
 #	done
 
 touch ${ORIN}/js/orin.min.js
+echo '/*! orin namespaced JS */' > ${ORIN}/js/orin.min.js
 
 ymin ${ORIN}/src/js/orin-base.js
-ymin ${ORIN}/src/js/flickr-badge-fx.js
 ymin ${ORIN}/src/js/orin-ready.js
 
 exit 0;
