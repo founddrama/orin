@@ -28,7 +28,7 @@
 
 <?php
 	// get your js includes ABOVE anything that might get added dynamically from wp_footer: 
-	include (TEMPLATEPATH . '/js-includes.php')
+	include (TEMPLATEPATH . '/js-includes.php');
 	/**
 	 * Always have wp_footer() just before the closing </body>
 	 * tag of your theme, or you will break many plugins, which
