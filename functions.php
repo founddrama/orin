@@ -186,7 +186,7 @@ function starkers_widgets_init() {
 	register_sidebar( array(
 		'name' => __( 'Primary Widget Area', 'starkers' ),
 		'id' => 'primary-widget-area',
-		'description' => __( 'The primary widget area', 'starkers' ),
+		'description' => __( 'The primary widget area (main "timeline" sidebar)', 'starkers' ),
 		'before_widget' => '<li>',
 		'after_widget' => '</li>',
 		'before_title' => '<h3>',
@@ -197,7 +197,18 @@ function starkers_widgets_init() {
 	register_sidebar( array(
 		'name' => __( 'Secondary Widget Area', 'starkers' ),
 		'id' => 'secondary-widget-area',
-		'description' => __( 'The secondary widget area', 'starkers' ),
+		'description' => __( 'The secondary widget area (all pages)', 'starkers' ),
+		'before_widget' => '<li>',
+		'after_widget' => '</li>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>',
+	) );
+	
+	// Single-post sidebar. Empty by default.
+	register_sidebar( array(
+		'name' => __( 'Single-Post Widget Area', 'starkers' ),
+		'id' => 'single-post-widgets',
+		'description' => __( 'The primary widget area for single-post pages', 'starkers' ),
 		'before_widget' => '<li>',
 		'after_widget' => '</li>',
 		'before_title' => '<h3>',
@@ -244,6 +255,17 @@ function starkers_widgets_init() {
 		'description' => __( 'The fourth footer widget area', 'starkers' ),
 		'before_widget' => '<li>',
 		'after_widget' => '</li>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>',
+	) );
+	
+	// Area 7, located in the header. Empty by default.
+	register_sidebar( array(
+		'name' => __( 'Masthead Widget Area', 'starkers' ),
+		'id' => 'masthead-widget-area',
+		'description' => __( 'The masthead widget area', 'starkers' ),
+		'before_widget' => '<div class="widget">',
+		'after_widget' => '</div>',
 		'before_title' => '<h3>',
 		'after_title' => '</h3>',
 	) );

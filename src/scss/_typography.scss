@@ -55,6 +55,10 @@ $_em: 1em; $i: 6;
 	h#{$i} { font-size: $_em; }
 }
 
+// non-semantic but for backward-compat:
+small { font-size: 0.8em; }
+big { font-size: 1.2em; }
+
 // @todo - how to ditch #masthead ?
 #masthead {
 	h1 { font-size: 6em; }
