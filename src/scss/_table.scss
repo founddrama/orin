@@ -4,6 +4,8 @@ table, td, th {
 
 table {
 	padding: 1px;
+	margin-bottom: $_48th;
+	@include article-shadow(4px, lighten($f_d-dark, 25%));
 }
 
 thead tr {

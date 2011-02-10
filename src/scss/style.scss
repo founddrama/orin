@@ -1,8 +1,8 @@
-/*
+/*!
 Theme Name: Orin
-Theme URI: http://blog.founddrama.net/orin
+Theme URI: https://github.com/founddrama/orin
 Description: A WordPress theme, custom rolled for <http://blog.founddrama.net>, and based on the HTML5 Starkers <http://starkerstheme.com>, which is based on <a href="http://elliotjaystocks.com/starkers/">Starkers</a> by <a href="http://elliotjaystocks.com/">Elliot Jay Stocks</a> which is based on Twenty Ten.
-Version: 0.1a
+Version: 0.4b
 Author: Rob Friesel
 Author URI: http://blog.founddrama.net
 Tags: orin, html5
@@ -49,14 +49,9 @@ a {
 		margin-bottom: 64px;
 		
 		@include article-shadow(8px, rgba($f_d-grey, .8));
+		border: 1px solid $f_d-grey;
 		
 		&:hover { @include article-shadow(24px, rgba(saturate($f_d-color, 25%), .8)); }
-	}
-	
-	.post-decorator {
-		border: 1px solid $f_d-grey;
-		border-color: rgba($f_d-grey, 0);
-		border-bottom-color: rgba(#fff, 1);
 	}
 	
 	nav a {
@@ -112,6 +107,9 @@ input {
 
 // tables
 @import "table";
+
+// tables
+@import "widgets";
 
 // plugins and overrides
 @import "plugins";

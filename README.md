@@ -15,7 +15,7 @@ too and choose fork it for your own experiments.
 
 **Author URI:** <http://blog.founddrama.net/>
 
-**Version:** 0.3b
+**Version:** 0.4b
 
 ## Notes
 * CSS is developed and managed using [Sass](http://sass-lang.com/); the author

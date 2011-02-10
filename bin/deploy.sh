@@ -27,19 +27,25 @@ echo "Updating Orin theme from the latest in the github master branch:"
 git pull --verbose	
 
 # minify the .js files
-for j in `find . -name *[^min].js` ; do
-	minName=${j/%\.js/.min.js}
-	echo "Compressing '${j}' to '${minName}':"
-	java -jar ${YUI_COMPRESSOR} -o ${minName} ${j}
-done
+#for j in `find . -name *[^min].js` ; do
+#	minName=${j/%\.js/.min.js}
+#	echo "Compressing '${j}' to '${minName}':"
+#	java -jar ${YUI_COMPRESSOR} -o ${minName} ${j}
+#done
 
 # .css from .scss
-sass --style compressed src/scss/style.scss:style.css
 if [ ! -d css ]; then
 	echo "Missing css directory!"
 	echo "Attempting to create orin/css:"
 	mkdir css
 fi
+echo "Compiling style.css from Sass/SCSS sources..."
+sass --style compressed src/scss/style.scss:style.css
+echo "Compressing style.css..."
+java -jar ${YUI_COMPRESSOR} -o style.css style.css
+echo "Compiling css/ie.css from Sass/SCSS sources..."
 sass --style compressed src/scss/ie.scss:css/ie.css
+echo "Compressing css/ie.css..."
+java -jar ${YUI_COMPRESSOR} -o css/ie.css css/ie.css
 
 exit 0;
