@@ -48,6 +48,11 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 // sizing:
 $_font-size: 16px;
 
+// base font-size:
+body {
+	font-size: $_font-size;
+}
+
 // h#{n} headings:
 $_em: 1em; $i: 6;
 @while $i > 0 {
