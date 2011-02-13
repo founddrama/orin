@@ -40,12 +40,10 @@ if [ ! -d css ]; then
 	mkdir css
 fi
 echo "Compiling style.css from Sass/SCSS sources..."
-sass --style compact src/scss/style.scss:style.css
-echo "Compressing style.css..."
-java -jar ${YUI_COMPRESSOR} -o style.css style.css
+touch style.css
+cat _theme-description.txt > style.css
+sass --style compressed src/scss/style.scss >> style.css
 echo "Compiling css/ie.css from Sass/SCSS sources..."
-sass --style compact src/scss/ie.scss:css/ie.css
-echo "Compressing css/ie.css..."
-java -jar ${YUI_COMPRESSOR} -o css/ie.css css/ie.css
+sass --style compressed src/scss/ie.scss:css/ie.css
 
 exit 0;
