@@ -37,7 +37,7 @@ article {
 }
 
 // Elements
-pre, code, kbd, tt {
+pre, pre *, code, kbd, tt {
 	@include _console;
 }
 
@@ -52,6 +52,11 @@ $_font-size: 16px;
 body {
 	font-size: $_font-size;
 }
+
+sup, sub { font-size: 0.8em; }
+sup { vertical-align: super; }
+sub { vertical-align: sub; }
+
 
 // h#{n} headings:
 $_em: 1em; $i: 6;
