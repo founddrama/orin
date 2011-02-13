@@ -13,6 +13,10 @@
 	#prev, .pad { border-right: $_foot_border; }
 	#next, .pad { border-left: $_foot_border; }
 }
+footer #wp-calendar {
+	color: $f_d-dark;
+	a { color: $f_d-color; }
+}
 
 /**
  * Delicious.com
