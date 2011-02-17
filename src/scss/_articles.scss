@@ -96,7 +96,7 @@ article {
 		
 		&:nth-child(odd) { @include basic-linear-grader(white, lighten($f_d-desat, 50%), 92%); }
 		
-		a:first-of-type { float: right; }
+		a.permalink { float: right; }
 	}
 	.avatar {
 		background: white;

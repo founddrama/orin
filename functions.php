@@ -122,7 +122,7 @@ function starkers_comment( $comment, $args, $depth ) {
 			<br />
 		<?php endif; ?>
 
-		<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>">
+		<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>" class="permalink">
 			<?php
 				/* translators: 1: date, 2: time */
 				printf( __( '%1$s at %2$s', 'starkers' ), get_comment_date(),  get_comment_time() ); ?></a><?php edit_comment_link( __( '(Edit)', 'starkers' ), ' ' );
