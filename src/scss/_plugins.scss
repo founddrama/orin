@@ -60,3 +60,14 @@ img.amazon-beacon {
 .footnote {
 	font-size: 0.8em;
 }
+
+/**
+ * F_D search haiku
+ */
+p {
+	.search-haiku {
+		text-align: center;
+		font-style: italic;
+	}
+	.search-haiku-defined { font-size: 0.8em; }
+}
