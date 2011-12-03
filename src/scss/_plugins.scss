@@ -65,9 +65,9 @@ img.amazon-beacon {
  * F_D search haiku
  */
 p {
-	.search-haiku {
+	&.search-haiku {
 		text-align: center;
 		font-style: italic;
 	}
-	.search-haiku-defined { font-size: 0.8em; }
+	&.search-haiku-defined { font-size: 0.8em; }
 }
