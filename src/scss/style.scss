@@ -6,11 +6,15 @@
 @import "variables";
 
 body {
-	@include basic-linear-grader(white, $f_d-grey, 128);
+	background-color: $f_d-color;
 	border-bottom: 1px solid $f_d-color;
 }
 
-// some way to do this as "header" w/o #masthead ?
+#orin-ct-wrap {
+	background-color: #fff;
+	overflow: hidden;
+}
+
 @import "masthead";
 
 a {

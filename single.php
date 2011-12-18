@@ -9,9 +9,6 @@
 
 get_header(); ?>
 
-<section id="orin-container">
-	<section id="orin-chronology">
-
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
 	<div class="post-decorator">
@@ -52,9 +49,5 @@ get_header(); ?>
 	</div><?php /* .post-decorator */ ?>
 
 <?php endwhile; // end of the loop. ?>
-
-	</section><?php /* #orin-chronology */ ?>
-<?php get_sidebar(); ?>
-</section><?php /* #orin-container */ ?>
 
 <?php get_footer(); ?>

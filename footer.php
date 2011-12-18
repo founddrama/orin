@@ -7,6 +7,10 @@
  * @since 0.1a
  */
 ?>
+			</section><?php /* / #orin-chronology */ ?>
+			<?php get_sidebar(); ?>
+		</section><?php /* / #orin-container */ ?>
+	</div><?php /* / #orin-ct-wrap */ ?>
 
 	<footer id="orin-footer">
 	
