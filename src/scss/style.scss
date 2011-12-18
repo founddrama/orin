@@ -1,4 +1,13 @@
-/* imports */
+/*!
+Theme Name: Orin
+Theme URI: https://github.com/founddrama/orin
+Description: A WordPress theme, custom rolled for <http://blog.founddrama.net>, and based on the HTML5 Starkers <http://starkerstheme.com>, which is based on <a href="http://elliotjaystocks.com/starkers/">Starkers</a> by <a href="http://elliotjaystocks.com/">Elliot Jay Stocks</a> which is based on Twenty Ten.
+Version: 0.4.1.4-beta
+Author: Rob Friesel
+Author URI: http://blog.founddrama.net
+Tags: orin, html5, css3
+*/
+// imports //
 @import "reset";
 @import "layout";
 @import "typography";
@@ -6,11 +15,15 @@
 @import "variables";
 
 body {
-	@include basic-linear-grader(white, $f_d-grey, 128);
+	background-color: $f_d-color;
 	border-bottom: 1px solid $f_d-color;
 }
 
-// some way to do this as "header" w/o #masthead ?
+#orin-ct-wrap {
+	background-color: #fff;
+	overflow: hidden;
+}
+
 @import "masthead";
 
 a {

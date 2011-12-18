@@ -40,9 +40,7 @@ if [ ! -d css ]; then
 	mkdir css
 fi
 echo "Compiling style.css from Sass/SCSS sources..."
-touch style.css
-cat _theme-description.txt > style.css
-sass --style compressed src/scss/style.scss >> style.css
+sass --style compressed src/scss/style.scss:style.css
 echo "Compiling css/ie.css from Sass/SCSS sources..."
 sass --style compressed src/scss/ie.scss:css/ie.css
 
