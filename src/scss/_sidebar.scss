@@ -30,7 +30,8 @@ aside {
 			text-shadow: $wh3-shadow;
 		}
 	}
+	#orin-container & ul {
+		overflow: hidden;
+	}
 }
-#orin-container aside ul {
-	overflow: hidden;
-}
+
