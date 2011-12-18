@@ -8,7 +8,11 @@
  */
 ?>
 			</section><?php /* / #orin-chronology */ ?>
-			<?php get_sidebar(); ?>
+			<?php 
+				if ( ! is_404() ) {
+					get_sidebar();
+				}
+			?>
 		</section><?php /* / #orin-container */ ?>
 	</div><?php /* / #orin-ct-wrap */ ?>
 
