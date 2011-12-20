@@ -3,9 +3,7 @@
 	
 	min-height: 12em;
 	padding-bottom: 2em;
-	
-	@include basic-linear-grader($f_d-color, $f_d-dark, 24);
-	
+		
 	text-align: center;
 	
 	section {

@@ -26,6 +26,7 @@
  */
 @mixin article-shadow($strength, $color) {
 	$_shadow: 0 $strength $strength $color;
+	box-shadow: $_shadow;
 	-moz-box-shadow: $_shadow;
 	-webkit-box-shadow: $_shadow;
 	-webkit-transition: -webkit-box-shadow 0.5s ease-out;
@@ -37,6 +38,7 @@
  */
 @mixin nav-shadow($strength, $color) {
 	$_shadow: $strength 0 abs($strength) $color;
+	box-shadow: $_shadow;
 	-moz-box-shadow: $_shadow;
 	-webkit-box-shadow: $_shadow;
 	-webkit-transition: -webkit-box-shadow 0.5s ease-out;
