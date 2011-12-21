@@ -26,6 +26,7 @@ output_style = (environment == :production) ? :compressed : :expanded
 
 on_stylesheet_saved do |filename|
   if filename =~ /css\/style\.css$/
+  	puts ">>> [WordPress] Moving #{File.basename(filename)} to theme's root dir..."
     FileUtils.mv(filename, filename.sub(/css\/style\.css$/, 'style.css'))
   end
 end
