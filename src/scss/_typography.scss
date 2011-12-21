@@ -72,7 +72,8 @@ big { font-size: 1.2em; }
 // @todo - how to ditch #masthead ?
 #masthead {
 	h1 { font-size: 6em; }
-	li { font-size: 14px; /* don't do "em" b/c of the cascade */ }
+	// don't do "em" b/c of the cascade :
+	li { font-size: 14px; }
 }
 
 nav {
