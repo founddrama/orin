@@ -14,9 +14,7 @@ article {
 	header {
 		margin-bottom: 2em;
 		h1, h2 {
-			$hh2a-shadow: 1px 0 1px $f_d-grey;
-			-moz-text-shadow: $hh2a-shadow;
-			text-shadow: $hh2a-shadow;
+			@include text-shadow($f_d-grey 1px 0 1px);
 		}
 	}
 	

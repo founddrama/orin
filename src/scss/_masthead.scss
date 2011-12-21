@@ -8,14 +8,14 @@
 		h1 {
 			position: absolute;
 			margin-left: $_12th;
-			text-shadow: 2px 0 2px $f_d-dark, -2px 0 2px $f_d-dark;
+			@include text-shadow($f_d-dark 2px 0 2px, $f_d-dark -2px 0 2px);
 			a {
 				text-decoration: none;
 				color: $f_d-color;
 			}
 			
 			-webkit-transition: 0.3s linear;
-			&:hover { text-shadow: 4px 0 4px lighten($f_d-color, 10%), -4px 0 4px lighten($f_d-color, 10%); }
+			&:hover { @include text-shadow(lighten($f_d-color, 10%) 4px 0 4px, lighten($f_d-color, 10%) -4px 0 4px); }
 		}
 
 		h2 {
