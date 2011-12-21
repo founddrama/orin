@@ -4,26 +4,6 @@
 @import "compass/css3";
 
 /**
- * For smooth rounded corners, feed in your radius and which corner to round;
- * if you want "all corners" then input 0 for both $tb and $lr.
- * @param {Number} $radius
- * @param {String} $tb (top? bottom?)
- * @param {String} $lr (left? right?)
- * @return {border-radius}
- */
-@mixin rounded($radius, $tb, $lr) {
-	// use "0" for $tb + $lr if you don't want to specify specific borders
-	
-	@if type_of($tb) == string and type_of($lr) == string {
-		border-#{$tb}-#{$lr}-radius: $radius;
-		-moz-border-radius-#{$tb}#{$lr}: $radius;
-	} @else {
-		border-radius: $radius;
-		-moz-border-radius: $radius;
-	}
-}
-
-/**
  * @param {Number} $strength (in px or %)
  * @param {Color} $color
  */
