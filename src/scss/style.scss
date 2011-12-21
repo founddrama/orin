@@ -23,7 +23,7 @@ body {
 
 #orin-ct-wrap {
 	background-color: #fff;
-	min-height: 24em;
+	min-height: $_sect_h;
 	overflow: hidden;
 	@include box-shadow($f_d-dark 10px 0 10px 10px);
 }
