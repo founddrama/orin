@@ -24,8 +24,6 @@ article {
 	a img:hover {
 		@include article-shadow(4px, lighten($f_d-dark, 25%));
 		@include rotate(-1deg);
-		// @TODO - passing 2 didn't work - doing 'all' instead
-		// wanted : just transform + box-shadow
 		@include transition(all 0.5s ease-out);
 	}
 		
@@ -34,8 +32,6 @@ article {
 		border: 1px solid $f_d-grey;
 		padding: 4px;
 		@include article-shadow(2px, lighten($f_d-dark, 50%));
-		// @TODO - passing 2 didn't work - doing 'all' instead
-		// wanted : just transform + box-shadow
 		@include transition(all 0.5s ease-out);
 	}
 	
