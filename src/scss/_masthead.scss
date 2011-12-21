@@ -14,7 +14,7 @@
 				color: $f_d-color;
 			}
 			
-			-webkit-transition: 0.3s linear;
+			@include transition(0.3s linear);
 			&:hover { @include text-shadow(lighten($f_d-color, 10%) 4px 0 4px, lighten($f_d-color, 10%) -4px 0 4px); }
 		}
 
