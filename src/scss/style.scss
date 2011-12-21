@@ -7,6 +7,8 @@ Author: Rob Friesel
 Author URI: http://blog.founddrama.net
 Tags: orin, html5, css3
 */
+// Compass imports //
+@import "compass/css3";
 // imports //
 @import "reset";
 @import "layout";
@@ -22,10 +24,7 @@ body {
 #orin-ct-wrap {
 	background-color: #fff;
 	overflow: hidden;
-	$_shadow: 10px 0 10px 10px $f_d-dark;
-	box-shadow: $_shadow;
-	-moz-box-shadow: $_shadow;
-	-webkit-box-shadow: $_shadow;
+	@include box-shadow($f_d-dark 10px 0 10px 10px);
 }
 
 @import "masthead";

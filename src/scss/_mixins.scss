@@ -25,10 +25,7 @@
  * @param {Color} $color
  */
 @mixin article-shadow($strength, $color) {
-	$_shadow: 0 $strength $strength $color;
-	box-shadow: $_shadow;
-	-moz-box-shadow: $_shadow;
-	-webkit-box-shadow: $_shadow;
+	@include box-shadow($color 0 $strength $strength);
 	-webkit-transition: -webkit-box-shadow 0.5s ease-out;
 }
 
@@ -37,10 +34,7 @@
 * @param {Color} $color
  */
 @mixin nav-shadow($strength, $color) {
-	$_shadow: $strength 0 abs($strength) $color;
-	box-shadow: $_shadow;
-	-moz-box-shadow: $_shadow;
-	-webkit-box-shadow: $_shadow;
+	@include box-shadow($color $strength 0 abs($strength));
 	-webkit-transition: -webkit-box-shadow 0.5s ease-out;
 }
 
