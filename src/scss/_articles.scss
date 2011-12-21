@@ -25,7 +25,7 @@ article {
 	
 	a img:hover {
 		@include article-shadow(4px, lighten($f_d-dark, 25%));
-		@include rotator(-1deg);
+		@include rotate(-1deg);
 		-webkit-transition: {
 			property: -webkit-transform, -webkit-box-shadow	;
 			duration: 0.5s;

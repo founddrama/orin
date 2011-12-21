@@ -31,12 +31,3 @@
 	background: $base_color;
 	@include background(linear-gradient($accent_color, $base_color $stop));
 }
-
-/**
- * @param {Number} $amount
- */
-@mixin rotator($amount) {
-	-webkit-transform: rotate($amount);
-	-moz-transform: rotate($amount);
-	transform: rotate($amount);
-}
