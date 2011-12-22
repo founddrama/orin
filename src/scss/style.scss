@@ -51,7 +51,7 @@ a {
 		padding: $_24th;
 		padding-bottom: $_24th / 2;
 		
-		@include basic-linear-grader(white, $f_d-desat, 56px); // was : 64
+		@include basic-linear-grader(white, $f_d-desat, 56px);
 		
 		margin-bottom: 64px;
 		
