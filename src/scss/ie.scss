@@ -30,6 +30,12 @@ input {
 	&[type="submit"] {
 		@include ie-button-fix;
 	}
+
+	&[type="text"] {
+		border-width: 2px;
+		padding: 0;
+		margin: 0;
+	}
 }
 
 // fixes the calendar in IE6+7
