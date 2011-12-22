@@ -59,6 +59,10 @@
 				position: absolute;
 				left: 0;
 			}
+			&:last-of-type:hover ul {
+				left: auto !important;
+				right: 0;
+			}
 		}
 	}
 }
