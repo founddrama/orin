@@ -78,23 +78,15 @@ input {
 		@include button-style;		
 	}
 
-	&[type="text"] {
-		padding: 4px 2px;
-		margin: 2px 0;
-		border: 1px solid $f_d-grey;
-		@include border-radius(2px);
-		@include transition(border-color 0.2s ease-out);
-		&:focus {
-			outline: none;
-			padding: 3px 1px;
-			margin: 1px 0;
-			border: {
-				width: 2px;
-				color: lighten($f_d-color, 50%);
-			}
-			@include transition(border-color 0.3s ease-in 0.1s);
-		}
+	&[type="text"],
+	&[type="email"],
+	&[type="search"],
+	&[type="url"] {
+		@include input-style;
 	}
+}
+textarea {
+	@include input-style;
 }
 
 // inside : #orin-chronology 
