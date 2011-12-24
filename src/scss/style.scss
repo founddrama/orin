@@ -25,7 +25,7 @@ body {
 	background-color: #fff;
 	min-height: $_sect_h;
 	overflow: hidden;
-	@include box-shadow($f_d-dark 10px 0 10px 10px);
+	@include box-shadow(rgba($f_d-dark, 0.8) 0 10px 10px 5px);
 }
 
 @import "masthead";
