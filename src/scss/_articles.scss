@@ -7,16 +7,14 @@ article {
 	}
 	
 	
-	@include rounded(8px, 0, 0);
+	@include border-radius(8px);
 	
 	header, footer { width: 100%; }
 	
 	header {
 		margin-bottom: 2em;
 		h1, h2 {
-			$hh2a-shadow: 1px 0 1px $f_d-grey;
-			-moz-text-shadow: $hh2a-shadow;
-			text-shadow: $hh2a-shadow;
+			@include text-shadow($f_d-grey 1px 0 1px);
 		}
 	}
 	
@@ -25,12 +23,8 @@ article {
 	
 	a img:hover {
 		@include article-shadow(4px, lighten($f_d-dark, 25%));
-		@include rotator(-1deg);
-		-webkit-transition: {
-			property: -webkit-transform, -webkit-box-shadow	;
-			duration: 0.5s;
-			timing-function: ease-out;
-		}
+		@include rotate(-1deg);
+		@include transition(all 0.5s ease-out);
 	}
 		
 	img {
@@ -38,11 +32,7 @@ article {
 		border: 1px solid $f_d-grey;
 		padding: 4px;
 		@include article-shadow(2px, lighten($f_d-dark, 50%));
-		-webkit-transition: {
-			property: -webkit-transform, -webkit-box-shadow	;
-			duration: 0.5s;
-			timing-function: ease-out;
-		}
+		@include transition(all 0.5s ease-out);
 	}
 	
 	blockquote {

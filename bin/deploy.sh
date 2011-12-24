@@ -6,9 +6,9 @@
 #			<http://sass-lang.com/>
 
 # configure as needed:
-BLOG_ROOT=~/blog.founddrama.net/
+BLOG_ROOT=${HOME}/blog.founddrama.net/
 WP_THEMES=${BLOG_ROOT}wp-content/themes/
-YUI_COMPRESSOR=~/build/bin/yuicompressor-2.4.2.jar
+YUI_COMPRESSOR=${HOME}/build/bin/yuicompressor-2.4.2.jar
 
 # get into the right dir
 cd ${WP_THEMES}
@@ -23,7 +23,7 @@ fi
 cd orin
 
 # update to the latest
-echo "Updating Orin theme from the latest in the github master branch:"
+echo "[git] Updating Orin theme from the latest in the github master branch:"
 git pull --verbose	
 
 # minify the .js files
@@ -36,12 +36,12 @@ git pull --verbose
 # .css from .scss
 if [ ! -d css ]; then
 	echo "Missing css directory!"
-	echo "Attempting to create orin/css:"
+	echo "[bash] Attempting to create orin/css:"
 	mkdir css
 fi
-echo "Compiling style.css from Sass/SCSS sources..."
-sass --style compressed src/scss/style.scss:style.css
-echo "Compiling css/ie.css from Sass/SCSS sources..."
-sass --style compressed src/scss/ie.scss:css/ie.css
+echo "[compass] Compiling CSS from Sass/SCSS sources..."
+compass compile --sass-dir src/scss --css-dir css -e production -s compressed --no-line-comments
+echo "[bash] Moving style.css to Orin theme's root..."
+mv css/style.css style.css
 
 exit 0;

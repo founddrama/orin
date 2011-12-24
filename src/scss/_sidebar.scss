@@ -24,10 +24,7 @@ aside {
 		
 		h3 {
 			color: $f_d-color;
-			
-			$wh3-shadow: 0 2px 1px $f_d-grey;
-			-moz-text-shadow: $wh3-shadow;
-			text-shadow: $wh3-shadow;
+			@include text-shadow($f_d-grey 0 2px 1px);
 		}
 	}
 	#orin-container & ul {
