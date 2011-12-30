@@ -1,11 +1,9 @@
 #orin-footer {
 	clear: both;
 	
-	min-height: 12em;
+	min-height: $_sect_h;
 	padding-bottom: 2em;
-	
-	@include basic-linear-grader($f_d-color, $f_d-dark, 24);
-	
+		
 	text-align: center;
 	
 	section {

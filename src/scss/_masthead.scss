@@ -1,21 +1,21 @@
 // some way to do this as "header" w/o #masthead ?
 #masthead {
-	@include basic-linear-grader(white, $f_d-grey, 128);
-	height: 12em;
+	@include basic-linear-grader(white, $f_d-grey, 128px);
+	height: $_sect_h;
 	position: relative;
 	
 	hgroup {
 		h1 {
 			position: absolute;
 			margin-left: $_12th;
-			text-shadow: 2px 0 2px $f_d-dark, -2px 0 2px $f_d-dark;
+			@include text-shadow($f_d-dark 2px 0 2px, $f_d-dark -2px 0 2px);
 			a {
 				text-decoration: none;
 				color: $f_d-color;
 			}
 			
-			-webkit-transition: 0.3s linear;
-			&:hover { text-shadow: 4px 0 4px lighten($f_d-color, 10%), -4px 0 4px lighten($f_d-color, 10%); }
+			@include transition(0.3s linear);
+			&:hover { @include text-shadow(lighten($f_d-color, 10%) 4px 0 4px, lighten($f_d-color, 10%) -4px 0 4px); }
 		}
 
 		h2 {
@@ -44,7 +44,7 @@
 				right: $_nav-li-border-style;
 			}
 			
-			&:last-child { @include rounded(4px, bottom, right); }
+			&:last-child { @include border-bottom-right-radius(4px); }
 			
 			ul {
 				display: none;
@@ -58,6 +58,10 @@
 				display: block;
 				position: absolute;
 				left: 0;
+			}
+			&:last-of-type:hover ul {
+				left: auto !important;
+				right: 0;
 			}
 		}
 	}

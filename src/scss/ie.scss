@@ -9,6 +9,8 @@
  * IE7 and below...
  */
 
+#masthead nav ul li:hover ul { top: 23px; }
+
 // to get the sidebar in the right place: (fixes IE6+7)
 #orin-chronology { float: left; }
 
@@ -27,6 +29,12 @@ input {
 	&[type="reset"],
 	&[type="submit"] {
 		@include ie-button-fix;
+	}
+
+	&[type="text"] {
+		border-width: 2px;
+		padding: 0;
+		margin: 0;
 	}
 }
 
