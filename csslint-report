@@ -1,6 +1,6 @@
 
 
-csslint: There are 141 problems in style.css.
+csslint: There are 137 problems in style.css.
 
 style.css
 1: warning at line 19, col 1
@@ -179,22 +179,22 @@ Heading (h1) has already been defined.
 
 style.css
 36: warning at line 311, col 1
-The property -ms-transition is compatible with -moz-transition, -webkit-transition, -o-transition and should be included as well.
+Don't use IDs in selectors.
 #masthead hgroup h1 {
 
 style.css
 37: warning at line 311, col 1
-Don't use IDs in selectors.
+The property -ms-transition is compatible with -moz-transition, -webkit-transition, -o-transition and should be included as well.
 #masthead hgroup h1 {
 
 style.css
-38: warning at line 320, col 18
-Heading (h1) should not be qualified.
+38: warning at line 320, col 1
+Don't use IDs in selectors.
 #masthead hgroup h1 a {
 
 style.css
-39: warning at line 320, col 1
-Don't use IDs in selectors.
+39: warning at line 320, col 18
+Heading (h1) should not be qualified.
 #masthead hgroup h1 a {
 
 style.css
@@ -359,32 +359,32 @@ textarea:focus {
 
 style.css
 72: warning at line 589, col 9
-Heading (h5) should not be qualified.
-article h5 {
-
-style.css
-73: warning at line 589, col 9
 Heading (h5) has already been defined.
 article h5 {
 
 style.css
-74: warning at line 592, col 9
-Heading (h4) has already been defined.
-article h4 {
+73: warning at line 589, col 9
+Heading (h5) should not be qualified.
+article h5 {
 
 style.css
-75: warning at line 592, col 9
+74: warning at line 592, col 9
 Heading (h4) should not be qualified.
 article h4 {
 
 style.css
+75: warning at line 592, col 9
+Heading (h4) has already been defined.
+article h4 {
+
+style.css
 76: warning at line 595, col 9
-Heading (h3) has already been defined.
+Heading (h3) should not be qualified.
 article h3 {
 
 style.css
 77: warning at line 595, col 9
-Heading (h3) should not be qualified.
+Heading (h3) has already been defined.
 article h3 {
 
 style.css
@@ -408,18 +408,18 @@ Heading (h1) has already been defined.
 article h1 {
 
 style.css
-82: warning at line 613, col 35
-Heading (h2) should not be qualified.
-article header h1, article header h2 {
-
-style.css
-83: warning at line 613, col 16
+82: warning at line 613, col 16
 Heading (h1) has already been defined.
 article header h1, article header h2 {
 
 style.css
-84: warning at line 613, col 35
+83: warning at line 613, col 35
 Heading (h2) has already been defined.
+article header h1, article header h2 {
+
+style.css
+84: warning at line 613, col 35
+Heading (h2) should not be qualified.
 article header h1, article header h2 {
 
 style.css
@@ -539,12 +539,12 @@ aside li h3, aside li ul {
 
 style.css
 108: warning at line 789, col 10
-Heading (h3) should not be qualified.
+Heading (h3) has already been defined.
 aside li h3 {
 
 style.css
 109: warning at line 789, col 10
-Heading (h3) has already been defined.
+Heading (h3) should not be qualified.
 aside li h3 {
 
 style.css
@@ -573,8 +573,8 @@ Don't use IDs in selectors.
 #orin-footer li {
 
 style.css
-115: warning at line 818, col 17
-Heading (h3) should not be qualified.
+115: warning at line 818, col 1
+Don't use IDs in selectors.
 #orin-footer li h3 {
 
 style.css
@@ -583,8 +583,8 @@ Heading (h3) has already been defined.
 #orin-footer li h3 {
 
 style.css
-117: warning at line 818, col 1
-Don't use IDs in selectors.
+117: warning at line 818, col 17
+Heading (h3) should not be qualified.
 #orin-footer li h3 {
 
 style.css
@@ -633,9 +633,9 @@ Don't use IDs in selectors.
 #wp-calendar #prev, #wp-calendar .pad {
 
 style.css
-127: warning at line 905, col 17
-Values of 0 shouldn't have units specified.
-  border-right: 0px;
+127: warning at line 907, col 1
+2 IDs in the selector, really?
+#wp-calendar #next, #wp-calendar .pad {
 
 style.css
 128: warning at line 907, col 21
@@ -643,63 +643,43 @@ Don't use IDs in selectors.
 #wp-calendar #next, #wp-calendar .pad {
 
 style.css
-129: warning at line 907, col 1
-2 IDs in the selector, really?
-#wp-calendar #next, #wp-calendar .pad {
-
-style.css
-130: warning at line 908, col 16
-Values of 0 shouldn't have units specified.
-  border-left: 0px;
-
-style.css
-131: warning at line 911, col 1
+129: warning at line 911, col 1
 Don't use IDs in selectors.
 footer #wp-calendar {
 
 style.css
-132: warning at line 914, col 1
+130: warning at line 914, col 1
 Don't use IDs in selectors.
 footer #wp-calendar a {
 
 style.css
-133: warning at line 947, col 3
+131: warning at line 947, col 3
 Use of !important
   background: transparent !important;
 
 style.css
-134: warning at line 948, col 3
+132: warning at line 948, col 3
 Use of !important
   border: none !important;
 
 style.css
-135: warning at line 949, col 3
+133: warning at line 949, col 3
 Use of !important
-  margin: 0px !important;
+  margin: 0 !important;
 
 style.css
-136: warning at line 949, col 11
-Values of 0 shouldn't have units specified.
-  margin: 0px !important;
-
-style.css
-137: warning at line 950, col 3
+134: warning at line 950, col 3
 Use of !important
-  padding: 0px !important;
+  padding: 0 !important;
 
 style.css
-138: warning at line 950, col 12
-Values of 0 shouldn't have units specified.
-  padding: 0px !important;
-
-style.css
-139: warning
+135: warning
 Too many floats (10), you're probably using them for layout. Consider using a grid system instead.
 
 style.css
-140: warning
+136: warning
 Too many font-size declarations (26), abstraction needed.
 
 style.css
-141: warning
+137: warning
 You have 8 h1s, 7 h2s, 7 h3s, 4 h4s, 4 h5s, 2 h6s defined in this stylesheet.

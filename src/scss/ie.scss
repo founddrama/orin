@@ -19,8 +19,8 @@
 
 // gets the buttons on the same line as the field (fixes IE7, not really IE6)
 @mixin ie-button-fix {
-	border: 0px;
-	padding: 0px;
+	border: 0;
+	padding: 0;
 }
 button { @include ie-button-fix; }
 input {

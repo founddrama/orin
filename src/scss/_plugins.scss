@@ -9,7 +9,7 @@
  * WP-Calendar
  */
 #wp-calendar {
-	$_foot_border: 0px;
+	$_foot_border: 0;
 	#prev, .pad { border-right: $_foot_border; }
 	#next, .pad { border-left: $_foot_border; }
 }
@@ -43,8 +43,8 @@ footer #wp-calendar {
 .amazon-beacon {
 	background: transparent !important;
 	border: none !important;
-	margin: 0px !important;
-	padding: 0px !important;
+	margin: 0 !important;
+	padding: 0 !important;
 }
 
 /**
