@@ -40,7 +40,7 @@ footer #wp-calendar {
 /**
  * Amazon Affiliates
  */
-img.amazon-beacon {
+.amazon-beacon {
 	background: transparent !important;
 	border: none !important;
 	margin: 0px !important;
@@ -64,10 +64,8 @@ img.amazon-beacon {
 /**
  * F_D search haiku
  */
-p {
-	&.search-haiku {
-		text-align: center;
-		font-style: italic;
-	}
-	&.search-haiku-defined { font-size: 0.8em; }
+.search-haiku {
+	text-align: center;
+	font-style: italic;
 }
+.search-haiku-defined { font-size: 0.8em; }
