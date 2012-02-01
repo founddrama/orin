@@ -608,67 +608,67 @@ Don't use IDs in selectors.
 #orin-footer a[rel="generator"] {
 
 style.css
-122: warning at line 837, col 1
-2 IDs in the selector, really?
-#orin-footer #searchform label {
+122: warning at line 838, col 1
+Don't use IDs in selectors.
+#searchform label {
 
 style.css
-123: warning at line 845, col 1
+123: warning at line 846, col 1
 The property -ms-transition is compatible with -moz-transition, -webkit-transition, -o-transition and should be included as well.
 table {
 
 style.css
-124: warning at line 888, col 1
+124: warning at line 889, col 1
 Don't use IDs in selectors.
 #masthead-widgets {
 
 style.css
-125: warning at line 904, col 1
-2 IDs in the selector, really?
-#wp-calendar #prev, #wp-calendar .pad {
-
-style.css
-126: warning at line 904, col 21
+125: warning at line 905, col 1
 Don't use IDs in selectors.
-#wp-calendar #prev, #wp-calendar .pad {
+#prev, #wp-calendar .pad {
 
 style.css
-127: warning at line 907, col 1
-2 IDs in the selector, really?
-#wp-calendar #next, #wp-calendar .pad {
-
-style.css
-128: warning at line 907, col 21
+126: warning at line 905, col 8
 Don't use IDs in selectors.
-#wp-calendar #next, #wp-calendar .pad {
+#prev, #wp-calendar .pad {
 
 style.css
-129: warning at line 911, col 1
+127: warning at line 909, col 1
+Don't use IDs in selectors.
+#next, #wp-calendar .pad {
+
+style.css
+128: warning at line 909, col 8
+Don't use IDs in selectors.
+#next, #wp-calendar .pad {
+
+style.css
+129: warning at line 913, col 1
 Don't use IDs in selectors.
 footer #wp-calendar {
 
 style.css
-130: warning at line 914, col 1
+130: warning at line 916, col 1
 Don't use IDs in selectors.
 footer #wp-calendar a {
 
 style.css
-131: warning at line 947, col 3
+131: warning at line 949, col 3
 Use of !important
   background: transparent !important;
 
 style.css
-132: warning at line 948, col 3
+132: warning at line 950, col 3
 Use of !important
   border: none !important;
 
 style.css
-133: warning at line 949, col 3
+133: warning at line 951, col 3
 Use of !important
   margin: 0 !important;
 
 style.css
-134: warning at line 950, col 3
+134: warning at line 952, col 3
 Use of !important
   padding: 0 !important;
 

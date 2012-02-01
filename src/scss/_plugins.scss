@@ -8,11 +8,10 @@
 /**
  * WP-Calendar
  */
-#wp-calendar {
-	$_foot_border: 0;
-	#prev, .pad { border-right: $_foot_border; }
-	#next, .pad { border-left: $_foot_border; }
-}
+$_foot_border: 0;
+#prev, #wp-calendar .pad { border-right: $_foot_border; }
+#next, #wp-calendar .pad { border-left: $_foot_border; }
+
 footer #wp-calendar {
 	color: $f_d-dark;
 	a { color: $f_d-color; }
