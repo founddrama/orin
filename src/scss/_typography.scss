@@ -1,7 +1,8 @@
 // font-families
-@mixin _sans-serif { font-family: "Gill Sans", "Lucida Grande", "Trebuchet MS", sans-serif; }
-@mixin _serif { font-family: "Hoefler Text", Palatino, Georgia, serif; }
-@mixin _console { font-family: Consolas, "Lucida Console", Monaco, monospace; }
+// @TODO - replace these w/ 'silent' classes for @extending when that becomes available
+._sans-serif { font-family: "Gill Sans", "Lucida Grande", "Trebuchet MS", sans-serif; }
+._serif { font-family: "Hoefler Text", Palatino, Georgia, serif; }
+._console { font-family: Consolas, "Lucida Console", Monaco, monospace; }
 
 // Elements
 div, span, p, blockquote,
@@ -10,7 +11,7 @@ del, dfn, ins,  q, samp,
 dl, dt, dd, ol, ul, li,
 article, details, figcaption, figure, 
 hgroup, menu, section, summary {
-	@include _serif;
+	@extend ._serif;
 }
 
 // Elements
@@ -20,29 +21,29 @@ nav, aside,
 // Element combinationss
 aside li,	
 header nav * {
-	@include _sans-serif;
+	@extend ._sans-serif;
 	
 }
 
 article {
 	header, footer {
-		@include _sans-serif;
-		* { @include _sans-serif; }
+		@extend ._sans-serif;
+		* { @extend ._sans-serif; }
 	}
 }
 
 .comment {
-	@include _sans-serif;
-	p { @include _serif; }
+	@extend ._sans-serif;
+	p { @extend ._serif; }
 }
 
 // Elements
 pre, pre *, code, kbd, tt {
-	@include _console;
+	@extend ._console;
 }
 
 table, caption, tbody, tfoot, thead, tr, th, td {
-	@include _sans-serif;
+	@extend ._sans-serif;
 }
 
 // sizing:
