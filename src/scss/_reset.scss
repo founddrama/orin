@@ -33,7 +33,6 @@ article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
 	@include zero_out;
-	outline: 0;
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
