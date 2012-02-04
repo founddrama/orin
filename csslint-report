@@ -1,6 +1,6 @@
 
 
-csslint: There are 118 problems in style.css.
+csslint: There are 109 problems in style.css.
 
 style.css
 1: warning at line 86, col 5
@@ -93,8 +93,8 @@ Heading (h1) has already been defined.
 .masthead h1 {
 
 style.css
-19: warning at line 220, col 16
-Heading (h1) has already been defined.
+19: warning at line 220, col 35
+Heading (h2) should not be qualified.
 article header h1, article header h2 {
 
 style.css
@@ -108,18 +108,18 @@ Heading (h1) should not be qualified.
 article header h1, article header h2 {
 
 style.css
-22: warning at line 220, col 35
-Heading (h2) should not be qualified.
+22: warning at line 220, col 16
+Heading (h1) has already been defined.
 article header h1, article header h2 {
 
 style.css
-23: warning at line 223, col 37
-Heading (h2) should not be qualified.
+23: warning at line 223, col 16
+Heading (h1) should not be qualified.
 article header h1 a, article header h2 a {
 
 style.css
-24: warning at line 223, col 16
-Heading (h1) should not be qualified.
+24: warning at line 223, col 37
+Heading (h2) should not be qualified.
 article header h1 a, article header h2 a {
 
 style.css
@@ -138,13 +138,13 @@ Heading (h1) should not be qualified.
 .masthead hgroup h1 {
 
 style.css
-28: warning at line 289, col 18
-Heading (h1) has already been defined.
+28: warning at line 289, col 1
+The property -ms-transition is compatible with -moz-transition, -webkit-transition, -o-transition and should be included as well.
 .masthead hgroup h1 {
 
 style.css
-29: warning at line 289, col 1
-The property -ms-transition is compatible with -moz-transition, -webkit-transition, -o-transition and should be included as well.
+29: warning at line 289, col 18
+Heading (h1) has already been defined.
 .masthead hgroup h1 {
 
 style.css
@@ -159,12 +159,12 @@ Heading (h1) should not be qualified.
 
 style.css
 32: warning at line 305, col 18
-Heading (h2) has already been defined.
+Heading (h2) should not be qualified.
 .masthead hgroup h2 {
 
 style.css
 33: warning at line 305, col 18
-Heading (h2) should not be qualified.
+Heading (h2) has already been defined.
 .masthead hgroup h2 {
 
 style.css
@@ -173,418 +173,373 @@ Fallback background (hex or RGB) should precede RGBA background.
   background: rgba(221, 221, 221, 0.7);
 
 style.css
-35: warning at line 351, col 3
-Use of !important
-  left: auto !important;
-
-style.css
-36: warning at line 370, col 1
+35: warning at line 370, col 1
 The property -ms-transition is compatible with -moz-transition, -webkit-transition, -o-transition and should be included as well.
 .orin-chronology .page-decorator,
 
 style.css
-37: warning at line 398, col 1
+36: warning at line 398, col 1
 The property -ms-transition is compatible with -moz-transition, -webkit-transition, -o-transition and should be included as well.
 .orin-chronology .page-decorator:hover,
 
 style.css
-38: warning at line 416, col 1
+37: warning at line 416, col 50
+Unqualified attribute selectors are known to be slow.
+.orin-button, button, input[type="button"], input[type="file"], input[type="reset"], input[type="submit"] {
+
+style.css
+38: warning at line 416, col 70
+Unqualified attribute selectors are known to be slow.
+.orin-button, button, input[type="button"], input[type="file"], input[type="reset"], input[type="submit"] {
+
+style.css
+39: warning at line 416, col 91
+Unqualified attribute selectors are known to be slow.
+.orin-button, button, input[type="button"], input[type="file"], input[type="reset"], input[type="submit"] {
+
+style.css
+40: warning at line 416, col 1
 The property -ms-transition is compatible with -moz-transition, -webkit-transition, -o-transition and should be included as well.
-button {
+.orin-button, button, input[type="button"], input[type="file"], input[type="reset"], input[type="submit"] {
 
 style.css
-39: warning at line 443, col 1
+41: warning at line 416, col 28
+Unqualified attribute selectors are known to be slow.
+.orin-button, button, input[type="button"], input[type="file"], input[type="reset"], input[type="submit"] {
+
+style.css
+42: warning at line 443, col 68
+Unqualified attribute selectors are known to be slow.
+.orin-button:hover, button:hover, input[type="button"]:hover, input[type="file"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
+
+style.css
+43: warning at line 443, col 94
+Unqualified attribute selectors are known to be slow.
+.orin-button:hover, button:hover, input[type="button"]:hover, input[type="file"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
+
+style.css
+44: warning at line 443, col 121
+Unqualified attribute selectors are known to be slow.
+.orin-button:hover, button:hover, input[type="button"]:hover, input[type="file"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
+
+style.css
+45: warning at line 443, col 1
 The property -ms-transition is compatible with -moz-transition, -webkit-transition, -o-transition and should be included as well.
-button:hover {
+.orin-button:hover, button:hover, input[type="button"]:hover, input[type="file"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
 
 style.css
-40: warning at line 462, col 6
+46: warning at line 443, col 40
 Unqualified attribute selectors are known to be slow.
-input[type="button"], input[type="file"], input[type="reset"], input[type="submit"] {
+.orin-button:hover, button:hover, input[type="button"]:hover, input[type="file"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
 
 style.css
-41: warning at line 462, col 48
+47: warning at line 462, col 19
 Unqualified attribute selectors are known to be slow.
-input[type="button"], input[type="file"], input[type="reset"], input[type="submit"] {
+.orin-field, input[type="text"], input[type="email"], input[type="search"], input[type="url"], textarea {
 
 style.css
-42: warning at line 462, col 69
+48: warning at line 462, col 39
 Unqualified attribute selectors are known to be slow.
-input[type="button"], input[type="file"], input[type="reset"], input[type="submit"] {
+.orin-field, input[type="text"], input[type="email"], input[type="search"], input[type="url"], textarea {
 
 style.css
-43: warning at line 462, col 1
+49: warning at line 462, col 60
+Unqualified attribute selectors are known to be slow.
+.orin-field, input[type="text"], input[type="email"], input[type="search"], input[type="url"], textarea {
+
+style.css
+50: warning at line 462, col 82
+Unqualified attribute selectors are known to be slow.
+.orin-field, input[type="text"], input[type="email"], input[type="search"], input[type="url"], textarea {
+
+style.css
+51: warning at line 462, col 1
 The property -ms-transition is compatible with -moz-transition, -webkit-transition, -o-transition and should be included as well.
-input[type="button"], input[type="file"], input[type="reset"], input[type="submit"] {
+.orin-field, input[type="text"], input[type="email"], input[type="search"], input[type="url"], textarea {
 
 style.css
-44: warning at line 462, col 28
+52: warning at line 477, col 25
 Unqualified attribute selectors are known to be slow.
-input[type="button"], input[type="file"], input[type="reset"], input[type="submit"] {
+.orin-field:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="search"]:focus, input[type="url"]:focus, textarea:focus {
 
 style.css
-45: warning at line 489, col 34
+53: warning at line 477, col 51
 Unqualified attribute selectors are known to be slow.
-input[type="button"]:hover, input[type="file"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
+.orin-field:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="search"]:focus, input[type="url"]:focus, textarea:focus {
 
 style.css
-46: warning at line 489, col 60
+54: warning at line 477, col 78
 Unqualified attribute selectors are known to be slow.
-input[type="button"]:hover, input[type="file"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
+.orin-field:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="search"]:focus, input[type="url"]:focus, textarea:focus {
 
 style.css
-47: warning at line 489, col 6
+55: warning at line 477, col 106
 Unqualified attribute selectors are known to be slow.
-input[type="button"]:hover, input[type="file"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
+.orin-field:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="search"]:focus, input[type="url"]:focus, textarea:focus {
 
 style.css
-48: warning at line 489, col 1
+56: warning at line 477, col 1
 The property -ms-transition is compatible with -moz-transition, -webkit-transition, -o-transition and should be included as well.
-input[type="button"]:hover, input[type="file"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
+.orin-field:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="search"]:focus, input[type="url"]:focus, textarea:focus {
 
 style.css
-49: warning at line 489, col 87
-Unqualified attribute selectors are known to be slow.
-input[type="button"]:hover, input[type="file"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
-
-style.css
-50: warning at line 507, col 6
-Unqualified attribute selectors are known to be slow.
-input[type="text"], input[type="email"], input[type="search"], input[type="url"] {
-
-style.css
-51: warning at line 507, col 47
-Unqualified attribute selectors are known to be slow.
-input[type="text"], input[type="email"], input[type="search"], input[type="url"] {
-
-style.css
-52: warning at line 507, col 69
-Unqualified attribute selectors are known to be slow.
-input[type="text"], input[type="email"], input[type="search"], input[type="url"] {
-
-style.css
-53: warning at line 507, col 1
-The property -ms-transition is compatible with -moz-transition, -webkit-transition, -o-transition and should be included as well.
-input[type="text"], input[type="email"], input[type="search"], input[type="url"] {
-
-style.css
-54: warning at line 507, col 26
-Unqualified attribute selectors are known to be slow.
-input[type="text"], input[type="email"], input[type="search"], input[type="url"] {
-
-style.css
-55: warning at line 522, col 32
-Unqualified attribute selectors are known to be slow.
-input[type="text"]:focus, input[type="email"]:focus, input[type="search"]:focus, input[type="url"]:focus {
-
-style.css
-56: warning at line 522, col 59
-Unqualified attribute selectors are known to be slow.
-input[type="text"]:focus, input[type="email"]:focus, input[type="search"]:focus, input[type="url"]:focus {
-
-style.css
-57: warning at line 522, col 87
-Unqualified attribute selectors are known to be slow.
-input[type="text"]:focus, input[type="email"]:focus, input[type="search"]:focus, input[type="url"]:focus {
-
-style.css
-58: warning at line 522, col 1
-The property -ms-transition is compatible with -moz-transition, -webkit-transition, -o-transition and should be included as well.
-input[type="text"]:focus, input[type="email"]:focus, input[type="search"]:focus, input[type="url"]:focus {
-
-style.css
-59: warning at line 522, col 6
-Unqualified attribute selectors are known to be slow.
-input[type="text"]:focus, input[type="email"]:focus, input[type="search"]:focus, input[type="url"]:focus {
-
-style.css
-60: warning at line 533, col 1
-The property -ms-transition is compatible with -moz-transition, -webkit-transition, -o-transition and should be included as well.
-textarea {
-
-style.css
-61: warning at line 548, col 1
-The property -ms-transition is compatible with -moz-transition, -webkit-transition, -o-transition and should be included as well.
-textarea:focus {
-
-style.css
-62: warning at line 567, col 9
+57: warning at line 496, col 9
 Heading (h5) should not be qualified.
 article h5 {
 
 style.css
-63: warning at line 567, col 9
+58: warning at line 496, col 9
 Heading (h5) has already been defined.
 article h5 {
 
 style.css
-64: warning at line 570, col 9
+59: warning at line 499, col 9
 Heading (h4) has already been defined.
 article h4 {
 
 style.css
-65: warning at line 570, col 9
+60: warning at line 499, col 9
 Heading (h4) should not be qualified.
 article h4 {
 
 style.css
-66: warning at line 573, col 9
-Heading (h3) should not be qualified.
-article h3 {
-
-style.css
-67: warning at line 573, col 9
+61: warning at line 502, col 9
 Heading (h3) has already been defined.
 article h3 {
 
 style.css
-68: warning at line 576, col 9
-Heading (h2) has already been defined.
-article h2 {
+62: warning at line 502, col 9
+Heading (h3) should not be qualified.
+article h3 {
 
 style.css
-69: warning at line 576, col 9
+63: warning at line 505, col 9
 Heading (h2) should not be qualified.
 article h2 {
 
 style.css
-70: warning at line 579, col 9
+64: warning at line 505, col 9
+Heading (h2) has already been defined.
+article h2 {
+
+style.css
+65: warning at line 508, col 9
 Heading (h1) should not be qualified.
 article h1 {
 
 style.css
-71: warning at line 579, col 9
+66: warning at line 508, col 9
 Heading (h1) has already been defined.
 article h1 {
 
 style.css
-72: warning at line 591, col 35
-Heading (h2) should not be qualified.
-article header h1, article header h2 {
-
-style.css
-73: warning at line 591, col 16
+67: warning at line 520, col 16
 Heading (h1) has already been defined.
 article header h1, article header h2 {
 
 style.css
-74: warning at line 591, col 35
+68: warning at line 520, col 35
 Heading (h2) has already been defined.
 article header h1, article header h2 {
 
 style.css
-75: warning at line 591, col 16
+69: warning at line 520, col 16
 Heading (h1) should not be qualified.
 article header h1, article header h2 {
 
 style.css
-76: warning at line 597, col 1
+70: warning at line 520, col 35
+Heading (h2) should not be qualified.
+article header h1, article header h2 {
+
+style.css
+71: warning at line 526, col 1
 The property -ms-transition is compatible with -moz-transition, -webkit-transition, -o-transition and should be included as well.
 article a img:hover {
 
 style.css
-77: warning at line 611, col 3
+72: warning at line 540, col 3
 Duplicate property '-moz-transition' found.
   -moz-transition: all 0.5s ease-out;
 
 style.css
-78: warning at line 612, col 3
+73: warning at line 541, col 3
 Duplicate property '-webkit-transition' found.
   -webkit-transition: all 0.5s ease-out;
 
 style.css
-79: warning at line 613, col 3
+74: warning at line 542, col 3
 Duplicate property '-o-transition' found.
   -o-transition: all 0.5s ease-out;
 
 style.css
-80: warning at line 614, col 3
+75: warning at line 543, col 3
 Duplicate property 'transition' found.
   transition: all 0.5s ease-out;
 
 style.css
-81: warning at line 616, col 1
+76: warning at line 545, col 1
 The property -ms-transition is compatible with -moz-transition, -webkit-transition, -o-transition and should be included as well.
 article img {
 
 style.css
-82: warning at line 628, col 3
+77: warning at line 557, col 3
 Duplicate property '-moz-transition' found.
   -moz-transition: all 0.5s ease-out;
 
 style.css
-83: warning at line 629, col 3
+78: warning at line 558, col 3
 Duplicate property '-webkit-transition' found.
   -webkit-transition: all 0.5s ease-out;
 
 style.css
-84: warning at line 630, col 3
+79: warning at line 559, col 3
 Duplicate property '-o-transition' found.
   -o-transition: all 0.5s ease-out;
 
 style.css
-85: warning at line 631, col 3
+80: warning at line 560, col 3
 Duplicate property 'transition' found.
   transition: all 0.5s ease-out;
 
 style.css
-86: warning at line 633, col 1
+81: warning at line 562, col 1
 The property -ms-transition is compatible with -moz-transition, -webkit-transition, -o-transition and should be included as well.
 article blockquote {
 
 style.css
-87: warning at line 654, col 1
+82: warning at line 583, col 1
 The property -ms-transition is compatible with -moz-transition, -webkit-transition, -o-transition and should be included as well.
 article blockquote blockquote {
 
 style.css
-88: warning at line 689, col 1
+83: warning at line 618, col 1
 Don't use IDs in selectors.
 article #comments-title,
 
 style.css
-89: warning at line 693, col 1
+84: warning at line 622, col 1
 Don't use IDs in selectors.
 article #comments-title {
 
 style.css
-90: warning at line 718, col 1
+85: warning at line 647, col 1
 Don't use IDs in selectors.
 article #reply-title {
 
 style.css
-91: warning at line 721, col 1
+86: warning at line 650, col 1
 Don't use IDs in selectors.
 article #commentform input,
 
 style.css
-92: warning at line 722, col 1
+87: warning at line 651, col 1
 Don't use IDs in selectors.
 article #commentform textarea {
 
 style.css
-93: warning at line 725, col 1
+88: warning at line 654, col 1
 Don't use IDs in selectors.
 article #commentform .required {
 
 style.css
-94: warning at line 747, col 3
+89: warning at line 676, col 3
 display:inline has no effect on floated elements (but may be used to fix the IE6 double-margin bug).
   float: right;
 
 style.css
-95: warning at line 749, col 3
+90: warning at line 678, col 3
 width can't be used with display: inline.
   width: 300px;
 
 style.css
-96: warning at line 763, col 10
+91: warning at line 692, col 10
 Heading (h3) should not be qualified.
 aside li h3, aside li ul {
 
 style.css
-97: warning at line 763, col 10
+92: warning at line 692, col 10
 Heading (h3) has already been defined.
 aside li h3, aside li ul {
 
 style.css
-98: warning at line 767, col 10
-Heading (h3) has already been defined.
-aside li h3 {
-
-style.css
-99: warning at line 767, col 10
+93: warning at line 696, col 10
 Heading (h3) should not be qualified.
 aside li h3 {
 
 style.css
-100: warning at line 796, col 17
+94: warning at line 696, col 10
 Heading (h3) has already been defined.
-.orin-footer li h3 {
+aside li h3 {
 
 style.css
-101: warning at line 796, col 17
+95: warning at line 725, col 17
 Heading (h3) should not be qualified.
 .orin-footer li h3 {
 
 style.css
-102: warning at line 812, col 15
+96: warning at line 725, col 17
+Heading (h3) has already been defined.
+.orin-footer li h3 {
+
+style.css
+97: warning at line 741, col 15
 Unqualified attribute selectors are known to be slow.
 .orin-footer a[rel="generator"] {
 
 style.css
-103: warning at line 816, col 1
+98: warning at line 745, col 1
 Don't use IDs in selectors.
 #searchform label {
 
 style.css
-104: warning at line 824, col 1
+99: warning at line 753, col 1
 The property -ms-transition is compatible with -moz-transition, -webkit-transition, -o-transition and should be included as well.
 table {
 
 style.css
-105: warning at line 867, col 1
+100: warning at line 796, col 1
 Don't use IDs in selectors.
 #masthead-widgets {
 
 style.css
-106: warning at line 883, col 1
+101: warning at line 812, col 1
 Don't use IDs in selectors.
 #prev, #wp-calendar .pad {
 
 style.css
-107: warning at line 883, col 8
+102: warning at line 812, col 8
 Don't use IDs in selectors.
 #prev, #wp-calendar .pad {
 
 style.css
-108: warning at line 887, col 1
+103: warning at line 816, col 1
 Don't use IDs in selectors.
 #next, #wp-calendar .pad {
 
 style.css
-109: warning at line 887, col 8
+104: warning at line 816, col 8
 Don't use IDs in selectors.
 #next, #wp-calendar .pad {
 
 style.css
-110: warning at line 891, col 1
+105: warning at line 820, col 1
 Don't use IDs in selectors.
 footer #wp-calendar {
 
 style.css
-111: warning at line 894, col 1
+106: warning at line 823, col 1
 Don't use IDs in selectors.
 footer #wp-calendar a {
 
 style.css
-112: warning at line 927, col 3
-Use of !important
-  background: transparent !important;
-
-style.css
-113: warning at line 928, col 3
-Use of !important
-  border: none !important;
-
-style.css
-114: warning at line 929, col 3
-Use of !important
-  margin: 0 !important;
-
-style.css
-115: warning at line 930, col 3
-Use of !important
-  padding: 0 !important;
-
-style.css
-116: warning
+107: warning
 Too many floats (10), you're probably using them for layout. Consider using a grid system instead.
 
 style.css
-117: warning
+108: warning
 Too many font-size declarations (26), abstraction needed.
 
 style.css
-118: warning
+109: warning
 You have 8 h1s, 7 h2s, 7 h3s, 4 h4s, 4 h5s, 3 h6s defined in this stylesheet.
