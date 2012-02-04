@@ -1,12 +1,4 @@
 article {
-	// h#{n} headings:
-	$_em: 1em; $i: 6;
-	@while $i > 0 {
-		$_em: $_em + 0.125em; $i: $i - 1;
-		h#{$i} { line-height: $_em * 0.75; }
-	}
-	
-	
 	@include border-radius(8px);
 	
 	header, footer { width: 100%; }

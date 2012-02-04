@@ -17,7 +17,6 @@ hgroup, menu, section, summary {
 }
 
 // Elements
-h1, h2, h3, h4, h5, h6,
 label, legend,
 nav, aside {
 	@extend ._sans-serif;
@@ -60,10 +59,15 @@ sub { vertical-align: sub; }
 
 
 // h#{n} headings:
-$_em: 1em;
-@for $i from 1 through 6 {
+h1, h2, h3, h4, h5, h6 {
+	@extend ._sans-serif;
+	font-weight: bold;
+}
+$_em: 1em; $i: 6;
+@while $i > 0 {
 	$_em: $_em + 0.125em;
 	h#{$i} { font-size: $_em; }
+	$i: $i - 1;
 }
 
 // non-semantic but for backward-compat:

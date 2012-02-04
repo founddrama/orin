@@ -6,6 +6,11 @@
  */
 
 /**
+ * Utils
+ */
+.smaller { font-size: 0.8em; }
+
+/**
  * WP-Calendar
  */
 $_foot_border: 0;
@@ -28,7 +33,7 @@ footer #wp-calendar {
 	margin-bottom: 6px;
 }
 .delicious-tags {
-	font-size: 0.8em;
+	@extend .smaller;
 	a {
 		&:before { content: "#"; }
 		&:after { content: ","; }
@@ -56,9 +61,7 @@ footer #wp-calendar {
 	}
 	padding-top: $_48th;
 }
-.footnote {
-	font-size: 0.8em;
-}
+.footnote { @extend .smaller; }
 
 /**
  * F_D search haiku
@@ -67,4 +70,4 @@ footer #wp-calendar {
 	text-align: center;
 	font-style: italic;
 }
-.search-haiku-defined { font-size: 0.8em; }
+.search-haiku-defined { @extend .smaller; }
