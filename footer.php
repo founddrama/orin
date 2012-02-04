@@ -7,16 +7,16 @@
  * @since 0.1a
  */
 ?>
-			</section><?php /* / #orin-chronology */ ?>
+			</section><?php /* / .orin-chronology */ ?>
 			<?php 
 				if ( ! is_404() ) {
 					get_sidebar();
 				}
 			?>
-		</section><?php /* / #orin-container */ ?>
-	</div><?php /* / #orin-ct-wrap */ ?>
+		</section><?php /* / .orin-container */ ?>
+	</div><?php /* / .orin-ct-wrap */ ?>
 
-	<footer id="orin-footer">
+	<footer class="orin-footer">
 	
 		<section>
 			<?php get_sidebar( 'footer' ); ?>

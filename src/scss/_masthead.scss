@@ -1,5 +1,5 @@
 // some way to do this as "header" w/o #masthead ?
-#masthead {
+.masthead {
 	@include basic-linear-grader(white, $f_d-grey, 128px);
 	height: $_sect_h;
 	position: relative;

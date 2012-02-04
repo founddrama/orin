@@ -71,7 +71,7 @@ small { font-size: 0.8em; }
 big { font-size: 1.2em; }
 
 // @todo - how to ditch #masthead ?
-#masthead {
+.masthead {
 	h1 { font-size: 6em; }
 	// don't do "em" b/c of the cascade :
 	li { font-size: 14px; }
@@ -107,4 +107,4 @@ article {
 
 .comment a.permalink { font-size: 0.75em; }
 
-#orin-footer { font-size: 0.75em; }
+.orin-footer { font-size: 0.75em; }

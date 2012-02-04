@@ -21,7 +21,7 @@ body {
 	border-bottom: 1px solid $f_d-color;
 }
 
-#orin-ct-wrap {
+.orin-ct-wrap {
 	background-color: #fff;
 	min-height: $_sect_h;
 	overflow: hidden;
@@ -34,13 +34,13 @@ a {
 	color: $f_d-color;
 }
 
-#orin-container {
+.orin-container {
 	float: right;
 	width: $_960_base;
 	margin-right: 2em;
 }
 
-#orin-chronology {
+.orin-chronology {
 	display: inline-block;
 	width: $_3rd * 2;
 	

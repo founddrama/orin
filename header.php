@@ -45,7 +45,7 @@
 
 <body <?php body_class(); ?>>
 
-	<header id="masthead">
+	<header class="masthead">
 		<hgroup>
 			<h1><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2><?php bloginfo( 'description' ); ?></h2>
@@ -60,6 +60,6 @@
 			</section>
 		<?php endif; ?>
 	</header>
-	<div id="orin-ct-wrap">
-		<section id="orin-container">
-			<section id="orin-chronology">
+	<div class="orin-ct-wrap">
+		<section class="orin-container">
+			<section class="orin-chronology">

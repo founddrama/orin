@@ -27,7 +27,7 @@ aside {
 			@include text-shadow($f_d-grey 0 2px 1px);
 		}
 	}
-	#orin-container & ul {
+	.orin-container & ul {
 		overflow: hidden;
 	}
 }
