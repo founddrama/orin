@@ -9,13 +9,13 @@
  * IE7 and below...
  */
 
-#masthead nav ul li:hover ul { top: 23px; }
+.masthead nav ul li:hover ul { top: 23px; }
 
 // to get the sidebar in the right place: (fixes IE6+7)
-#orin-chronology { float: left; }
+.orin-chronology { float: left; }
 
 // to get the floaters in the footer working: (fixes IE7, but not IE6)
-#orin-footer section ul { display: inline !important; }
+.orin-footer section ul { display: inline !important; }
 
 // gets the buttons on the same line as the field (fixes IE7, not really IE6)
 .ie-btn-fix {
