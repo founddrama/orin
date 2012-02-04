@@ -18,17 +18,17 @@
 #orin-footer section ul { display: inline !important; }
 
 // gets the buttons on the same line as the field (fixes IE7, not really IE6)
-@mixin ie-button-fix {
+.ie-btn-fix {
 	border: 0;
 	padding: 0;
 }
-button { @include ie-button-fix; }
+button { @extend .ie-btn-fix; }
 input {
 	&[type="button"],
 	&[type="file"],
 	&[type="reset"],
 	&[type="submit"] {
-		@include ie-button-fix;
+		@extend .ie-btn-fix;
 	}
 
 	&[type="text"] {
