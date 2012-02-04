@@ -8,13 +8,15 @@ Author URI: http://blog.founddrama.net
 Tags: orin, html5, css3
 */
 // Compass imports //
+@import "compass/reset/utilities";
+@include global-reset;
 @import "compass/css3";
+// utils //
+@import "variables";
+@import "mixins";
 // imports //
-@import "reset";
 @import "layout";
 @import "typography";
-@import "mixins";
-@import "variables";
 
 body {
 	background-color: $f_d-color;
