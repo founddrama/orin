@@ -31,36 +31,3 @@
 	background: $base_color;
 	@include background(linear-gradient($accent_color, $base_color $stop));
 }
-
-@mixin button-style {
-	@include basic-linear-grader(darken($f_d-desat, 10%), $f_d-color, 84%);
-	color: white;
-	@include text-shadow($f_d-color 0 1px 1px);
-	@include border-radius(8px);
-	padding: 6px;
-	border: 2px solid darken($f_d-color, 10%);
-	@include article-shadow(2px, rgba(desaturate($f_d-color, 10%), .8));
-	
-	&:hover {
-		@include text-shadow(lighten($f_d-color, 40%) 0 2px 4px);
-		@include basic-linear-grader($f_d-color, lighten($f_d-desat, 20%), 84%);
-		@include article-shadow(4px, rgba(lighten($f_d-color, 20%), .4));
-	}
-}
-
-@mixin input-style {
-	padding: 4px 2px;
-	margin: 2px 0;
-	border: 1px solid $f_d-grey;
-	@include border-radius(2px);
-	@include transition(border-color 0.2s ease-out);
-	&:focus {
-		outline: none;
-		padding: 3px 1px;
-		border: {
-			width: 2px;
-			color: lighten($f_d-color, 50%);
-		}
-		@include transition(border-color 0.3s ease-in 0.1s);
-	}
-}
