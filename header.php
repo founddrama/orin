@@ -55,7 +55,7 @@
 		<?php wp_nav_menu( array( 'container' => 'nav', 'fallback_cb' => 'starkers_menu', 'theme_location' => 'primary' ) ); ?>
 		
 		<?php if ( is_active_sidebar( 'masthead-widget-area' ) ) : ?>
-			<section id="masthead-widgets">
+			<section class="masthead-widgets">
 				<?php dynamic_sidebar( 'masthead-widget-area' ); ?>
 			</section>
 		<?php endif; ?>
