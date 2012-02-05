@@ -13,13 +13,8 @@
 /**
  * WP-Calendar
  */
-$_foot_border: 0;
-#prev, #wp-calendar .pad { border-right: $_foot_border; }
-#next, #wp-calendar .pad { border-left: $_foot_border; }
-
-footer #wp-calendar {
-	color: $f_d-dark;
-	a { color: $f_d-color; }
+#wp-calendar {
+	tfoot td:last-of-type { text-align: right; }
 }
 
 /**

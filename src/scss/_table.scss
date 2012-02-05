@@ -10,7 +10,18 @@ table {
 
 thead tr {
 	background: $f_d-dark;
-	color: white;
+	border: 1px solid $f_d-dark;
+	border-bottom: none;
+}
+tfoot tr {
+	$_c: lighten($f_d-dark, 50%);
+	background: $_c;
+	border: 1px solid $_c;
+	border-top: none;
+}
+thead, tfoot {
+	tr, tr a { color: white; }
+	td, th { border: none; }
 }
 
 td, th {
@@ -31,4 +42,13 @@ tr {
 		}
 		
 	}
+}
+
+.orin-footer table {
+	color: white;
+	a, a:visited { color: $f_d-color; }
+	tfoot {
+		a, a:visited { color: white; }
+	}
+	td { color: black; }
 }
