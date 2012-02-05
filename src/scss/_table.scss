@@ -1,54 +1,54 @@
 table, td, th {
-	border: 1px solid $f_d-grey;
+  border: 1px solid $f_d-grey;
 }
 
 table {
-	padding: 1px;
-	margin-bottom: $_48th;
-	@include article-shadow(4px, lighten($f_d-dark, 25%));
+  padding: 1px;
+  margin-bottom: $_48th;
+  @include article-shadow(4px, lighten($f_d-dark, 25%));
 }
 
 thead tr {
-	background: $f_d-dark;
-	border: 1px solid $f_d-dark;
-	border-bottom: none;
+  background: $f_d-dark;
+  border: 1px solid $f_d-dark;
+  border-bottom: none;
 }
 tfoot tr {
-	$_c: lighten($f_d-dark, 50%);
-	background: $_c;
-	border: 1px solid $_c;
-	border-top: none;
+  $_c: lighten($f_d-dark, 50%);
+  background: $_c;
+  border: 1px solid $_c;
+  border-top: none;
 }
 thead, tfoot {
-	tr, tr a { color: white; }
-	td, th { border: none; }
+  tr, tr a { color: white; }
+  td, th { border: none; }
 }
 
 td, th {
-	margin: 1px;
-	padding: 2px 8px;
+  margin: 1px;
+  padding: 2px 8px;
 }
 
 th { border-color: $f_d-dark; }
 
 tr {
-	background: white;
-	&:nth-child(even) {
-		background: $f_d-grey;
-		td {
-			border-color: white;
-			&:first-of-type { border-left-color: $f_d-grey; }
-			&:last-of-type { border-right-color: $f_d-grey; }
-		}
-		
-	}
+  background: white;
+  &:nth-child(even) {
+    background: $f_d-grey;
+    td {
+      border-color: white;
+      &:first-of-type { border-left-color: $f_d-grey; }
+      &:last-of-type { border-right-color: $f_d-grey; }
+    }
+    
+  }
 }
 
 .orin-footer table {
-	color: white;
-	a, a:visited { color: $f_d-color; }
-	tfoot {
-		a, a:visited { color: white; }
-	}
-	td { color: black; }
+  color: white;
+  a, a:visited { color: $f_d-color; }
+  tfoot {
+    a, a:visited { color: white; }
+  }
+  td { color: black; }
 }

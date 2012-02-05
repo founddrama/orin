@@ -1,33 +1,33 @@
 aside {
-	float: right;
-	width: $_3rd - $_48th;
-	
-	ul { list-style-type: none; }
-	
-	li {
-		margin-bottom: $_24th;
-		li {
-			margin-bottom: 0.25em;
-			
-			margin-left: $_48th;
-			list-style: {
-				type: circle;
-				position: outside;
-			}
-		}
-		
-		h3, ul {
-			padding: 0.5em;
-			padding-top: 0;
-		}
-		
-		h3 {
-			color: $f_d-color;
-			@include text-shadow($f_d-grey 0 2px 1px);
-		}
-	}
-	.orin-container & ul {
-		overflow: hidden;
-	}
+  float: right;
+  width: $_3rd - $_48th;
+  
+  ul { list-style-type: none; }
+  
+  li {
+    margin-bottom: $_24th;
+    li {
+      margin-bottom: 0.25em;
+      
+      margin-left: $_48th;
+      list-style: {
+        type: circle;
+        position: outside;
+      }
+    }
+    
+    h3, ul {
+      padding: 0.5em;
+      padding-top: 0;
+    }
+    
+    h3 {
+      color: $f_d-color;
+      @include text-shadow($f_d-grey 0 2px 1px);
+    }
+  }
+  .orin-container & ul {
+    overflow: hidden;
+  }
 }
 

@@ -10,9 +10,9 @@
  */
 
 .zero {
-	margin: 0;
-	padding: 0;
-	border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 html, body, div, span, object, iframe,
@@ -27,59 +27,59 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
-	@extend .zero;
-	font-size: 100%;
-	vertical-align: baseline;
-	background: transparent;
+  @extend .zero;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 
 body {
-	line-height: 1;
+  line-height: 1;
 }
 
 article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary, hr { 
-	display: block;
+  display: block;
 }
 
 nav ul {
-	list-style: none;
+  list-style: none;
 }
 
 blockquote, q {
-	quotes: none;
-	&:before, &:after {
-		content: "";
-	    content: none;
-	}
+  quotes: none;
+  &:before, &:after {
+    content: "";
+      content: none;
+  }
 }
 
 ins, mark {
-	background-color: #ff9;
-	color: #000;
+  background-color: #ff9;
+  color: #000;
 }
 
 ins { text-decoration: none; }
 
 mark {
-	font-style: italic;
-	font-weight: bold;
+  font-style: italic;
+  font-weight: bold;
 }
 
 del, s, strike {
-	text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 hr {
-	@extend .zero;
-	margin: 1em 0;
-	height: 1px;
-	background-color: #ccc;
+  @extend .zero;
+  margin: 1em 0;
+  height: 1px;
+  background-color: #ccc;
 }
 
 input, select { vertical-align: middle; }

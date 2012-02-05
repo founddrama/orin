@@ -13,36 +13,36 @@ abbr, address, cite,
 del, dfn, ins,  q, samp,
 article, details, figcaption, figure, 
 hgroup, menu, section, summary {
-	@extend ._serif;
+  @extend ._serif;
 }
 
 // Elements
 label, legend,
 nav, aside {
-	@extend ._sans-serif;
+  @extend ._sans-serif;
 }
 aside {
-	p, blockquote {
-		@extend ._sans-serif;
-	}
+  p, blockquote {
+    @extend ._sans-serif;
+  }
 }
 
 article {
-	header, footer { @extend ._sans-serif; }
+  header, footer { @extend ._sans-serif; }
 }
 
 .comment {
-	@extend ._sans-serif;
-	p { @extend ._serif; }
+  @extend ._sans-serif;
+  p { @extend ._serif; }
 }
 
 // Elements
 pre, code, kbd, tt {
-	@extend ._console;
+  @extend ._console;
 }
 
 table, caption, tbody, tfoot, thead, tr, th, td {
-	@extend ._sans-serif;
+  @extend ._sans-serif;
 }
 
 // sizing:
@@ -58,14 +58,14 @@ sub { vertical-align: sub; }
 
 // h#{n} headings:
 h1, h2, h3, h4, h5, h6 {
-	@extend ._sans-serif;
-	font-weight: bold;
+  @extend ._sans-serif;
+  font-weight: bold;
 }
 $_em: 1em; $i: 6;
 @while $i > 0 {
-	$_em: $_em + 0.125em;
-	h#{$i} { font-size: $_em; }
-	$i: $i - 1;
+  $_em: $_em + 0.125em;
+  h#{$i} { font-size: $_em; }
+  $i: $i - 1;
 }
 
 // non-semantic but for backward-compat:
@@ -74,33 +74,33 @@ big { font-size: 1.2em; }
 
 // @todo - how to ditch #masthead ?
 .masthead {
-	h1 { font-size: 6em; }
-	// don't do "em" b/c of the cascade :
-	li { font-size: 14px; }
+  h1 { font-size: 6em; }
+  // don't do "em" b/c of the cascade :
+  li { font-size: 14px; }
 }
 
 nav { font-size: $_font-size; }
 
 article {
-	header, footer { font-size: 0.875em; }
-	
-	header {
-		h1, h2 {
-			font-size: 2em;
-			a {
-				text-decoration: none;
-				&:hover { text-decoration: underline; }
-			}
-		}
-	}
-		
-	font-size: $_font-size;
-	line-height: $_font-size * 1.5;
-	
-	blockquote {
-		font-size: 0.875em;
-		& blockquote { font-size: 1em; }
-	}
+  header, footer { font-size: 0.875em; }
+  
+  header {
+    h1, h2 {
+      font-size: 2em;
+      a {
+        text-decoration: none;
+        &:hover { text-decoration: underline; }
+      }
+    }
+  }
+    
+  font-size: $_font-size;
+  line-height: $_font-size * 1.5;
+  
+  blockquote {
+    font-size: 0.875em;
+    & blockquote { font-size: 1em; }
+  }
 }
 
 .form-allowed-tags { font-size: 0.8125em; }
