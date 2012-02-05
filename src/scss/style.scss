@@ -11,10 +11,10 @@ Tags: orin, html5, css3
 @import "compass/css3";
 // imports //
 @import "reset";
+@import "variables";
+@import "mixins";
 @import "layout";
 @import "typography";
-@import "mixins";
-@import "variables";
 
 body {
 	background-color: $f_d-color;

@@ -49,9 +49,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 $_font-size: 16px;
 
 // base font-size:
-body {
-	font-size: $_font-size;
-}
+body { font-size: $_font-size; }
 
 sup, sub { font-size: 0.8em; }
 sup { vertical-align: super; }
@@ -81,9 +79,7 @@ big { font-size: 1.2em; }
 	li { font-size: 14px; }
 }
 
-nav {
-	font-size: $_font-size;
-}
+nav { font-size: $_font-size; }
 
 article {
 	header, footer { font-size: 0.875em; }

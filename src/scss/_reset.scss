@@ -9,30 +9,25 @@
  * Author: Richard Clark - http://richclarkdesign.com
  */
 
-@mixin zero_out {
+.zero {
 	margin: 0;
-    padding: 0;
-    border: 0;
-}
-
-@mixin color_reset {
-	background-color: #ff9;
-	color: #000;
+	padding: 0;
+	border: 0;
 }
 
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
+del, dfn, img, ins, kbd, q, samp,
+small, sub, sup, var,
+strong, b, em, i, a,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
-	@include zero_out;
+	@extend .zero;
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
@@ -42,8 +37,8 @@ body {
 	line-height: 1;
 }
 
-article,aside,canvas,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section,summary { 
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary, hr { 
 	display: block;
 }
 
@@ -59,20 +54,14 @@ blockquote, q {
 	}
 }
 
-a {
-	@include zero_out;
-	font-size: 100%;
-	vertical-align: baseline;
-	background: transparent;
+ins, mark {
+	background-color: #ff9;
+	color: #000;
 }
 
-ins {
-	@include color_reset;
-	text-decoration: none;
-}
+ins { text-decoration: none; }
 
 mark {
-	@include color_reset;
 	font-style: italic;
 	font-weight: bold;
 }
@@ -87,14 +76,10 @@ table {
 }
 
 hr {
-	@include zero_out;
-	margin: {
-		top: 1em;
-		bottom: 1em;
-	}
-	display: block;
+	@extend .zero;
+	margin: 1em 0;
 	height: 1px;
-	border-top: 1px solid #ccc;
+	background-color: #ccc;
 }
 
 input, select { vertical-align: middle; }
