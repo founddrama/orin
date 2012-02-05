@@ -1,6 +1,6 @@
 
 
-csslint: There are 76 problems in style.css.
+csslint: There are 75 problems in style.css.
 
 style.css
 1: warning at line 37, col 1
@@ -68,8 +68,8 @@ Heading (h3) has already been defined.
 nav, aside, aside p, aside blockquote, article header, article footer, .comment, table, caption, tbody, tfoot, thead, tr, th, td, h1, h2, h3, h4, h5, h6, .masthead hgroup .desc {
 
 style.css
-14: warning at line 180, col 5
-Heading (h2) has already been defined.
+14: warning at line 180, col 9
+Heading (h3) has already been defined.
 h1, h2, h3, h4, h5, h6 {
 
 style.css
@@ -93,8 +93,8 @@ Heading (h1) has already been defined.
 h1, h2, h3, h4, h5, h6 {
 
 style.css
-19: warning at line 180, col 9
-Heading (h3) has already been defined.
+19: warning at line 180, col 5
+Heading (h2) has already been defined.
 h1, h2, h3, h4, h5, h6 {
 
 style.css
@@ -129,12 +129,12 @@ h1 {
 
 style.css
 26: warning at line 216, col 11
-Heading (h1) should not be qualified.
+Heading (h1) has already been defined.
 .masthead h1 {
 
 style.css
 27: warning at line 216, col 11
-Heading (h1) has already been defined.
+Heading (h1) should not be qualified.
 .masthead h1 {
 
 style.css
@@ -158,13 +158,13 @@ Heading (h1) should not be qualified.
 article header h1, article header h2 {
 
 style.css
-32: warning at line 237, col 16
-Heading (h1) should not be qualified.
+32: warning at line 237, col 37
+Heading (h2) should not be qualified.
 article header h1 a, article header h2 a {
 
 style.css
-33: warning at line 237, col 37
-Heading (h2) should not be qualified.
+33: warning at line 237, col 16
+Heading (h1) should not be qualified.
 article header h1 a, article header h2 a {
 
 style.css
@@ -203,7 +203,7 @@ Unqualified attribute selectors are known to be slow.
 .orin-button, button, input[type="button"], input[type="file"], input[type="reset"], input[type="submit"] {
 
 style.css
-41: warning at line 420, col 50
+41: warning at line 420, col 70
 Unqualified attribute selectors are known to be slow.
 .orin-button, button, input[type="button"], input[type="file"], input[type="reset"], input[type="submit"] {
 
@@ -213,7 +213,7 @@ Unqualified attribute selectors are known to be slow.
 .orin-button, button, input[type="button"], input[type="file"], input[type="reset"], input[type="submit"] {
 
 style.css
-43: warning at line 420, col 70
+43: warning at line 420, col 50
 Unqualified attribute selectors are known to be slow.
 .orin-button, button, input[type="button"], input[type="file"], input[type="reset"], input[type="submit"] {
 
@@ -278,104 +278,99 @@ Unqualified attribute selectors are known to be slow.
 .orin-field:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="search"]:focus, input[type="url"]:focus, textarea:focus {
 
 style.css
-56: warning at line 510, col 16
+56: warning at line 507, col 16
 Heading (h1) should not be qualified.
 article header h1, article header h2 {
 
 style.css
-57: warning at line 510, col 35
+57: warning at line 507, col 35
 Heading (h2) should not be qualified.
 article header h1, article header h2 {
 
 style.css
-58: warning at line 510, col 16
+58: warning at line 507, col 16
 Heading (h1) has already been defined.
 article header h1, article header h2 {
 
 style.css
-59: warning at line 510, col 35
+59: warning at line 507, col 35
 Heading (h2) has already been defined.
 article header h1, article header h2 {
 
 style.css
-60: warning at line 604, col 1
+60: warning at line 619, col 1
 Don't use IDs in selectors.
-article #comments-title,
+#comments-title,
 
 style.css
-61: warning at line 608, col 1
+61: warning at line 624, col 1
 Don't use IDs in selectors.
-article #comments-title {
+#comments-title {
 
 style.css
-62: warning at line 633, col 1
+62: warning at line 652, col 1
 Don't use IDs in selectors.
-article #reply-title {
+#reply-title {
 
 style.css
-63: warning at line 636, col 1
+63: warning at line 656, col 1
 Don't use IDs in selectors.
-article #commentform input,
+#commentform input,
 
 style.css
-64: warning at line 637, col 1
+64: warning at line 657, col 1
 Don't use IDs in selectors.
-article #commentform textarea {
+#commentform textarea {
 
 style.css
-65: warning at line 640, col 1
+65: warning at line 660, col 1
 Don't use IDs in selectors.
-article #commentform .required {
+#commentform .required {
 
 style.css
-66: warning at line 677, col 10
+66: warning at line 680, col 10
 Heading (h3) should not be qualified.
 aside li h3, aside li ul {
 
 style.css
-67: warning at line 677, col 10
+67: warning at line 680, col 10
 Heading (h3) has already been defined.
 aside li h3, aside li ul {
 
 style.css
-68: warning at line 681, col 10
+68: warning at line 684, col 10
 Heading (h3) should not be qualified.
 aside li h3 {
 
 style.css
-69: warning at line 681, col 10
+69: warning at line 684, col 10
 Heading (h3) has already been defined.
 aside li h3 {
 
 style.css
-70: warning at line 710, col 17
+70: warning at line 713, col 17
 Heading (h3) should not be qualified.
 .orin-footer li h3 {
 
 style.css
-71: warning at line 710, col 17
+71: warning at line 713, col 17
 Heading (h3) has already been defined.
 .orin-footer li h3 {
 
 style.css
-72: warning at line 726, col 15
-Unqualified attribute selectors are known to be slow.
-.orin-footer a[rel="generator"] {
-
-style.css
-73: warning at line 730, col 1
+72: warning at line 730, col 1
 Don't use IDs in selectors.
 #searchform label {
 
 style.css
-74: warning at line 832, col 1
+73: warning at line 832, col 1
 Don't use IDs in selectors.
-#wp-calendar tfoot td:last-of-type {
+#next {
 
 style.css
-75: warning
+74: warning
 Too many font-size declarations (24), abstraction needed.
 
 style.css
-76: warning
+75: warning
 You have 9 h1s, 7 h2s, 8 h3s, 5 h4s, 5 h5s, 5 h6s defined in this stylesheet.
