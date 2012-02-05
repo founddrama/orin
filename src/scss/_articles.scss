@@ -1,8 +1,6 @@
 article {
 	@include border-radius(8px);
 	
-	header, footer { width: 100%; }
-	
 	header {
 		margin-bottom: 2em;
 		h1, h2 {
