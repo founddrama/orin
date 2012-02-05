@@ -48,7 +48,7 @@
 	<header class="masthead">
 		<hgroup>
 			<h1><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2><?php bloginfo( 'description' ); ?></h2>
+			<div class="desc"><?php bloginfo( 'description' ); ?></div>
 		</hgroup>
 
 		<?php /* Our navigation menu.  If one isn't filled out, wp_nav_menu falls back to the 'starkers_menu' function which can be found in functions.php.  The menu assiged to the primary position is the one used.  If none is assigned, the menu with the lowest ID is used.  */ ?>

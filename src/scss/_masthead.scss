@@ -18,7 +18,10 @@
 			&:hover { @include text-shadow(lighten($f_d-color, 10%) 4px 0 4px, lighten($f_d-color, 10%) -4px 0 4px); }
 		}
 
-		h2 {
+		.desc {
+			@extend ._sans-serif;
+			font-size: 1.5em;
+			font-weight: bold;
 			position: absolute;
 			margin-left: $_3rd / 2;
 			margin-top: $_12th;
