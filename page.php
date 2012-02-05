@@ -15,11 +15,7 @@ get_header(); ?>
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 		
 			<header>
-				<?php if ( is_front_page() ) { ?>
-					<h2><?php the_title(); ?></h2>
-				<?php } else { ?>	
-					<h1><?php the_title(); ?></h1>
-				<?php } ?>
+				<h2><?php the_title(); ?></h2>
 			</header>				
 
 				<?php the_content(); ?>

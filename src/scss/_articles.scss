@@ -1,12 +1,7 @@
 article {
   @include border-radius(8px);
   
-  header {
-    margin-bottom: 2em;
-    h1, h2 {
-      @include text-shadow($f_d-grey 1px 0 1px);
-    }
-  }
+  header { margin-bottom: 2em; }
   
   // $_font-size @ _typography
   p, ol, ul { margin-bottom: $_font-size * 1.5; }

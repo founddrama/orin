@@ -4,29 +4,13 @@
   height: $_sect_h;
   position: relative;
   
-  hgroup {
-    h1 {
-      position: absolute;
-      margin-left: $_12th;
-      @include text-shadow($f_d-dark 2px 0 2px, $f_d-dark -2px 0 2px);
-      a {
-        text-decoration: none;
-        color: $f_d-color;
-      }
-      
-      -ms-transition: 0.3s linear;
-      @include transition(0.3s linear);
-      &:hover { @include text-shadow(lighten($f_d-color, 10%) 4px 0 4px, lighten($f_d-color, 10%) -4px 0 4px); }
-    }
-
-    .desc {
-      @extend ._sans-serif;
-      font-size: 1.5em;
-      font-weight: bold;
-      position: absolute;
-      margin-left: $_3rd / 2;
-      margin-top: $_12th;
-    }
+  hgroup .desc {
+    @extend ._sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    position: absolute;
+    margin-left: $_3rd / 2;
+    margin-top: $_12th;
   }
   
   nav ul {

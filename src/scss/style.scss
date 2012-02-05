@@ -10,9 +10,9 @@ Tags: orin, html5, css3
 // Compass imports //
 @import "compass/css3";
 // imports //
-@import "reset";
 @import "variables";
 @import "mixins";
+@import "reset";
 @import "layout";
 @import "typography";
 
@@ -27,6 +27,8 @@ body {
   overflow: hidden;
   @include box-shadow(rgba($f_d-dark, 0.8) 0 10px 10px 5px);
 }
+
+@import "headings";
 
 @import "masthead";
 

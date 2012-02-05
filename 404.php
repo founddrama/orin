@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-	<h1><?php _e( 'Not Found', 'starkers' ); ?></h1>
+	<h2><?php _e( 'Not Found', 'starkers' ); ?></h2>
 		<p><?php _e( 'Apologies, but the page you requested could not be found. Perhaps searching will help.', 'starkers' ); ?></p>
 		<?php get_search_form(); ?>
 

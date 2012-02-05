@@ -16,14 +16,9 @@ aside {
       }
     }
     
-    h3, ul {
+    ul {
       padding: 0.5em;
       padding-top: 0;
-    }
-    
-    h3 {
-      color: $f_d-color;
-      @include text-shadow($f_d-grey 0 2px 1px);
     }
   }
   .orin-container & ul {
