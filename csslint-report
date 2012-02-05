@@ -1,6 +1,6 @@
 
 
-csslint: There are 102 problems in style.css.
+csslint: There are 98 problems in style.css.
 
 style.css
 1: warning at line 37, col 1
@@ -343,169 +343,149 @@ The property -ms-transition is compatible with -moz-transition, -webkit-transiti
 article a img:hover {
 
 style.css
-69: warning at line 522, col 3
-Duplicate property '-moz-transition' found.
-  -moz-transition: all 0.5s ease-out;
-
-style.css
-70: warning at line 523, col 3
-Duplicate property '-webkit-transition' found.
-  -webkit-transition: all 0.5s ease-out;
-
-style.css
-71: warning at line 524, col 3
-Duplicate property '-o-transition' found.
-  -o-transition: all 0.5s ease-out;
-
-style.css
-72: warning at line 525, col 3
-Duplicate property 'transition' found.
-  transition: all 0.5s ease-out;
-
-style.css
-73: warning at line 527, col 1
+69: warning at line 523, col 1
 The property -ms-transition is compatible with -moz-transition, -webkit-transition, -o-transition and should be included as well.
 article img {
 
 style.css
-74: warning at line 539, col 3
+70: warning at line 535, col 3
 Duplicate property '-moz-transition' found.
   -moz-transition: all 0.5s ease-out;
 
 style.css
-75: warning at line 540, col 3
+71: warning at line 536, col 3
 Duplicate property '-webkit-transition' found.
   -webkit-transition: all 0.5s ease-out;
 
 style.css
-76: warning at line 541, col 3
+72: warning at line 537, col 3
 Duplicate property '-o-transition' found.
   -o-transition: all 0.5s ease-out;
 
 style.css
-77: warning at line 542, col 3
+73: warning at line 538, col 3
 Duplicate property 'transition' found.
   transition: all 0.5s ease-out;
 
 style.css
-78: warning at line 544, col 1
+74: warning at line 540, col 1
 The property -ms-transition is compatible with -moz-transition, -webkit-transition, -o-transition and should be included as well.
 article blockquote {
 
 style.css
-79: warning at line 565, col 1
+75: warning at line 561, col 1
 The property -ms-transition is compatible with -moz-transition, -webkit-transition, -o-transition and should be included as well.
 article blockquote blockquote {
 
 style.css
-80: warning at line 600, col 1
+76: warning at line 596, col 1
 Don't use IDs in selectors.
 article #comments-title,
 
 style.css
-81: warning at line 604, col 1
+77: warning at line 600, col 1
 Don't use IDs in selectors.
 article #comments-title {
 
 style.css
-82: warning at line 629, col 1
+78: warning at line 625, col 1
 Don't use IDs in selectors.
 article #reply-title {
 
 style.css
-83: warning at line 632, col 1
+79: warning at line 628, col 1
 Don't use IDs in selectors.
 article #commentform input,
 
 style.css
-84: warning at line 633, col 1
+80: warning at line 629, col 1
 Don't use IDs in selectors.
 article #commentform textarea {
 
 style.css
-85: warning at line 636, col 1
+81: warning at line 632, col 1
 Don't use IDs in selectors.
 article #commentform .required {
 
 style.css
-86: warning at line 673, col 10
+82: warning at line 669, col 10
 Heading (h3) should not be qualified.
 aside li h3, aside li ul {
 
 style.css
-87: warning at line 673, col 10
+83: warning at line 669, col 10
 Heading (h3) has already been defined.
 aside li h3, aside li ul {
 
 style.css
-88: warning at line 677, col 10
+84: warning at line 673, col 10
 Heading (h3) should not be qualified.
 aside li h3 {
 
 style.css
-89: warning at line 677, col 10
+85: warning at line 673, col 10
 Heading (h3) has already been defined.
 aside li h3 {
 
 style.css
-90: warning at line 706, col 17
+86: warning at line 702, col 17
 Heading (h3) should not be qualified.
 .orin-footer li h3 {
 
 style.css
-91: warning at line 706, col 17
+87: warning at line 702, col 17
 Heading (h3) has already been defined.
 .orin-footer li h3 {
 
 style.css
-92: warning at line 722, col 15
+88: warning at line 718, col 15
 Unqualified attribute selectors are known to be slow.
 .orin-footer a[rel="generator"] {
 
 style.css
-93: warning at line 726, col 1
+89: warning at line 722, col 1
 Don't use IDs in selectors.
 #searchform label {
 
 style.css
-94: warning at line 734, col 1
+90: warning at line 730, col 1
 The property -ms-transition is compatible with -moz-transition, -webkit-transition, -o-transition and should be included as well.
 table {
 
 style.css
-95: warning at line 800, col 1
+91: warning at line 796, col 1
 Don't use IDs in selectors.
 #prev, #wp-calendar .pad {
 
 style.css
-96: warning at line 800, col 8
+92: warning at line 796, col 8
 Don't use IDs in selectors.
 #prev, #wp-calendar .pad {
 
 style.css
-97: warning at line 804, col 1
+93: warning at line 800, col 1
 Don't use IDs in selectors.
 #next, #wp-calendar .pad {
 
 style.css
-98: warning at line 804, col 8
+94: warning at line 800, col 8
 Don't use IDs in selectors.
 #next, #wp-calendar .pad {
 
 style.css
-99: warning at line 808, col 1
+95: warning at line 804, col 1
 Don't use IDs in selectors.
 footer #wp-calendar {
 
 style.css
-100: warning at line 811, col 1
+96: warning at line 807, col 1
 Don't use IDs in selectors.
 footer #wp-calendar a {
 
 style.css
-101: warning
+97: warning
 Too many font-size declarations (24), abstraction needed.
 
 style.css
-102: warning
+98: warning
 You have 9 h1s, 7 h2s, 8 h3s, 5 h4s, 5 h5s, 5 h6s defined in this stylesheet.

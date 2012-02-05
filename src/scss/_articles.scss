@@ -14,7 +14,7 @@ article {
 	p, ol, ul { margin-bottom: $_font-size * 1.5; }
 	
 	a img:hover {
-		@include article-shadow(4px, lighten($f_d-dark, 25%));
+		@include box-shadow(lighten($f_d-dark, 25%) 0 4px 4px);
 		@include rotate(-1deg);
 		@include transition(all 0.5s ease-out);
 	}
@@ -23,7 +23,7 @@ article {
 		background: white;
 		border: 1px solid $f_d-grey;
 		padding: 4px;
-		@include article-shadow(2px, lighten($f_d-dark, 50%));
+		@include box-shadow(lighten($f_d-dark, 50%) 0 2px 2px);
 		@include transition(all 0.5s ease-out);
 	}
 	
