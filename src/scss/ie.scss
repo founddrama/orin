@@ -38,7 +38,13 @@ input {
 	}
 }
 
-// fixes the calendar in IE6+7
+// fixes the tables in IE6+7
 thead tr {
-	th, td { background: #222222; }
+	th, td { background: #222; }
+}
+tbody tr {
+	th, td { background: white; }
+}
+tfoot tr {
+	th, td { background: #DDD; }
 }
