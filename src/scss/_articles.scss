@@ -65,41 +65,6 @@ article {
 	footer, nav {
 		margin-bottom: $_48th;
 	}
-	
-	#comments-title,
-	.comment { clear: both; }
-	
-	#comments-title {
-		margin: {
-			top: $_24th;
-			bottom: $_48th
-		}
-	}
-	
-	.comment {
-		padding: 0 1em;
-		
-		&:nth-child(odd) { @include basic-linear-grader(white, lighten($f_d-desat, 50%), 92%); }
-		
-		a.permalink { float: right; }
-	}
-	.avatar {
-		background: white;
-		float: left;
-		margin: {
-			left: -1em;
-			right: 0.5em;
-		}
-	}
-	
-	#reply-title { padding-top: $_24th; }
-	
-	#commentform {
-		input,
-		textarea { display: block; }
-		
-		.required { color: $f_d-color; }
-	}
 }
 
 .post-edit-link,
