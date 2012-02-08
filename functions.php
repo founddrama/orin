@@ -155,14 +155,6 @@ function starkers_comment_close() {
 }
 
 /**
- * @since Orin 0.6
- */
-function orin_on_comment_form_before() {
-	echo '<div class="comments-ct">';
-}
-add_action( 'comment_form_before', 'orin_on_comment_form_before' );
-
-/**
  * Adjusts the comment_form() input types for HTML5.
  *
  * @since Orin 0.1-alpha
@@ -183,14 +175,6 @@ $fields =  array(
 return $fields;
 }
 add_filter('comment_form_default_fields', 'orin_fields');
-
-/**
- * @since Orin 0.6
- */
-function orin_on_comment_form_after() {
-	echo '</div>';
-}
-add_action( 'comment_form_after', 'orin_on_comment_form_after' );
 
 /**
  * Register widgetized areas.

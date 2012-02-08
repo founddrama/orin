@@ -1,5 +1,4 @@
-.comments-title,
-.comment { clear: both; }
+.comments-title, .comment { clear: both; }
 
 .comments-title {
   margin: {
@@ -10,9 +9,7 @@
 
 .comment {
   padding: 0 1em;
-  
   &:nth-child(odd) { @include basic-linear-grader(white, lighten($f_d-desat, 50%), 92%); }
-  
   .permalink { float: right; }
 }
 
@@ -25,11 +22,9 @@
   }
 }
 
-.comments-ct {
-  padding-top: $_24th;
+#reply-title { padding-top: $_24th; }
 
-  input,
-  textarea { display: block; }
-  
+.post {
+  input, textarea { display: block; }
   .required { color: $f_d-color; }
 }
