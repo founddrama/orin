@@ -26,7 +26,7 @@
 
 <?php if ( have_comments() ) : ?>
 			<?php /* STARKERS NOTE: The following h3 id is left intact so that comments can be referenced on the page */ ?>
-			<h3 id="comments-title"><?php
+			<h3 id="comments-title" class="comments-title"><?php
 			printf( _n( 'One Response to %2$s', '%1$s Responses to %2$s', get_comments_number(), 'starkers' ),
 			number_format_i18n( get_comments_number() ), '' . get_the_title() . '' );
 			?></h3>

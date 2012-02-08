@@ -1,7 +1,7 @@
-#comments-title,
+.comments-title,
 .comment { clear: both; }
 
-#comments-title {
+.comments-title {
   margin: {
     top: $_24th;
     bottom: $_48th
@@ -25,9 +25,9 @@
   }
 }
 
-#reply-title { padding-top: $_24th; }
+.comments-ct {
+  padding-top: $_24th;
 
-#commentform {
   input,
   textarea { display: block; }
   
