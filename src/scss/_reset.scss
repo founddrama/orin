@@ -29,7 +29,6 @@ article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
   @extend .zero;
-  font-size: 100%;
   vertical-align: baseline;
   background: transparent;
 }

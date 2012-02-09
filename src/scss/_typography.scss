@@ -51,20 +51,21 @@ $_font-size: 16px;
 // base font-size:
 body { font-size: $_font-size; }
 
-sup, sub { font-size: 0.8em; }
+/**
+ * Utils
+ */
+.smaller { font-size: 0.8em; }
+.bigger { font-size: 1.2em; }
+
+// some non-semantic but for backward-compat:
+sup, sub, small { @extend .smaller; }
+big { @extend .bigger; }
 sup { vertical-align: super; }
 sub { vertical-align: sub; }
 
-// non-semantic but for backward-compat:
-small { font-size: 0.8em; }
-big { font-size: 1.2em; }
-
 .masthead li { font-size: 14px; }
 
-nav { font-size: $_font-size; }
-
 article {
-  font-size: $_font-size;
   line-height: $_font-size * 1.5;
   header, footer, blockquote { font-size: 0.875em; }
   blockquote blockquote { font-size: 1em; }
@@ -72,6 +73,5 @@ article {
 
 .form-allowed-tags { font-size: 0.8125em; }
 
-.comment .permalink { font-size: 0.75em; }
-
+.comment .permalink,
 .orin-footer { font-size: 0.75em; }

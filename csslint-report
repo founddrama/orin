@@ -1,102 +1,107 @@
 
 
-csslint: There are 20 problems in style.css.
+csslint: There are 21 problems in style.css.
 
 style.css
-1: warning at line 109, col 3
+1: warning at line 108, col 3
 Unknown property 'border-spacing'.
   border-spacing: 0;
 
 style.css
-2: warning at line 460, col 50
+2: warning at line 451, col 50
 Unqualified attribute selectors are known to be slow.
 .orin-button, button, input[type="button"], input[type="file"], input[type="reset"], input[type="submit"] {
 
 style.css
-3: warning at line 460, col 70
+3: warning at line 451, col 70
 Unqualified attribute selectors are known to be slow.
 .orin-button, button, input[type="button"], input[type="file"], input[type="reset"], input[type="submit"] {
 
 style.css
-4: warning at line 460, col 91
+4: warning at line 451, col 91
 Unqualified attribute selectors are known to be slow.
 .orin-button, button, input[type="button"], input[type="file"], input[type="reset"], input[type="submit"] {
 
 style.css
-5: warning at line 460, col 28
+5: warning at line 451, col 28
 Unqualified attribute selectors are known to be slow.
 .orin-button, button, input[type="button"], input[type="file"], input[type="reset"], input[type="submit"] {
 
 style.css
-6: warning at line 488, col 40
+6: warning at line 479, col 40
 Unqualified attribute selectors are known to be slow.
 .orin-button:hover, button:hover, input[type="button"]:hover, input[type="file"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
 
 style.css
-7: warning at line 488, col 68
+7: warning at line 479, col 68
 Unqualified attribute selectors are known to be slow.
 .orin-button:hover, button:hover, input[type="button"]:hover, input[type="file"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
 
 style.css
-8: warning at line 488, col 94
+8: warning at line 479, col 94
 Unqualified attribute selectors are known to be slow.
 .orin-button:hover, button:hover, input[type="button"]:hover, input[type="file"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
 
 style.css
-9: warning at line 488, col 121
+9: warning at line 479, col 121
 Unqualified attribute selectors are known to be slow.
 .orin-button:hover, button:hover, input[type="button"]:hover, input[type="file"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
 
 style.css
-10: warning at line 508, col 19
+10: warning at line 499, col 19
 Unqualified attribute selectors are known to be slow.
 .orin-field, input[type="text"], input[type="email"], input[type="search"], input[type="url"], textarea {
 
 style.css
-11: warning at line 508, col 39
+11: warning at line 499, col 39
 Unqualified attribute selectors are known to be slow.
 .orin-field, input[type="text"], input[type="email"], input[type="search"], input[type="url"], textarea {
 
 style.css
-12: warning at line 508, col 60
+12: warning at line 499, col 60
 Unqualified attribute selectors are known to be slow.
 .orin-field, input[type="text"], input[type="email"], input[type="search"], input[type="url"], textarea {
 
 style.css
-13: warning at line 508, col 82
+13: warning at line 499, col 82
 Unqualified attribute selectors are known to be slow.
 .orin-field, input[type="text"], input[type="email"], input[type="search"], input[type="url"], textarea {
 
 style.css
-14: warning at line 524, col 25
+14: warning at line 515, col 25
 Unqualified attribute selectors are known to be slow.
 .orin-field:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="search"]:focus, input[type="url"]:focus, textarea:focus {
 
 style.css
-15: warning at line 524, col 51
+15: warning at line 515, col 51
 Unqualified attribute selectors are known to be slow.
 .orin-field:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="search"]:focus, input[type="url"]:focus, textarea:focus {
 
 style.css
-16: warning at line 524, col 78
+16: warning at line 515, col 78
 Unqualified attribute selectors are known to be slow.
 .orin-field:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="search"]:focus, input[type="url"]:focus, textarea:focus {
 
 style.css
-17: warning at line 524, col 106
+17: warning at line 515, col 106
 Unqualified attribute selectors are known to be slow.
 .orin-field:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="search"]:focus, input[type="url"]:focus, textarea:focus {
 
 style.css
-18: warning at line 758, col 1
+18: warning at line 679, col 1
+Don't use IDs in selectors.
+#reply-title {
+
+style.css
+19: warning at line 748, col 1
 Don't use IDs in selectors.
 #searchform label {
 
 style.css
-19: warning at line 860, col 1
+20: warning at line 843, col 1
 Don't use IDs in selectors.
 #next {
 
 style.css
-20: warning
-Too many font-size declarations (21), abstraction needed.
+21: warning
+Too many font-size declarations (15), abstraction needed.
