@@ -1,6 +1,6 @@
 
 
-csslint: There are 21 problems in style.css.
+csslint: There are 24 problems in style.css.
 
 style.css
 1: warning at line 108, col 3
@@ -73,17 +73,17 @@ Unqualified attribute selectors are known to be slow.
 .orin-field:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="search"]:focus, input[type="url"]:focus, textarea:focus {
 
 style.css
-15: warning at line 515, col 51
+15: warning at line 515, col 78
 Unqualified attribute selectors are known to be slow.
 .orin-field:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="search"]:focus, input[type="url"]:focus, textarea:focus {
 
 style.css
-16: warning at line 515, col 78
+16: warning at line 515, col 106
 Unqualified attribute selectors are known to be slow.
 .orin-field:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="search"]:focus, input[type="url"]:focus, textarea:focus {
 
 style.css
-17: warning at line 515, col 106
+17: warning at line 515, col 51
 Unqualified attribute selectors are known to be slow.
 .orin-field:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="search"]:focus, input[type="url"]:focus, textarea:focus {
 
@@ -93,15 +93,29 @@ Don't use IDs in selectors.
 #reply-title {
 
 style.css
-19: warning at line 748, col 1
+19: warning at line 735, col 17
+Heading (h3) should not be qualified.
+.orin-footer li h3 {
+
+style.css
+20: warning at line 735, col 17
+Heading (h3) has already been defined.
+.orin-footer li h3 {
+
+style.css
+21: warning at line 752, col 1
 Don't use IDs in selectors.
 #searchform label {
 
 style.css
-20: warning at line 843, col 1
+22: warning at line 847, col 1
 Don't use IDs in selectors.
 #next {
 
 style.css
-21: warning
+23: warning
 Too many font-size declarations (15), abstraction needed.
+
+style.css
+24: warning
+You have 2 h3s defined in this stylesheet.

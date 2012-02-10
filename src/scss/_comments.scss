@@ -24,7 +24,7 @@
 
 #reply-title { padding-top: $_24th; }
 
-.post {
+.post, .page {
   input, textarea { display: block; }
   .required { color: $f_d-color; }
 }

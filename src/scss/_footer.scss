@@ -5,7 +5,7 @@
   padding-bottom: 2em;
     
   text-align: center;
-  
+
   section {
     overflow: hidden;
     
@@ -22,6 +22,11 @@
   li {
     margin-bottom: $_24th;
     color: $f_d-grey;
+
+    h3 {
+      color: $f_d-dark;
+      @include text-shadow(none);
+    }
     
     li {
       margin: {
