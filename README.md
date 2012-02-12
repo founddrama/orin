@@ -15,16 +15,20 @@ too and choose fork it for your own experiments.
 
 **Author URI:** <http://blog.founddrama.net/>
 
-**Version:** 0.5
+**Version:** 0.6
 
 ## Notes
-* CSS is developed and managed using [Sass](http://sass-lang.com/); the author
-  recommends that you work it into your deploy script.
 
-## @todo
-* The site references minified versions of certain resources (_e.g._, `css` and
-  `js` files); the author recommends a build script to handle creating these
-  minified files and putting them in the right place
-  * A sample deploy script is included at `./bin/deploy.sh`
-  * see also : <http://developer.yahoo.com/yui/compressor/> and/or
-    <https://github.com/yui/yuicompressor>
+CSS is developed and managed using [Sass](http://sass-lang.com/) and
+[Compass](http://compass-style.org/); the author recommends that you work it
+into your deploy script.
+
+## Your Homework
+
+The site references minified versions of certain resources (_e.g._, `css` and
+`js` files); the author recommends a build script to handle creating these
+minified files and putting them in the right place
+
+* A sample deploy script is included at `./bin/deploy.sh`
+* see also : <http://developer.yahoo.com/yui/compressor/> and/or
+  <https://github.com/yui/yuicompressor>

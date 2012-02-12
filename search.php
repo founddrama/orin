@@ -10,7 +10,7 @@
 get_header(); ?>
 
 <?php if ( have_posts() ) : ?>
-		<h1><?php printf( __( 'Search Results for: %s', 'starkers' ), '' . get_search_query() . '' ); ?></h1>
+		<h2><?php printf( __( 'Search Results for: %s', 'starkers' ), '' . get_search_query() . '' ); ?></h2>
 			<?php
 				get_template_part( 'loop', 'search' );
 			?>

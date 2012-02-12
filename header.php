@@ -45,21 +45,21 @@
 
 <body <?php body_class(); ?>>
 
-	<header id="masthead">
+	<header class="masthead">
 		<hgroup>
 			<h1><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2><?php bloginfo( 'description' ); ?></h2>
+			<div class="desc"><?php bloginfo( 'description' ); ?></div>
 		</hgroup>
 
 		<?php /* Our navigation menu.  If one isn't filled out, wp_nav_menu falls back to the 'starkers_menu' function which can be found in functions.php.  The menu assiged to the primary position is the one used.  If none is assigned, the menu with the lowest ID is used.  */ ?>
 		<?php wp_nav_menu( array( 'container' => 'nav', 'fallback_cb' => 'starkers_menu', 'theme_location' => 'primary' ) ); ?>
 		
 		<?php if ( is_active_sidebar( 'masthead-widget-area' ) ) : ?>
-			<section id="masthead-widgets">
+			<section class="masthead-widgets">
 				<?php dynamic_sidebar( 'masthead-widget-area' ); ?>
 			</section>
 		<?php endif; ?>
 	</header>
-	<div id="orin-ct-wrap">
-		<section id="orin-container">
-			<section id="orin-chronology">
+	<div class="orin-ct-wrap">
+		<section class="orin-container">
+			<section class="orin-chronology">
