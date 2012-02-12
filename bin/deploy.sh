@@ -28,13 +28,17 @@ git pull --verbose
 
 # .css from .scss
 if [ ! -d css ]; then
-	echo "Missing css directory!"
-	echo "[bash] Attempting to create orin/css:"
-	mkdir css
+  echo "[WARNING] Missing css directory!"
+  echo "[bash] Attempting to create orin/css:"
+  mkdir css
 fi
 echo "[compass] Compiling CSS from Sass/SCSS sources..."
 compass compile --sass-dir src/scss --css-dir css -e production -s compressed --no-line-comments
-echo "[bash] Moving style.css to Orin theme's root..."
-mv css/style.css style.css
+
+# in the event that config.rb goes missing...
+if [ -e css/style.css ]; then
+  echo "[bash] Moving style.css to Orin theme's root..."
+  mv css/style.css style.css
+fi
 
 exit 0;
