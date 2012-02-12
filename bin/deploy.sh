@@ -1,26 +1,25 @@
 #!/bin/sh
 # This is a sample deploy script for the Orin WordPress blog theme
 # @requires {com.yahoo.platform.yui.compressor.YUICompressor}
-# 			<http://developer.yahoo.com/yui/compressor/>
+#       <http://developer.yahoo.com/yui/compressor/>
 # @requires {sass} and {haml}
-#			<http://sass-lang.com/>
+#     <http://sass-lang.com/>
 
 # configure as needed:
 BLOG_ROOT=${HOME}/blog.founddrama.net/
-WP_THEMES=${BLOG_ROOT}wp-content/themes/
+WP_THEMES=${BLOG_ROOT}wp-content/themes
 YUI_COMPRESSOR=${HOME}/build/bin/yuicompressor-2.4.2.jar
 
 # get into the right dir
 cd ${WP_THEMES}
 
 if [ ! -d orin ]; then
-	echo "Missing local repository!"
-	echo "(How do you even have this deploy script?)"
-	echo "Attempting to clone Orin theme from github:"
-	git clone --verbose -- ssh://git@github.com:founddrama/orin.git
+  echo "[WARNING] Missing local repository!"
+  echo "Attempting to clone Orin theme from github:"
+  git clone --verbose -- ssh://git@github.com:founddrama/orin.git
 fi
 
-cd orin
+cd ${WP_THEMES}/orin
 
 # update to the latest
 echo "[git] Updating Orin theme from the latest in the github master branch:"
