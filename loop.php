@@ -10,7 +10,7 @@
 
 <?php /* If there are no posts to display, such as an empty archive page */ ?>
 <?php if ( ! have_posts() ) : ?>
-		<h1><?php _e( 'Not Found', 'starkers' ); ?></h1>
+		<h2><?php _e( 'Not Found', 'starkers' ); ?></h2>
 			<p><?php _e( 'Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post.', 'starkers' ); ?></p>
 			<?php get_search_form(); ?>
 <?php endif; ?>

@@ -9,9 +9,9 @@
 
 get_header(); ?>
 
-				<h1><?php
+				<h2><?php
 					printf( __( 'Category Archives: %s', 'starkers' ), '' . single_cat_title( '', false ) . '' );
-				?></h1>
+				?></h2>
 				<?php
 					$category_description = category_description();
 					if ( ! empty( $category_description ) )

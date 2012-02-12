@@ -19,26 +19,32 @@
 
 // gets the buttons on the same line as the field (fixes IE7, not really IE6)
 .ie-btn-fix {
-	border: 0;
-	padding: 0;
+  border: 0;
+  padding: 0;
 }
 button { @extend .ie-btn-fix; }
 input {
-	&[type="button"],
-	&[type="file"],
-	&[type="reset"],
-	&[type="submit"] {
-		@extend .ie-btn-fix;
-	}
+  &[type="button"],
+  &[type="file"],
+  &[type="reset"],
+  &[type="submit"] {
+    @extend .ie-btn-fix;
+  }
 
-	&[type="text"] {
-		border-width: 2px;
-		padding: 0;
-		margin: 0;
-	}
+  &[type="text"] {
+    border-width: 2px;
+    padding: 0;
+    margin: 0;
+  }
 }
 
-// fixes the calendar in IE6+7
+// fixes the tables in IE6+7
 thead tr {
-	th, td { background: #222222; }
+  th, td { background: #222; }
+}
+tbody tr {
+  th, td { background: white; }
+}
+tfoot tr {
+  th, td { background: #DDD; }
 }

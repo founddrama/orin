@@ -6,60 +6,49 @@
  */
 
 /**
- * Utils
- */
-.smaller { font-size: 0.8em; }
-
-/**
  * WP-Calendar
  */
-$_foot_border: 0;
-#prev, #wp-calendar .pad { border-right: $_foot_border; }
-#next, #wp-calendar .pad { border-left: $_foot_border; }
-
-footer #wp-calendar {
-	color: $f_d-dark;
-	a { color: $f_d-color; }
-}
+//#wp-calendar tfoot td:last-of-type { text-align: right; }
+#next { text-align: right; }
 
 /**
  * Delicious.com
  */
 .delicious li {
-	list-style-type: circle;
+  list-style-type: circle;
 }
 .delicious-link,
 .delicious-extended {
-	margin-bottom: 6px;
+  margin-bottom: 6px;
 }
 .delicious-tags {
-	@extend .smaller;
-	a {
-		&:before { content: "#"; }
-		&:after { content: ","; }
-		&:last-of-type:after { content: ""; }
-	}
+  @extend .smaller;
+  a {
+    &:before { content: "#"; }
+    &:after { content: ","; }
+    &:last-of-type:after { content: ""; }
+  }
 }
 
 /**
  * Amazon Affiliates
  */
 .amazon-beacon {
-	background: transparent; // !important
-	border: none;            // !important
-	margin: 0;               // !important
-	padding: 0;              // !important
+  background: transparent; // !important
+  border: none;            // !important
+  margin: 0;               // !important
+  padding: 0;              // !important
 }
 
 /**
  * WP-Footnotes
  */
 .footnotes {
-	border: {
-		top: 1px solid $f_d-grey;
-		top-color: rgba($f_d-color, 0.5);
-	}
-	padding-top: $_48th;
+  border: {
+    top: 1px solid $f_d-grey;
+    top-color: rgba($f_d-color, 0.5);
+  }
+  padding-top: $_48th;
 }
 .footnote { @extend .smaller; }
 
@@ -67,7 +56,7 @@ footer #wp-calendar {
  * F_D search haiku
  */
 .search-haiku {
-	text-align: center;
-	font-style: italic;
+  text-align: center;
+  font-style: italic;
 }
 .search-haiku-defined { @extend .smaller; }

@@ -1,116 +1,74 @@
 article {
-	@include border-radius(8px);
-	
-	header, footer { width: 100%; }
-	
-	header {
-		margin-bottom: 2em;
-		h1, h2 {
-			@include text-shadow($f_d-grey 1px 0 1px);
-		}
-	}
-	
-	// $_font-size @ _typography
-	p, ol, ul { margin-bottom: $_font-size * 1.5; }
-	
-	a img:hover {
-		@include box-shadow(lighten($f_d-dark, 25%) 0 4px 4px);
-		@include rotate(-1deg);
-		-ms-transition: all 0.5s ease-out;
-		@include transition(all 0.5s ease-out);
-	}
-		
-	img {
-		background: white;
-		border: 1px solid $f_d-grey;
-		padding: 4px;
-		@include box-shadow(lighten($f_d-dark, 50%) 0 2px 2px);
-		-ms-transition: all 0.5s ease-out;
-		@include transition(all 0.5s ease-out);
-	}
-	
-	blockquote {
-		color: white;
-		padding: 1em;
-		margin: 2em;
-		border: 0.25em solid white;
-		@include article-shadow(4px, $f_d-grey);
-		@include basic-linear-grader(darken($f_d-color, 10%), $f_d-dark, 92%);
-		blockquote {
-			@include article-shadow(4px, $f_d-dark);
-		}
-		
-		a { color: $f_d-grey; }
-		.wp-caption { color: $f_d-dark; }
-		
-		p:last-child { margin-bottom: 0; }
-	}
-	
-	q {
-		font-style: italic;
-		color: $f_d-dark;
-	}
-	
-	ol, ul {
-		list-style-position: outside;
-		margin-left: 1.5em;
-	}
-	
-	footer {
-		clear: both;
-		padding: $_48th / 2 2px;
-		background: white;
-	}
-	
-	footer, nav {
-		margin-bottom: $_48th;
-	}
-	
-	#comments-title,
-	.comment { clear: both; }
-	
-	#comments-title {
-		margin: {
-			top: $_24th;
-			bottom: $_48th
-		}
-	}
-	
-	.comment {
-		padding: 0 1em;
-		
-		&:nth-child(odd) { @include basic-linear-grader(white, lighten($f_d-desat, 50%), 92%); }
-		
-		a.permalink { float: right; }
-	}
-	.avatar {
-		background: white;
-		float: left;
-		margin: {
-			left: -1em;
-			right: 0.5em;
-		}
-	}
-	
-	#reply-title { padding-top: $_24th; }
-	
-	#commentform {
-		input,
-		textarea { display: block; }
-		
-		.required { color: $f_d-color; }
-	}
+  @include border-radius(8px);
+  
+  header { margin-bottom: 2em; }
+  
+  // $_font-size @ _typography
+  p, ol, ul { margin-bottom: $_font-size * 1.5; }
+  
+  a img:hover {
+    @include box-shadow(lighten($f_d-dark, 25%) 0 4px 4px);
+    @include rotate(-1deg);
+    -ms-transition: all 0.5s ease-out;
+    @include transition(all 0.5s ease-out);
+  }
+    
+  img {
+    background: white;
+    border: 1px solid $f_d-grey;
+    padding: 4px;
+    @include box-shadow(lighten($f_d-dark, 50%) 0 2px 2px);
+    -ms-transition: all 0.5s ease-out;
+    @include transition(all 0.5s ease-out);
+  }
+  
+  blockquote {
+    color: white;
+    padding: 1em;
+    margin: 2em;
+    border: 0.25em solid white;
+    @include article-shadow(4px, $f_d-grey);
+    @include basic-linear-grader(darken($f_d-color, 10%), $f_d-dark, 92%);
+    blockquote {
+      @include article-shadow(4px, $f_d-dark);
+    }
+    
+    a { color: $f_d-grey; }
+    .wp-caption { color: $f_d-dark; }
+    
+    p:last-child { margin-bottom: 0; }
+  }
+  
+  q {
+    font-style: italic;
+    color: $f_d-dark;
+  }
+  
+  ol, ul {
+    list-style-position: outside;
+    margin-left: 1.5em;
+  }
+  
+  footer {
+    clear: both;
+    padding: $_48th / 2 2px;
+    background: white;
+  }
+  
+  footer, nav {
+    margin-bottom: $_48th;
+  }
 }
 
 .post-edit-link,
 .post-comment-link { float: right; }
 
 .single-post article footer {
-	@include basic-linear-grader(white, rgba($f_d-grey, .6), 92%);
-	
-	$_border: 1px dotted $f_d-dark;
-	border: {
-		top: $_border;
-		bottom: $_border;
-	}
+  @include basic-linear-grader(white, rgba($f_d-grey, .6), 92%);
+  
+  $_border: 1px dotted $f_d-dark;
+  border: {
+    top: $_border;
+    bottom: $_border;
+  }
 }

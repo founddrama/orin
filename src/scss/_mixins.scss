@@ -3,14 +3,18 @@
 // Compass imports //
 @import "compass/css3";
 
+@mixin _sans-serif {
+  font-family: "Gill Sans", "Lucida Grande", "Trebuchet MS", sans-serif;
+}
+
 /**
  * @param {Number} $strength (in px or %)
  * @param {Color} $color
  */
 @mixin article-shadow($strength, $color) {
-	@include box-shadow($color 0 $strength $strength);
-	-ms-transition: box-shadow 0.5s ease-out;
-	@include transition(box-shadow 0.5s ease-out);
+  @include box-shadow($color 0 $strength $strength);
+  -ms-transition: box-shadow 0.5s ease-out;
+  @include transition(box-shadow 0.5s ease-out);
 }
 
 /**
@@ -18,9 +22,9 @@
 * @param {Color} $color
  */
 @mixin nav-shadow($strength, $color) {
-	@include box-shadow($color $strength 0 abs($strength));
-	-ms-transition: box-shadow 0.5s ease-out;
-	@include transition(box-shadow 0.5s ease-out);
+  @include box-shadow($color $strength 0 abs($strength));
+  -ms-transition: box-shadow 0.5s ease-out;
+  @include transition(box-shadow 0.5s ease-out);
 }
 
 
@@ -30,6 +34,6 @@
  * @param {Number/Percent} $stop - requires a unit!
  */
 @mixin basic-linear-grader($base_color, $accent_color, $stop) {
-	background: $base_color;
-	@include background(linear-gradient($accent_color, $base_color $stop));
+  background: $base_color;
+  @include background(linear-gradient($accent_color, $base_color $stop));
 }
