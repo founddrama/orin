@@ -24,14 +24,7 @@ cd orin
 
 # update to the latest
 echo "[git] Updating Orin theme from the latest in the github master branch:"
-git pull --verbose	
-
-# minify the .js files
-#for j in `find . -name *[^min].js` ; do
-#	minName=${j/%\.js/.min.js}
-#	echo "Compressing '${j}' to '${minName}':"
-#	java -jar ${YUI_COMPRESSOR} -o ${minName} ${j}
-#done
+git pull --verbose  
 
 # .css from .scss
 if [ ! -d css ]; then
