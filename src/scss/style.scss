@@ -40,11 +40,21 @@ a {
   float: right;
   width: $_960_base;
   margin-right: 2em;
+  @media all and (max-width: 1023px) {
+    & {
+      float: none;
+      width: auto;
+      margin: 0 1em;
+    }
+  }
 }
 
 .orin-chronology {
   display: inline-block;
   width: $_3rd * 2;
+  @media all and (max-width: 1023px) {
+    & { width: auto; }
+  }
   
   .page-decorator,
   .post-decorator {
@@ -61,6 +71,14 @@ a {
     border: 1px solid $f_d-grey;
     
     &:hover { @include article-shadow(24px, rgba(saturate($f_d-color, 25%), .8)); }
+
+    @media all and (max-width: 1023px) {
+      & {
+        padding: $_24th / 2;
+        padding-top: $_24th;
+        margin-bottom : 32px;
+      }
+    }
   }
   
   nav a {

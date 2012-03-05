@@ -37,6 +37,10 @@ article {
     .wp-caption { color: $f_d-dark; }
     
     p:last-child { margin-bottom: 0; }
+
+    @media all and (max-width: 1023px) {
+      & { margin: 1em 0; }
+    }
   }
   
   q {

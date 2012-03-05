@@ -24,5 +24,12 @@ aside {
   .orin-container & ul {
     overflow: hidden;
   }
+
+  @media all and (max-width: 1023px) {
+    & {
+      float: none;
+      width: auto;
+    }
+  }
 }
 

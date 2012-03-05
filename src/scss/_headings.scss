@@ -36,6 +36,10 @@ h1 {
     @include text-shadow(lighten($f_d-color, 10%) 4px 0 4px, lighten($f_d-color, 10%) -4px 0 4px);
     text-decoration: none;
   }
+
+  @media all and (max-width: 1023px) {
+    & { margin-left: $_12th / 2; }
+  }
 }
 
 h2 {

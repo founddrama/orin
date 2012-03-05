@@ -3,6 +3,9 @@
   @include basic-linear-grader(white, $f_d-grey, 128px);
   height: $_sect_h;
   position: relative;
+  //@media all and (max-width: 1023px) {
+  //  & { height: 8em; }
+  //}
   
   hgroup .desc {
     @extend ._sans-serif;
@@ -12,11 +15,22 @@
     margin-left: $_3rd / 2;
     margin-top: $_12th;
     color: $f_d-dark;
+
+    @media all and (max-width: 1023px) {
+      & { margin-left: $_12th; }
+    }
   }
   
   nav ul {
     position: absolute;
     right: $_24th;
+    @media all and (max-width: 1023px) {
+      & {
+        right: 0;
+        left: 0;
+        bottom: 0;
+      }
+    }
     
     li {
       float: left;
