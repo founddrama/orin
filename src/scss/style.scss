@@ -44,16 +44,21 @@ a {
     & {
       float: none;
       width: auto;
-      margin: 0 1em;
+      margin-right: 0;
+      padding: 0 1em;
     }
   }
 }
 
 .orin-chronology {
   display: inline-block;
+  float: left;
   width: $_3rd * 2;
   @media all and (max-width: 1023px) {
-    & { width: auto; }
+    & {
+      float: none;
+      width: 100%;
+    }
   }
   
   .page-decorator,
