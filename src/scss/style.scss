@@ -147,6 +147,13 @@ textarea {
   @extend .orin-field;
 }
 
+@media all and (max-width: 1023px) {
+  input, textarea {
+    width: 100%;
+    font-size: 2em;
+  }
+}
+
 // inside : #orin-chronology 
 @import "articles";
 @import "comments";

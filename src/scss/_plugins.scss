@@ -8,8 +8,15 @@
 /**
  * WP-Calendar
  */
-//#wp-calendar tfoot td:last-of-type { text-align: right; }
 #next { text-align: right; }
+@media all and (max-width: 1023px) {
+  #wp-calendar {
+    width: 100%;
+    font-size: 2em;
+    tbody td { text-align: center; }
+  }
+}
+
 
 /**
  * Delicious.com
