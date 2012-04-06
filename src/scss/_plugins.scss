@@ -14,12 +14,33 @@
 /**
  * Delicious.com
  */
+.delicious {
+  margin-left: 0;
+  li {
+    list-style-type: none;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    border-bottom-color: $f_d-desat;
+    border-bottom: 1px solid transparentize($f_d-desat, 0.5);
+    &:last-of-type {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+  }
+}
 .delicious li {
   list-style-type: circle;
 }
 .delicious-link,
 .delicious-extended {
   margin-bottom: 6px;
+}
+.delicious-link {
+  font-weight: bold;
+}
+.delicious-extended {
+  .orin-chronology & { font-size: 1em; }
 }
 .delicious-tags {
   @extend .smaller;
