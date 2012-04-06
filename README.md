@@ -15,7 +15,7 @@ too and choose fork it for your own experiments.
 
 **Author URI:** <http://blog.founddrama.net/>
 
-**Version:** 0.6
+**Version:** 0.6.1.1
 
 ## Notes
 
