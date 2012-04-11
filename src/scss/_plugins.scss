@@ -9,14 +9,11 @@
  * WP-Calendar
  */
 #next { text-align: right; }
-@media all and (max-width: 1023px) {
-  #wp-calendar {
-    width: 100%;
-    font-size: 2em;
-    tbody td { text-align: center; }
-  }
+#wp-calendar {
+  width: 100%;
+  font-size: 2em;
+  tbody td { text-align: center; }
 }
-
 
 /**
  * Delicious.com

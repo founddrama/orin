@@ -1,6 +1,6 @@
 aside {
-  float: right;
-  width: $_3rd - $_48th;
+  float: none;
+  width: 100%;
   
   ul { list-style-type: none; }
   
@@ -23,13 +23,6 @@ aside {
   }
   .orin-container & ul {
     overflow: hidden;
-  }
-
-  @media all and (max-width: 1023px) {
-    & {
-      float: none;
-      width: 100%;
-    }
   }
 }
 
