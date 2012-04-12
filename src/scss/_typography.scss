@@ -75,3 +75,10 @@ article {
 
 .comment .permalink,
 .orin-footer { font-size: 0.75em; }
+
+@media all and (max-width: 1023px) {
+  .masthead li, .orin-chronology, .orin-footer {
+    font-size: 1.5em;
+    line-height: 1.5em * 1.5;
+  }
+}

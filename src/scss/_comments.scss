@@ -25,6 +25,10 @@
 #reply-title { padding-top: $_24th; }
 
 .post, .page {
-  input, textarea { display: block; }
+  input, textarea {
+    display: block;
+    width: 100%;
+    font-size: 2em;
+  }
   .required { color: $f_d-color; }
 }

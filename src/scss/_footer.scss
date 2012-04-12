@@ -11,10 +11,10 @@
     
     &>ul {
       text-align: left;
-      width: $_4th;
-      display: inline-block;
+      width: auto;
+      display: block;
       vertical-align: top;
-      margin: 2em 0;
+      margin: 2em;
       list-style-type: none;
     }
   }

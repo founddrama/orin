@@ -22,7 +22,7 @@ h2, h3, h4, h5, h6 {
 h1 {
   @include h-font-base(6em, 1em);
   position: absolute;
-  margin-left: $_12th;
+  margin-left: $_12th / 2;
   @include text-shadow($f_d-dark 2px 0 2px, $f_d-dark -2px 0 2px);
   -ms-transition: 0.3s linear;
   @include transition(0.3s linear);
