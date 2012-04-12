@@ -3,20 +3,25 @@
   @include basic-linear-grader(white, $f_d-grey, 128px);
   height: $_sect_h;
   position: relative;
+  //@media all and (max-width: 1023px) {
+  //  & { height: 8em; }
+  //}
   
   hgroup .desc {
     @extend ._sans-serif;
     font-size: 1.5em;
     font-weight: bold;
     position: absolute;
-    margin-left: $_3rd / 2;
+    margin-left: $_12th;
     margin-top: $_12th;
     color: $f_d-dark;
   }
   
   nav ul {
     position: absolute;
-    right: $_24th;
+    right: 0;
+    left: 0;
+    bottom: 0;
     
     li {
       float: left;

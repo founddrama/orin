@@ -1,0 +1,83 @@
+// Compass imports //
+@import "compass/css3";
+// imports //
+@import "variables";
+@import "layout";
+@import "mixins";
+
+// headings
+h1 { margin-left: $_12th; }
+
+// masthead
+.masthead {
+  hgroup .desc {
+    margin-left: $_3rd / 2;
+  }
+
+  nav ul {
+    right: $_24th;
+    left: auto;
+    bottom: auto;
+  }
+}
+
+// style
+.orin-container {
+  float: right;
+  width: $_960_base;
+  margin-right: 2em;
+  padding: 0;
+}
+
+.orin-chronology {
+  float: left;
+  width: $_3rd * 2;
+
+  .page-decorator, .post-decorator {
+    padding: $_24th;
+    padding-bottom: $_24th / 2;
+    margin-bottom: 64px;
+  }
+}
+
+input, textarea {
+  width: auto;
+  font-size: 12px;
+}
+
+// articles
+article blockquote {
+  margin: 2em;
+}
+
+// comments
+.post, .page {
+  input, textarea {
+    width: auto;
+    font-size: 12px;
+  }
+}
+
+// sidebar
+aside {
+  float: right;
+  width: $_3rd - $_48th;
+}
+
+// footer
+.orin-footer section>ul {
+  width: $_4th;
+  margin: 2em 0;
+  display: inline-block;
+}
+
+// widgets
+.masthead-widgets {
+  display: block;
+}
+
+#wp-calendar {
+  width: auto;
+  font-size: 1em;
+  tbody td { text-align: left; }
+}

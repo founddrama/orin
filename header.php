@@ -12,6 +12,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
+<meta name="viewport" content="width=device-width, maximum-scale=0.5">
 <title><?php
 
 	wp_title( '|', true, 'right' );
@@ -19,6 +20,10 @@
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+<link rel="stylesheet" type="text/css" media="only screen and (min-width:1024px)" href="<?php bloginfo('template_directory'); ?>/css/mq.css" />
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" media="screen" href="<?php bloginfo('template_directory'); ?>/css/mq.css" />
+<![endif]-->
 <!--[if lte IE 7]>
 <link rel="stylesheet" type="text/css" media="screen" href="<?php bloginfo('template_directory'); ?>/css/ie.css" />
 <![endif]-->
