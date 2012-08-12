@@ -92,3 +92,10 @@
   color: $f_d-color;
   @include box-shadow($f_d-grey 1px 0 12px 0 inset);
 }
+
+/**
+ * "Reset" a Gist font-size:
+ */
+.gist-data pre {
+  font-size: 12px;
+}
