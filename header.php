@@ -12,7 +12,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
-<meta name="viewport" content="width=device-width, maximum-scale=0.5">
+<meta name="viewport" content="width=device-width, initial-scale=0.5">
 <title><?php
 
 	wp_title( '|', true, 'right' );
