@@ -6,6 +6,13 @@
 .alignleft    { float: left; margin: 0 20px 20px 0; }
 .alignright   { float: right; margin: 0 0 20px 20px; }
 .wp-caption   { border: 1px solid #999; text-align: center; background: #eee; padding: 10px; margin: 10px; }
+.wp-caption-text {
+  // should this be in "plugins"?
+  // and/or do a SMACSS re-factor and put it in modules?
+  @extend ._sans-serif;
+  font-size: 0.66em;
+  margin-bottom: 0.66em;
+}
 
 // pseudo grid units - aping @see 960.gs
 $_960_base: 960px;
