@@ -62,6 +62,7 @@ sup, sub, small { @extend .smaller; }
 big { @extend .bigger; }
 sup { vertical-align: super; }
 sub { vertical-align: sub; }
+sup, sub { line-height: 1em; }
 
 .masthead li { font-size: 14px; }
 

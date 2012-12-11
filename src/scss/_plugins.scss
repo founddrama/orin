@@ -20,7 +20,7 @@
  */
 .delicious {
   margin-left: 0;
-  li {
+  & > li {
     list-style-type: none;
     margin-bottom: 1em;
     padding-bottom: 1em;
