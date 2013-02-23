@@ -99,3 +99,15 @@
 .gist-data pre {
   font-size: 12px;
 }
+
+.gist {
+  table {
+    width: 100%;
+    table-layout: fixed;
+    margin-bottom: 0;
+  }
+
+  .line-numbers {
+    width: 1em;
+  }
+}
