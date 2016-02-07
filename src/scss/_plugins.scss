@@ -106,8 +106,12 @@
     table-layout: fixed;
     margin-bottom: 0;
   }
+  
+  tr {
+    background: transparent;
+  }
 
-  .line-numbers {
-    width: 1em;
+  .blob-code {
+    padding: 1px 10px 1px 20px !important;
   }
 }
