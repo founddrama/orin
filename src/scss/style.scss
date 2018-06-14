@@ -13,8 +13,8 @@ Tags: orin, html5, css3, responsive
 @import "variables";
 @import "mixins";
 @import "reset";
-@import "typography";
 @import "layout";
+@import "typography";
 
 body {
   background-color: $f_d-color;
