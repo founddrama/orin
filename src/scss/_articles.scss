@@ -47,6 +47,8 @@ article {
   ol, ul {
     list-style-position: outside;
     margin-left: 1.5em;
+    
+    ol, ul { margin-bottom: 0; }
   }
   
   footer {
