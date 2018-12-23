@@ -105,3 +105,13 @@
     padding: 1px 10px 1px 20px !important;
   }
 }
+
+/**
+ * Flickr photo embeds
+ */
+.flickr-embed-frame + script + p {
+  // if the `iframe` is in a `p` then we don't need this
+  // b/c the `p` has `margin-bottom: 24px`
+  // but we _do_ need it if there's no `p`
+    margin-top: 24px;
+}
