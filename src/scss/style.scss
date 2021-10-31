@@ -69,6 +69,15 @@ a { color: $f_d-color; }
     
     &:hover { @include article-shadow(24px, rgba(saturate($f_d-color, 25%), .8)); }
   }
+
+  h2 + p {
+    margin-top: $_gutter_size / 4;
+  }
+  h2, p {
+    & + .page-decorator, & + .post-decorator {
+      margin-top: $_gutter_size / 2;
+    }
+  }
   
   nav a {
     &:last-child { float: right; }
