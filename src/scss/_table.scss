@@ -40,8 +40,13 @@ tr {
       &:first-of-type { border-left-color: $f_d-grey; }
       &:last-of-type { border-right-color: $f_d-grey; }
     }
-    
   }
+}
+
+table + figcaption {
+  @extend %sans-serif;
+  font-size: 0.75rem;
+  margin: -0.5rem 0 $_gutter_size;
 }
 
 .orin-footer table {
