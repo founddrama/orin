@@ -111,9 +111,23 @@
 /**
  * Flickr photo embeds
  */
-.flickr-embed-frame + script + p {
-  // if the `iframe` is in a `p` then we don't need this
-  // b/c the `p` has `margin-bottom: 24px`
-  // but we _do_ need it if there's no `p`
+.flickr-embed-frame {
+  & + script + p {
+    // if the `iframe` is in a `p` then we don't need this
+    // b/c the `p` has `margin-bottom: 24px`
+    // but we _do_ need it if there's no `p`
     margin-top: 24px;
+  }
+  
+  // !important because the iframe gets [style] attrs written by the script
+  // this will constrain it to the article card BUT! there's no "pure CSS" way
+  // to fix the height
+  max-width: 100% !important;
+}
+
+/**
+ * WordPress responsive images
+ */
+.wp-block-image img {
+  height: auto;
 }
