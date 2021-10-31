@@ -90,7 +90,6 @@ a { color: $f_d-color; }
   margin: 2px 0;
   border: 1px solid $f_d-grey;
   @include border-radius(2px);
-  -ms-transition: border-color 0.2s ease-out;
   @include transition(border-color 0.2s ease-out);
   &:focus {
     outline: none;
@@ -99,7 +98,6 @@ a { color: $f_d-color; }
       width: 2px;
       color: lighten($f_d-color, 50%);
     }
-    -ms-transition: border-color 0.3s ease-in 0.1s;
     @include transition(border-color 0.3s ease-in 0.1s);
   }
 }
