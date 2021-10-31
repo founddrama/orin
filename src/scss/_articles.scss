@@ -1,7 +1,7 @@
 article {
   @include border-radius(8px);
   
-  header { margin-bottom: 2em; }
+  header { margin-bottom: $_gutter_size; }
   
   // $_font-size @ _typography
   p, ol, ul { margin-bottom: $_font-size * 1.5; }
