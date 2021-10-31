@@ -1,10 +1,10 @@
 // for CSSLint : declare each heading only once:
 
 @mixin h-font-base($font_size, $line_height: 2em) {
+  @extend %sans-serif;
   margin: 0;
   padding: 0;
   border: 0;
-  @include _sans-serif;
   font-size: $font_size;
   line-height: $line_height;
   font-weight: bold;
