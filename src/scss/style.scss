@@ -47,17 +47,25 @@ a { color: $f_d-color; }
   width: 100%;
   
   .page-decorator, .post-decorator {
-    @include border-radius(8px);
+    @include border-radius(4px);
     
     padding: $_24th / 2;
     padding-top: $_24th;
-    
-    @include basic-linear-grader(white, $f_d-desat, 56px);
     
     margin-bottom : 32px;
     
     @include article-shadow(8px, rgba($f_d-grey, .8));
     border: 1px solid $f_d-grey;
+    border-top: none;
+
+    background-repeat: no-repeat;
+    background-image:
+      linear-gradient(to top, $f_d-color, $f_d-color),
+      linear-gradient(to top, white, white);
+    background-position: 0 0;
+    background-size: 100% ($_gutter_size / 2), 100% 100%;
+
+    position: relative;
     
     &:hover { @include article-shadow(24px, rgba(saturate($f_d-color, 25%), .8)); }
   }
