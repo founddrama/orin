@@ -48,7 +48,10 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 $_font-size: 16px;
 
 // base font-size:
-body { font-size: $_font-size; }
+body {
+  font-size: $_font-size;
+  line-height: 1.5rem;
+}
 
 /**
  * Utils
@@ -66,7 +69,6 @@ sup, sub { line-height: 1em; }
 .masthead li { font-size: 14px; }
 
 article {
-  line-height: $_font-size * 1.5;
   header, footer, blockquote { font-size: 0.875em; }
   blockquote blockquote { font-size: 1em; }
 }
