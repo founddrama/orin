@@ -8,7 +8,7 @@
   //}
   
   hgroup .desc {
-    @extend ._sans-serif !optional;
+    @extend %sans-serif !optional;
     font-size: 1.5em;
     font-weight: bold;
     position: absolute;

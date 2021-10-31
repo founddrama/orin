@@ -1,8 +1,7 @@
 // font-families
-// @TODO - replace these w/ 'silent' classes for @extending when that becomes available
-._sans-serif { @include _sans-serif; }
-._serif { font-family: "Hoefler Text", Palatino, Georgia, serif; }
-._console { font-family: Consolas, "Lucida Console", Monaco, monospace; }
+%sans-serif { @include _sans-serif; }
+%serif { font-family: "Hoefler Text", Palatino, Georgia, serif; }
+%console { font-family: Consolas, "Lucida Console", Monaco, monospace; }
 
 // DO NOT SET: a, span, dl, dt, dd, ol, ul, li, div
 // (these should only ever get their fonts from their containers)
@@ -13,36 +12,36 @@ abbr, address, cite,
 del, dfn, ins,  q, samp,
 article, details, figcaption, figure, 
 hgroup, menu, section, summary {
-  @extend ._serif;
+  @extend %serif;
 }
 
 // Elements
 label, legend,
 nav, aside {
-  @extend ._sans-serif;
+  @extend %sans-serif;
 }
 aside {
   p, blockquote {
-    @extend ._sans-serif;
+    @extend %sans-serif;
   }
 }
 
 article {
-  header, footer { @extend ._sans-serif; }
+  header, footer { @extend %sans-serif; }
 }
 
 .comment {
-  @extend ._sans-serif;
-  p { @extend ._serif; }
+  @extend %sans-serif;
+  p { @extend %serif; }
 }
 
 // Elements
 pre, code, kbd, tt {
-  @extend ._console;
+  @extend %console;
 }
 
 table, caption, tbody, tfoot, thead, tr, th, td {
-  @extend ._sans-serif;
+  @extend %sans-serif;
 }
 
 // sizing:

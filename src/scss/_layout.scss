@@ -9,7 +9,7 @@
 .wp-caption-text {
   // should this be in "plugins"?
   // and/or do a SMACSS re-factor and put it in modules?
-  @extend ._sans-serif !optional;
+  @extend %sans-serif !optional;
   font-size: 0.66em;
   margin-bottom: 0.66em;
 }
