@@ -2,19 +2,19 @@
   clear: both;
   
   min-height: $_sect_h;
-  padding-bottom: 2em;
+  padding-bottom: $_gutter_size;
     
   text-align: center;
 
   section {
     overflow: hidden;
     
-    &>ul {
+    & > ul {
       text-align: left;
       width: auto;
       display: block;
       vertical-align: top;
-      margin: 2em;
+      margin: $_gutter_size;
       list-style-type: none;
     }
   }

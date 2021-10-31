@@ -13,7 +13,6 @@
  */
 @mixin article-shadow($strength, $color) {
   @include box-shadow($color 0 $strength $strength);
-  -ms-transition: box-shadow 0.5s ease-out;
   @include transition(box-shadow 0.5s ease-out);
 }
 
@@ -23,7 +22,6 @@
  */
 @mixin nav-shadow($strength, $color) {
   @include box-shadow($color $strength 0 abs($strength));
-  -ms-transition: box-shadow 0.5s ease-out;
   @include transition(box-shadow 0.5s ease-out);
 }
 

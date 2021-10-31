@@ -2,7 +2,7 @@
 Theme Name: Orin
 Theme URI: https://github.com/founddrama/orin
 Description: A WordPress theme, custom rolled for <https://blog.founddrama.net>, and based on the HTML5 Starkers <http://starkerstheme.com>, which is based on <a href="http://elliotjaystocks.com/starkers/">Starkers</a> by <a href="http://elliotjaystocks.com/">Elliot Jay Stocks</a> which is based on Twenty Ten.
-Version: 0.9.0
+Version: 1.0.0
 Author: Rob Friesel
 Author URI: http://blog.founddrama.net
 Tags: orin, html5, css3, responsive
@@ -90,7 +90,6 @@ a { color: $f_d-color; }
   margin: 2px 0;
   border: 1px solid $f_d-grey;
   @include border-radius(2px);
-  -ms-transition: border-color 0.2s ease-out;
   @include transition(border-color 0.2s ease-out);
   &:focus {
     outline: none;
@@ -99,7 +98,6 @@ a { color: $f_d-color; }
       width: 2px;
       color: lighten($f_d-color, 50%);
     }
-    -ms-transition: border-color 0.3s ease-in 0.1s;
     @include transition(border-color 0.3s ease-in 0.1s);
   }
 }

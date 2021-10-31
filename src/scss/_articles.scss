@@ -1,7 +1,7 @@
 article {
   @include border-radius(8px);
   
-  header { margin-bottom: 2em; }
+  header { margin-bottom: $_gutter_size; }
   
   // $_font-size @ _typography
   p, ol, ul { margin-bottom: $_font-size * 1.5; }
@@ -9,7 +9,6 @@ article {
   a img:hover {
     @include box-shadow(lighten($f_d-dark, 25%) 0 4px 4px);
     @include rotate(-1deg);
-    -ms-transition: all 0.5s ease-out;
     @include transition(all 0.5s ease-out);
   }
     
@@ -18,7 +17,6 @@ article {
     border: 1px solid $f_d-grey;
     padding: 4px;
     @include box-shadow(lighten($f_d-dark, 50%) 0 2px 2px);
-    -ms-transition: all 0.5s ease-out;
     @include transition(all 0.5s ease-out);
   }
   

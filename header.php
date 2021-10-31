@@ -24,9 +24,6 @@
 <!--[if IE 8]>
 <link rel="stylesheet" type="text/css" media="screen" href="<?php bloginfo('template_directory'); ?>/css/mq.css" />
 <![endif]-->
-<!--[if lte IE 7]>
-<link rel="stylesheet" type="text/css" media="screen" href="<?php bloginfo('template_directory'); ?>/css/ie.css" />
-<![endif]-->
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
 <!--[if lt IE 9]>
