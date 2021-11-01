@@ -2,7 +2,7 @@
 Theme Name: Orin
 Theme URI: https://github.com/founddrama/orin
 Description: A WordPress theme, custom rolled for <https://blog.founddrama.net>, and based on the HTML5 Starkers <http://starkerstheme.com>, which is based on <a href="http://elliotjaystocks.com/starkers/">Starkers</a> by <a href="http://elliotjaystocks.com/">Elliot Jay Stocks</a> which is based on Twenty Ten.
-Version: 1.0.0
+Version: 1.1.0
 Author: Rob Friesel
 Author URI: http://blog.founddrama.net
 Tags: orin, html5, css3, responsive
@@ -47,19 +47,36 @@ a { color: $f_d-color; }
   width: 100%;
   
   .page-decorator, .post-decorator {
-    @include border-radius(8px);
+    @include border-radius(4px);
     
     padding: $_24th / 2;
     padding-top: $_24th;
-    
-    @include basic-linear-grader(white, $f_d-desat, 56px);
     
     margin-bottom : 32px;
     
     @include article-shadow(8px, rgba($f_d-grey, .8));
     border: 1px solid $f_d-grey;
+    border-top: none;
+
+    background-repeat: no-repeat;
+    background-image:
+      linear-gradient(to top, $f_d-color, $f_d-color),
+      linear-gradient(to top, white, white);
+    background-position: 0 0;
+    background-size: 100% ($_gutter_size / 2), 100% 100%;
+
+    position: relative;
     
     &:hover { @include article-shadow(24px, rgba(saturate($f_d-color, 25%), .8)); }
+  }
+
+  h2 + p {
+    margin-top: $_gutter_size / 4;
+  }
+  h2, p {
+    & + .page-decorator, & + .post-decorator {
+      margin-top: $_gutter_size / 2;
+    }
   }
   
   nav a {

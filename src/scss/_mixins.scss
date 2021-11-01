@@ -3,10 +3,6 @@
 // Compass imports //
 @import "compass/css3";
 
-@mixin _sans-serif {
-  font-family: "Gill Sans", "Lucida Grande", "Trebuchet MS", sans-serif;
-}
-
 /**
  * @param {Number} $strength (in px or %)
  * @param {Color} $color

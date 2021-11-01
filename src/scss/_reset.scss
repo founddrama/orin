@@ -9,7 +9,7 @@
  * Author: Richard Clark - http://richclarkdesign.com
  */
 
-.zero {
+%zero {
   margin: 0;
   padding: 0;
   border: 0;
@@ -28,7 +28,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
-  @extend .zero;
+  @extend %zero;
   vertical-align: baseline;
   background: transparent;
 }
@@ -76,7 +76,7 @@ table {
 }
 
 hr {
-  @extend .zero;
+  @extend %zero;
   margin: 1em 0;
   height: 1px;
   background-color: #ccc;
