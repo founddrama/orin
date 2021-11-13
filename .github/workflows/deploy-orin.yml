@@ -1,0 +1,47 @@
+name: Deploy Orin
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # checkout repo to $GITHUB_WORKSPACE
+      - uses: actions/checkout@v2
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '2.6'
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '17.x'
+
+      - name: Compass compile
+        run: |
+          if [ ! -d css ]; then
+            echo "[WARNING] Missing css directory!"
+            echo "[bash] Attempting to create orin/css:"
+            mkdir css
+          fi
+          gem install compass
+          compass compile --sass-dir src/scss --css-dir css -e production -s compressed --no-line-comments
+          if [ -e css/style.css ]; then
+            echo "[bash] Moving style.css to Orin theme's root..."
+            mv css/style.css style.css
+          fi
+          
+      - name: Minify JavaScript
+        run: |
+          npm install uglify-js -g
+          uglifyjs --compress --mangle --output js/iframe-resizer.js -- js/iframe-resizer.js
+
+      - name: Deploy to blog.founddrama.net
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.REMOTE_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          source: "*.php,*.md,STARKERS_LICENSE.txt,css/*,images/*,js/*,languages/*,screenshot.png,style.css"
+          target: blog.founddrama.net/wp-content/themes/orin
+          overwrite: true

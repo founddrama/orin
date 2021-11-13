@@ -30,5 +30,4 @@ The site references minified versions of certain resources (_e.g._, `css` and
 minified files and putting them in the right place
 
 * A sample deploy script is included at `./bin/deploy.sh`
-* see also : <http://developer.yahoo.com/yui/compressor/> and/or
-  <https://github.com/yui/yuicompressor>
+* see also: <https://github.com/yui/yuicompressor>
