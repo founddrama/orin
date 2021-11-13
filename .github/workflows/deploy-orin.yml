@@ -1,0 +1,36 @@
+name: Deploy Orin
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: '2.6'
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '17.x'
+      - name: Compass compile
+        run: |
+          if [ ! -d css ]; then
+            echo "[WARNING] Missing css directory!"
+            echo "[bash] Attempting to create orin/css:"
+            mkdir css
+          fi
+          gem install compass
+          compass compile --sass-dir src/scss --css-dir css -e production -s compressed --no-line-comments
+          if [ -e css/style.css ]; then
+            echo "[bash] Moving style.css to Orin theme's root..."
+            mv css/style.css style.css
+          fi
+          
+      - name: Minify JavaScript
+        run: |
+          npm install uglify-js -g
+          uglifyjs --compress --mangle --output js/iframe-resizer.js -- js/iframe-resizer.js 
