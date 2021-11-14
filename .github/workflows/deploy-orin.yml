@@ -10,30 +10,18 @@ jobs:
     steps:
       # checkout repo to $GITHUB_WORKSPACE
       - uses: actions/checkout@v2
-      - uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '2.6'
       - uses: actions/setup-node@v1
         with:
           node-version: '17.x'
 
-      - name: Compass compile
+      - name: Compile SCSS
         run: |
-          if [ ! -d css ]; then
-            echo "[WARNING] Missing css directory!"
-            echo "[bash] Attempting to create orin/css:"
-            mkdir css
-          fi
-          gem install compass
-          compass compile --sass-dir src/scss --css-dir css -e production -s compressed --no-line-comments
-          if [ -e css/style.css ]; then
-            echo "[bash] Moving style.css to Orin theme's root..."
-            mv css/style.css style.css
-          fi
+          npm install -g sass
+          sass --style=compressed --no-source-map src/scss/style.scss:style.css src/scss/mq.scss:css/mq.css
           
       - name: Minify JavaScript
         run: |
-          npm install uglify-js -g
+          npm install -g uglify-js
           uglifyjs --compress --mangle --output js/iframe-resizer.js -- js/iframe-resizer.js
 
       - name: Deploy to blog.founddrama.net
