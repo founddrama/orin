@@ -1,3 +1,5 @@
+@use "sass:math";
+
 // for CSSLint : declare each heading only once:
 
 @mixin h-font-base($font_size, $line_height: 2em) {
@@ -29,7 +31,7 @@ h6 {
 h1 {
   @include h-font-base(6em, 1em);
   position: absolute;
-  margin-left: $_12th / 2;
+  margin-left: math.div($_12th, 2);
   text-shadow: $f_d-dark 2px 0 2px, $f_d-dark -2px 0 2px;
   transition: 0.3s linear;
   

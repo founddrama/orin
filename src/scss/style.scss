@@ -7,6 +7,7 @@ Author: Rob Friesel
 Author URI: http://blog.founddrama.net
 Tags: orin, html5, css3, responsive
 */
+@use "sass:math";
 @import "variables";
 @import "mixins";
 @import "reset";
@@ -49,7 +50,7 @@ a {
   .post-decorator {
     border-radius: 4px;
     
-    padding: $_24th / 2;
+    padding: math.div($_24th, 2);
     padding-top: $_24th;
     
     margin-bottom : 32px;
@@ -63,7 +64,7 @@ a {
       linear-gradient(to top, $f_d-color, $f_d-color),
       linear-gradient(to top, white, white);
     background-position: 0 0;
-    background-size: 100% ($_gutter_size / 2), 100% 100%;
+    background-size: 100% math.div($_gutter_size, 2), 100% 100%;
 
     position: relative;
     
@@ -73,13 +74,13 @@ a {
   }
 
   h2 + p {
-    margin-top: $_gutter_size / 4;
+    margin-top: math.div($_gutter_size, 4);
   }
 
   h2, p {
     & + .page-decorator,
     & + .post-decorator {
-      margin-top: $_gutter_size / 2;
+      margin-top: math.div($_gutter_size, 2);
     }
   }
   
