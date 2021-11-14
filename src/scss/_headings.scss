@@ -31,7 +31,7 @@ h1 {
   position: absolute;
   margin-left: $_12th / 2;
   @include text-shadow($f_d-dark 2px 0 2px, $f_d-dark -2px 0 2px);
-  @include transition(0.3s linear);
+  transition: 0.3s linear;
   
   a {
     color: $f_d-color;

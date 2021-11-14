@@ -119,8 +119,8 @@ a {
   padding: 4px 2px;
   margin: 2px 0;
   border: 1px solid $f_d-grey;
-  @include transition(border-color 0.2s ease-out);
   border-radius: 2px;
+  transition: border-color 0.2s ease-out;
   &:focus {
     outline: none;
     padding: 3px 1px;
@@ -128,7 +128,7 @@ a {
       width: 2px;
       color: lighten($f_d-color, 50%);
     }
-    @include transition(border-color 0.3s ease-in 0.1s);
+    transition: border-color 0.3s ease-in 0.1s;
   }
 }
 

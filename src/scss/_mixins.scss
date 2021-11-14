@@ -1,26 +1,15 @@
-/* @mixins for Orin */
-
-// Compass imports //
-@import "compass/css3";
+/**
+ * @mixins for Orin
+ */
 
 /**
  * @param {Number} $strength (in px or %)
  * @param {Color} $color
  */
 @mixin article-shadow($strength, $color) {
-  @include box-shadow($color 0 $strength $strength);
-  @include transition(box-shadow 0.5s ease-out);
+  box-shadow: $color 0 $strength $strength;
+  transition: box-shadow 0.5s ease-out;
 }
-
-/**
-* @param {Number} $strength (in px or %)
-* @param {Color} $color
- */
-@mixin nav-shadow($strength, $color) {
-  @include box-shadow($color $strength 0 abs($strength));
-  @include transition(box-shadow 0.5s ease-out);
-}
-
 
 /**
  * @param {Color} $base_color

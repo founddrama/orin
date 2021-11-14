@@ -15,7 +15,7 @@ article {
   a img:hover {
     @include box-shadow(lighten($f_d-dark, 25%) 0 4px 4px);
     @include rotate(-1deg);
-    @include transition(all 0.5s ease-out);
+    transition: all 0.5s ease-out;
   }
     
   img {
@@ -23,7 +23,7 @@ article {
     border: 1px solid $f_d-grey;
     padding: 4px;
     @include box-shadow(lighten($f_d-dark, 50%) 0 2px 2px);
-    @include transition(all 0.5s ease-out);
+    transition: all 0.5s ease-out;
   }
   
   blockquote {
