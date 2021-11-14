@@ -15,7 +15,10 @@
 #wp-calendar {
   width: 100%;
   font-size: 2em;
-  tbody td { text-align: center; }
+
+  tbody td {
+    text-align: center;
+  }
 }
 
 /**
@@ -153,4 +156,23 @@
  */
 .wp-block-image img {
   height: auto;
+}
+
+/**
+ * WordPress block search
+ */
+.wp-block-search {
+  .orin-container & &__button {
+    @extend .orin-button;
+  }
+}
+
+/**
+ * WordPress block calendar
+ */
+.wp-block-calendar {
+  .orin-container & table th {
+    background: $f_d-dark;
+    border-color: $f_d-dark;
+  }
 }

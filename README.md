@@ -7,6 +7,8 @@ and responsive design. The author's target for this theme's deployment is his
 own [found_drama blog](https://blog.founddrama.net); but he hopes that you enjoy
 it, too and choose fork it for your own experiments.
 
+![Here's a thumbnail of the Orin theme](./screenshot.png)
+
 
 ## Details
 
