@@ -1,4 +1,7 @@
-.comments-title, .comment { clear: both; }
+.comments-title,
+.comment {
+  clear: both;
+}
 
 .comments-title {
   margin: {
@@ -22,13 +25,20 @@
   }
 }
 
-#reply-title { padding-top: $_24th; }
+#reply-title {
+  padding-top: $_24th;
+}
 
-.post, .page {
-  input, textarea {
+.post,
+.page {
+  input,
+  textarea {
     display: block;
     width: 100%;
     font-size: 2em;
   }
-  .required { color: $f_d-color; }
+
+  .required {
+    color: $f_d-color;
+  }
 }

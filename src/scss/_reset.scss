@@ -46,15 +46,18 @@ nav ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
-  &:before, &:after {
+  &:before,
+  &:after {
     content: "";
-      content: none;
+    content: none;
   }
 }
 
-ins, mark {
+ins,
+mark {
   background-color: #ff9;
   color: #000;
 }
@@ -66,7 +69,9 @@ mark {
   font-weight: bold;
 }
 
-del, s, strike {
+del,
+s,
+strike {
   text-decoration: line-through;
 }
 
@@ -82,4 +87,7 @@ hr {
   background-color: #ccc;
 }
 
-input, select { vertical-align: middle; }
+input,
+select {
+  vertical-align: middle;
+}

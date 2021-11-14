@@ -1,4 +1,6 @@
-table, td, th {
+table,
+td,
+th {
   border: 1px solid $f_d-grey;
 }
 
@@ -13,32 +15,50 @@ thead tr {
   border: 1px solid $f_d-dark;
   border-bottom: none;
 }
+
 tfoot tr {
   $_c: lighten($f_d-dark, 50%);
   background: $_c;
   border: 1px solid $_c;
   border-top: none;
 }
-thead, tfoot {
-  tr, tr a { color: white; }
-  td, th { border: none; }
+
+thead,
+tfoot {
+  tr,
+  tr a {
+    color: white;
+  }
+  td,
+  th {
+    border: none;
+  }
 }
 
-td, th {
+td,
+th {
   margin: 1px;
   padding: 2px 8px;
 }
 
-th { border-color: $f_d-dark; }
+th {
+  border-color: $f_d-dark;
+}
 
 tr {
   background: white;
+
   &:nth-child(even) {
     background: $f_d-grey;
+
     td {
       border-color: white;
-      &:first-of-type { border-left-color: $f_d-grey; }
-      &:last-of-type { border-right-color: $f_d-grey; }
+      &:first-of-type {
+        border-left-color: $f_d-grey;
+      }
+      &:last-of-type {
+        border-right-color: $f_d-grey;
+      }
     }
   }
 }
@@ -51,9 +71,20 @@ table + figcaption {
 
 .orin-footer table {
   color: white;
-  a, a:visited { color: $f_d-color; }
-  tfoot {
-    a, a:visited { color: white; }
+
+  a,
+  a:visited {
+    color: $f_d-color;
   }
-  td { color: black; }
+
+  tfoot {
+    a,
+    a:visited {
+      color: white;
+    }
+  }
+
+  td {
+    color: black;
+  }
 }

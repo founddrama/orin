@@ -8,7 +8,10 @@
 /**
  * WP-Calendar
  */
-#next { text-align: right; }
+#next {
+  text-align: right;
+}
+
 #wp-calendar {
   width: 100%;
   font-size: 2em;
@@ -22,12 +25,14 @@
  */
 .delicious {
   margin-left: 0;
+
   & > li {
     list-style-type: none;
     margin-bottom: 1em;
     padding-bottom: 1em;
     border-bottom-color: $f_d-desat;
     border-bottom: 1px solid transparentize($f_d-desat, 0.5);
+
     &:last-of-type {
       margin-bottom: 0;
       padding-bottom: 0;
@@ -35,22 +40,34 @@
     }
   }
 }
+
 .delicious-link,
 .delicious-extended {
   margin-bottom: 6px;
 }
+
 .delicious-link {
   font-weight: bold;
 }
+
 .delicious-extended {
-  .orin-chronology & { font-size: 1em; }
+  .orin-chronology & {
+    font-size: 1em;
+  }
 }
+
 .delicious-tags {
   @extend .smaller;
   a {
-    &:before { content: "#"; }
-    &:after { content: ","; }
-    &:last-of-type:after { content: ""; }
+    &:before {
+      content: "#";
+    }
+    &:after {
+      content: ",";
+    }
+    &:last-of-type:after {
+      content: "";
+    }
   }
 }
 
@@ -64,7 +81,10 @@
   }
   padding-top: $_48th;
 }
-.footnote { @extend .smaller; }
+
+.footnote {
+  @extend .smaller;
+}
 
 /**
  * F_D search haiku
@@ -73,7 +93,10 @@
   text-align: center;
   font-style: italic;
 }
-.search-haiku-defined { @extend .smaller; }
+
+.search-haiku-defined {
+  @extend .smaller;
+}
 
 /**
  * F_D disclosure text

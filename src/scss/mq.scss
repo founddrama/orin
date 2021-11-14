@@ -4,7 +4,9 @@
 @import "mixins";
 
 // headings
-h1 { margin-left: $_12th; }
+h1 {
+  margin-left: $_12th;
+}
 
 // masthead
 .masthead {
@@ -29,14 +31,16 @@ h1 { margin-left: $_12th; }
   min-width: $_3rd * 2;
   max-width: $_3rd * 3;
 
-  .page-decorator, .post-decorator {
+  .page-decorator,
+  .post-decorator {
     padding: $_24th;
     padding-bottom: $_24th / 2;
     margin-bottom: 64px;
   }
 }
 
-input, textarea {
+input,
+textarea {
   width: auto;
   font-size: 12px;
 }
@@ -47,8 +51,10 @@ article blockquote {
 }
 
 // comments
-.post, .page {
-  input, textarea {
+.post,
+.page {
+  input,
+  textarea {
     width: auto;
     font-size: 12px;
   }
@@ -75,5 +81,7 @@ aside {
 #wp-calendar {
   width: auto;
   font-size: 1em;
-  tbody td { text-align: left; }
+  tbody td {
+    text-align: left;
+  }
 }

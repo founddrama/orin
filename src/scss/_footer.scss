@@ -33,6 +33,7 @@
         bottom: 0.25em;
         left: $_48th;       
       }
+
       list-style: {
         type: circle;
         position: outside;
@@ -43,8 +44,12 @@
   
   a {
     color: $f_d-grey;
-    &:visited { color: darken($f_d-grey, 25%); }
+    &:visited {
+      color: darken($f_d-grey, 25%);
+    }
   }
 }
 
-#searchform label { display: none; }
+#searchform label {
+  display: none;
+}

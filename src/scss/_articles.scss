@@ -1,10 +1,16 @@
 article {
   @include border-radius(8px);
   
-  header { margin-bottom: $_gutter_size; }
+  header {
+    margin-bottom: $_gutter_size;
+  }
   
   // $_font-size @ _typography
-  p, ol, ul { margin-bottom: $_font-size * 1.5; }
+  p,
+  ol,
+  ul {
+    margin-bottom: $_font-size * 1.5;
+  }
   
   a img:hover {
     @include box-shadow(lighten($f_d-dark, 25%) 0 4px 4px);
@@ -31,10 +37,17 @@ article {
       @include article-shadow(4px, $f_d-dark);
     }
     
-    a { color: $f_d-grey; }
-    .wp-caption { color: $f_d-dark; }
+    a {
+      color: $f_d-grey;
+    }
+
+    .wp-caption {
+      color: $f_d-dark;
+    }
     
-    p:last-child { margin-bottom: 0; }
+    p:last-child {
+      margin-bottom: 0;
+    }
   }
   
   q {
@@ -42,11 +55,15 @@ article {
     color: $f_d-dark;
   }
   
-  ol, ul {
+  ol,
+  ul {
     list-style-position: outside;
     margin-left: 1.5em;
     
-    ol, ul { margin-bottom: 0; }
+    ol,
+    ul {
+      margin-bottom: 0;
+    }
   }
   
   footer {
@@ -55,13 +72,16 @@ article {
     background: white;
   }
   
-  footer, nav {
+  footer,
+  nav {
     margin-bottom: $_48th;
   }
 }
 
 .post-edit-link,
-.post-comment-link { float: right; }
+.post-comment-link {
+  float: right;
+}
 
 .single-post article footer {
   @include basic-linear-grader(white, rgba($f_d-grey, .6), 92%);
