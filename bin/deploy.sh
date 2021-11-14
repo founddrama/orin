@@ -1,14 +1,11 @@
 #!/bin/sh
 # This is a sample deploy script for the Orin WordPress blog theme
-# @requires {com.yahoo.platform.yui.compressor.YUICompressor}
-#       <http://developer.yahoo.com/yui/compressor/>
 # @requires {sass} and {haml}
 #     <http://sass-lang.com/>
 
 # configure as needed:
 BLOG_ROOT=${HOME}/blog.founddrama.net/
 WP_THEMES=${BLOG_ROOT}wp-content/themes
-YUI_COMPRESSOR=${HOME}/build/bin/yuicompressor-2.4.2.jar
 
 # get into the right dir
 cd ${WP_THEMES}
@@ -30,6 +27,10 @@ if [ ! -d css ]; then
   echo "[WARNING] Missing css directory!"
   echo "[bash] Attempting to create orin/css:"
   mkdir css
+fi
+if ! command -v compass &> /dev/null
+then
+  gem install compass
 fi
 echo "[compass] Compiling CSS from Sass/SCSS sources..."
 compass compile --sass-dir src/scss --css-dir css -e production -s compressed --no-line-comments
