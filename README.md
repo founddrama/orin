@@ -33,4 +33,4 @@ The site references minified versions of certain resources (_e.g._, `css` and
 minified files and putting them in the right place
 
 * A sample deploy script is included at [`bin/deploy.sh`](bin/deploy.sh)
-* A sample deploy workflow is included at [`.github/workflows/orin-deploy.yml`](.github/workflows/orin-deploy.yml)
+* A sample deploy workflow is included at [`.github/workflows/deploy-orin.yml`](.github/workflows/deploy-orin.yml)
