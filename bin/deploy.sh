@@ -23,22 +23,11 @@ echo "[git] Updating Orin theme from the latest in the github master branch:"
 git pull --verbose  
 
 # .css from .scss
-if [ ! -d css ]; then
-  echo "[WARNING] Missing css directory!"
-  echo "[bash] Attempting to create orin/css:"
-  mkdir css
-fi
-if ! command -v compass &> /dev/null
+if ! command -v sass &> /dev/null
 then
-  gem install compass
+  npm install -g sass
 fi
-echo "[compass] Compiling CSS from Sass/SCSS sources..."
-compass compile --sass-dir src/scss --css-dir css -e production -s compressed --no-line-comments
-
-# in the event that config.rb goes missing...
-if [ -e css/style.css ]; then
-  echo "[bash] Moving style.css to Orin theme's root..."
-  mv css/style.css style.css
-fi
+echo "[sass] Compiling CSS from SCSS sources..."
+sass --style=compressed --no-source-map  src/scss/style.scss:style.css src/scss/mq.scss:css/mq.css
 
 exit 0;
