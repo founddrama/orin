@@ -6,6 +6,7 @@
  * @subpackage Orin
  * @since 0.1a
  */
-	  get_header();
-	  get_template_part( 'loop', 'index' );
-	  get_footer(); ?>
+  get_header();
+  get_template_part( 'loop', 'index' );
+  get_footer();
+?>

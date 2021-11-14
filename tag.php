@@ -9,9 +9,9 @@
 
 get_header(); ?>
 
-		<h2><?php
-			printf( __( 'Tag Archives: %s', 'starkers' ), '' . single_tag_title( '', false ) . '' );
-		?></h2>
+    <h2><?php
+      printf( __( 'Tag Archives: %s', 'starkers' ), '' . single_tag_title( '', false ) . '' );
+    ?></h2>
 <?php
-	get_template_part( 'loop', 'tag' );
-	get_footer(); ?>
+  get_template_part( 'loop', 'tag' );
+  get_footer(); ?>
