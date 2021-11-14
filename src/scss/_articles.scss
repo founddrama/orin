@@ -1,5 +1,5 @@
 article {
-  @include border-radius(8px);
+  border-radius: 8px;
   
   header {
     margin-bottom: $_gutter_size;

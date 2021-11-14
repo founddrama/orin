@@ -50,7 +50,7 @@ a {
   
   .page-decorator,
   .post-decorator {
-    @include border-radius(4px);
+    border-radius: 4px;
     
     padding: $_24th / 2;
     padding-top: $_24th;
@@ -103,7 +103,7 @@ a {
   @include basic-linear-grader(darken($f_d-desat, 10%), $f_d-color, 84%);
   color: white;
   @include text-shadow($f_d-color 0 1px 1px);
-  @include border-radius(8px);
+  border-radius: 8px;
   padding: 6px;
   border: 2px solid darken($f_d-color, 10%);
   @include article-shadow(2px, rgba(desaturate($f_d-color, 10%), .8));
@@ -119,8 +119,8 @@ a {
   padding: 4px 2px;
   margin: 2px 0;
   border: 1px solid $f_d-grey;
-  @include border-radius(2px);
   @include transition(border-color 0.2s ease-out);
+  border-radius: 2px;
   &:focus {
     outline: none;
     padding: 3px 1px;
