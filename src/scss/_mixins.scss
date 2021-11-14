@@ -18,5 +18,5 @@
  */
 @mixin basic-linear-grader($base_color, $accent_color, $stop) {
   background: $base_color;
-  @include background(linear-gradient($accent_color, $base_color $stop));
+  background: linear-gradient($accent_color, $base_color $stop);
 }
