@@ -30,7 +30,7 @@ h1 {
   @include h-font-base(6em, 1em);
   position: absolute;
   margin-left: $_12th / 2;
-  @include text-shadow($f_d-dark 2px 0 2px, $f_d-dark -2px 0 2px);
+  text-shadow: $f_d-dark 2px 0 2px, $f_d-dark -2px 0 2px;
   transition: 0.3s linear;
   
   a {
@@ -39,32 +39,32 @@ h1 {
   }
   
   &:hover {
-    @include text-shadow(lighten($f_d-color, 10%) 4px 0 4px, lighten($f_d-color, 10%) -4px 0 4px);
+    text-shadow: lighten($f_d-color, 10%) 4px 0 4px, lighten($f_d-color, 10%) -4px 0 4px;
     text-decoration: none;
   }
 }
 
 h2 {
   @include h-font-base(2em, 1em);
-  @include text-shadow($f_d-grey 1px 0 1px);
+  text-shadow: $f_d-grey 1px 0 1px;
 }
 
 h3 {
   @include h-font-base(1.5em);
-  @include text-shadow($f_d-grey 0 2px 1px);
+  text-shadow: $f_d-grey 0 2px 1px;
 }
 
 h4 {
   @include h-font-base(1.375em);
-  @include text-shadow($f_d-grey 0 2px 1px);
+  text-shadow: $f_d-grey 0 2px 1px;
 }
 
 h5 {
   @include h-font-base(1.25em);
-  @include text-shadow($f_d-grey 0 2px 1px);
+  text-shadow: $f_d-grey 0 2px 1px;
 }
 
 h6 {
   @include h-font-base(1.125em);
-  @include text-shadow($f_d-grey 0 2px 1px);
+  text-shadow: $f_d-grey 0 2px 1px;
 }
