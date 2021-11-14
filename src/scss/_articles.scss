@@ -13,8 +13,8 @@ article {
   }
   
   a img:hover {
-    @include rotate(-1deg);
     box-shadow: lighten($f_d-dark, 25%) 0 4px 4px;
+    transform: rotate(-1deg);
     transition: all 0.5s ease-out;
   }
     
