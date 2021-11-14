@@ -25,7 +25,7 @@
 
     h3 {
       color: $f_d-dark;
-      @include text-shadow(none);
+      text-shadow: none;
     }
     
     li {

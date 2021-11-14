@@ -1,5 +1,7 @@
+@use "sass:math";
+
 article {
-  @include border-radius(8px);
+  border-radius: 8px;
   
   header {
     margin-bottom: $_gutter_size;
@@ -13,17 +15,17 @@ article {
   }
   
   a img:hover {
-    @include box-shadow(lighten($f_d-dark, 25%) 0 4px 4px);
-    @include rotate(-1deg);
-    @include transition(all 0.5s ease-out);
+    box-shadow: lighten($f_d-dark, 25%) 0 4px 4px;
+    transform: rotate(-1deg);
+    transition: all 0.5s ease-out;
   }
     
   img {
     background: white;
     border: 1px solid $f_d-grey;
     padding: 4px;
-    @include box-shadow(lighten($f_d-dark, 50%) 0 2px 2px);
-    @include transition(all 0.5s ease-out);
+    box-shadow: lighten($f_d-dark, 50%) 0 2px 2px;
+    transition: all 0.5s ease-out;
   }
   
   blockquote {
@@ -68,7 +70,7 @@ article {
   
   footer {
     clear: both;
-    padding: $_48th / 2 2px;
+    padding: math.div($_48th, 2) 2px;
     background: white;
   }
   

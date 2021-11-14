@@ -1,4 +1,4 @@
-@import "compass/css3";
+@use "sass:math";
 @import "variables";
 @import "layout";
 @import "mixins";
@@ -11,7 +11,7 @@ h1 {
 // masthead
 .masthead {
   hgroup .desc {
-    margin-left: $_3rd / 2;
+    margin-left: math.div($_3rd, 2);
   }
 
   nav ul {
@@ -34,7 +34,7 @@ h1 {
   .page-decorator,
   .post-decorator {
     padding: $_24th;
-    padding-bottom: $_24th / 2;
+    padding-bottom: math.div($_24th, 2);
     margin-bottom: 64px;
   }
 }
