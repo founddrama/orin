@@ -23,9 +23,8 @@ it, too and choose fork it for your own experiments.
 
 ## Notes
 
-CSS is developed and managed using [Sass](http://sass-lang.com/) and
-[Compass](http://compass-style.org/); the author recommends that you work it
-into your deploy script.
+CSS is developed and managed using [Sass](http://sass-lang.com/); the author
+recommends that you work it into your deploy script.
 
 
 ## Your Homework
