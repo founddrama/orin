@@ -129,6 +129,10 @@
     background: transparent;
   }
 
+  td {
+    border: inherit;
+  }
+
   .blob-code {
     padding: 1px 10px 1px 20px !important;
   }
