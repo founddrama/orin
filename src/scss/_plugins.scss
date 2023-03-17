@@ -85,8 +85,9 @@
   padding-top: $_48th;
 }
 
-.footnote {
+.footnote-link {
   @extend .smaller;
+  vertical-align: super;
 }
 
 /**

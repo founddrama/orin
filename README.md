@@ -18,7 +18,7 @@ it, too and choose fork it for your own experiments.
 
 **Author URI:** <https://blog.founddrama.net/>
 
-**Version:** 1.4.1
+**Version:** 1.4.2
 
 
 ## Notes
