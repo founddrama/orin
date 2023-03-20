@@ -75,7 +75,7 @@
 }
 
 /**
- * WP-Footnotes
+  * Footnotes Made Easy
  */
 .footnotes {
   border: {
@@ -83,11 +83,6 @@
     top-color: rgba($f_d-color, 0.5);
   }
   padding-top: $_48th;
-}
-
-.footnote-link {
-  @extend .smaller;
-  vertical-align: super;
 }
 
 /**
